@@ -76,6 +76,14 @@ export BLOCKSY_USER="admin"
 export BLOCKSY_APP_PASSWORD="xxxx xxxx xxxx xxxx xxxx xxxx"
 ```
 
+## Example plan
+
+`examples/example-plan.json` sets a palette and typography, builds a sticky
+header and footer, creates a menu, activates a free extension, creates a hook
+Content Block, and sets a per-page layout.
+
+![Example Blocksy plan](assets/example-plan.png)
+
 ## Layout
 
 ```text
@@ -94,6 +102,8 @@ dist/
 data/                     versioned option/builder catalogs
 examples/
   example-plan.json       one end-to-end example
+assets/
+  example-plan.png        social/repo preview image
 research/                 extraction notes and snapshots used to build this
 ```
 
