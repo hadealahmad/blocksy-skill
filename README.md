@@ -1,5 +1,7 @@
 # Blocksy skill
 
+> Repository: <https://github.com/hadealahmad/blocksy-skill>
+
 A portable OpenCode skill for configuring WordPress sites that run:
 
 - Blocksy
@@ -25,14 +27,16 @@ is no file or database access.
 
 ## Install the skill
 
-Copy this directory to:
+Clone it directly into the global skills directory:
 
-```text
-~/.config/opencode/skills/blocksy/
+```sh
+git clone https://github.com/hadealahmad/blocksy-skill.git \
+  ~/.config/opencode/skills/blocksy
 ```
 
-or keep it as a project skill in `.opencode/skills/blocksy/`. The skill entry
-point is `SKILL.md`.
+Or copy this directory to `~/.config/opencode/skills/blocksy/`, or keep it as a
+project skill in `.opencode/skills/blocksy/`. The skill entry point is
+`SKILL.md`.
 
 ## Quick start with WP-CLI
 
