@@ -1,0 +1,4946 @@
+{
+  "header": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "visibility",
+      "type": "ct-visibility",
+      "label": "Visibility",
+      "default": true,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "Desktop"
+        },
+        {
+          "key": "tablet",
+          "value": "Tablet"
+        },
+        {
+          "key": "mobile",
+          "value": "Mobile"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "visibility",
+      "type": "ct-visibility",
+      "label": "Visibility",
+      "default": true,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "Desktop"
+        },
+        {
+          "key": "tablet",
+          "value": "Tablet"
+        },
+        {
+          "key": "mobile",
+          "value": "Mobile"
+        }
+      ]
+    }
+  ],
+  "single": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "template_subtype",
+      "type": "ct-radio",
+      "label": "Replacement Behavior",
+      "default": "canvas",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "content": "Content Area",
+        "canvas": "Full Page"
+      }
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "title": "Left Sidebar"
+        },
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "title": "Right Sidebar"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "previewedPost",
+      "type": "blocksy-previewed-post",
+      "label": "Dynamic Content Preview",
+      "default": {
+        "post_id": "",
+        "post_type": "post"
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    }
+  ],
+  "archive": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Replace Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "template_subtype",
+      "type": "ct-radio",
+      "label": "Replacement Behavior",
+      "default": "card",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "card": "Only Card",
+        "canvas": "Full Page"
+      }
+    },
+    {
+      "id": "previewedPost",
+      "type": "blocksy-previewed-post",
+      "label": "Dynamic Content Preview",
+      "default": {
+        "post_id": "",
+        "post_type": "post"
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "template_editor_width_source",
+      "type": "ct-radio",
+      "label": "Editor/Card Width",
+      "default": "small",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "small": "Small",
+        "medium": "Medium",
+        "custom": "Custom"
+      }
+    },
+    {
+      "id": "template_editor_width",
+      "type": "ct-slider",
+      "label": "Custom Width",
+      "default": 1290,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 100,
+      "max": 1900
+    },
+    {
+      "id": "has_template_default_layout",
+      "type": "ct-switch",
+      "label": "Default Card Layout",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "title": "Left Sidebar"
+        },
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "title": "Right Sidebar"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    }
+  ],
+  "404": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    }
+  ],
+  "hook": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "location",
+      "type": "blocksy-hooks-select",
+      "label": null,
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "",
+          "value": "None"
+        },
+        {
+          "key": "wp_head",
+          "value": "WP head",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:head:start",
+          "value": "WP head start",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:head:end",
+          "value": "WP head end",
+          "group": "Head"
+        },
+        {
+          "key": "wp_body_open",
+          "value": "WP body open",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:header:before",
+          "value": "Header before",
+          "group": "Header"
+        },
+        {
+          "key": "blocksy:header:after",
+          "value": "Header after",
+          "group": "Header"
+        },
+        {
+          "key": "blocksy:header:offcanvas:desktop:top",
+          "value": "Desktop top",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:desktop:bottom",
+          "value": "Desktop bottom",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:mobile:top",
+          "value": "Mobile top",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:mobile:bottom",
+          "value": "Mobile bottom",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:sidebar:before",
+          "value": "Sidebar before",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:start",
+          "value": "Sidebar start",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:end",
+          "value": "Sidebar end",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:after",
+          "value": "Sidebar after",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "dynamic_sidebar_before",
+          "value": "Dynamic sidebar before",
+          "group": "All widget areas"
+        },
+        {
+          "key": "dynamic_sidebar",
+          "value": "Dynamic sidebar",
+          "group": "All widget areas"
+        },
+        {
+          "key": "dynamic_sidebar_after",
+          "value": "Dynamic sidebar after",
+          "group": "All widget areas"
+        },
+        {
+          "key": "blocksy:hero:before",
+          "value": "Before section",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:title:before",
+          "value": "Before title",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:description:before",
+          "value": "Before description",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:breadcrumbs:before",
+          "value": "Before breadcrumbs",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:before",
+          "value": "Before post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:first:before",
+          "value": "Before first post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:second:before",
+          "value": "Before second post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:title:after",
+          "value": "After title",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:description:after",
+          "value": "After description",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:breadcrumbs:after",
+          "value": "After breadcrumbs",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:first:after",
+          "value": "After first post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:second:after",
+          "value": "After second post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:after",
+          "value": "After post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:after",
+          "value": "After section",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:content:before",
+          "value": "Before content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:top",
+          "value": "Top content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:bottom",
+          "value": "Bottom content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:after",
+          "value": "After content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:comments:before",
+          "value": "Before comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:top",
+          "value": "Top comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:title:before",
+          "value": "Before title",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:title:after",
+          "value": "After title",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:bottom",
+          "value": "Bottom comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:after",
+          "value": "After comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:single:related_posts:before",
+          "value": "Before related posts",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:top",
+          "value": "Related posts top",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:title:before",
+          "value": "Before title",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:title:after",
+          "value": "After title",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:card:top",
+          "value": "Card top",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:featured_image:before",
+          "value": "Before featured image",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:featured_image:after",
+          "value": "After featured image",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:card:bottom",
+          "value": "Card bottom",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:bottom",
+          "value": "Related posts bottom",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:after",
+          "value": "After related posts",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:archive:top",
+          "value": "Top",
+          "group": "Archive"
+        },
+        {
+          "key": "blocksy:archive:bottom",
+          "value": "Bottom",
+          "group": "Archive"
+        },
+        {
+          "key": "blocksy:loop:before",
+          "value": "Before",
+          "group": "Loop"
+        },
+        {
+          "key": "blocksy:loop:after",
+          "value": "After",
+          "group": "Loop"
+        },
+        {
+          "key": "blocksy:loop:card:start",
+          "value": "Start",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:loop:card:end",
+          "value": "End",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:loop:card:cards-number",
+          "value": "After certain number of cards",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:single:top",
+          "value": "Top",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:top",
+          "value": "Top content",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:paragraphs-number",
+          "value": "After certain number of blocks",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:headings-number",
+          "value": "Before certain number of headings",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:bottom",
+          "value": "Bottom content",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:bottom",
+          "value": "Bottom",
+          "group": "Single Post"
+        },
+        {
+          "key": "woocommerce_login_form_start",
+          "value": "Login form start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_login_form_end",
+          "value": "Login form end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:login:start",
+          "value": "Login form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:login:end",
+          "value": "Login form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_register_form_start",
+          "value": "Register form start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_register_form_end",
+          "value": "Register form end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:register:start",
+          "value": "Register form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:register:end",
+          "value": "Register form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:lostpassword:start",
+          "value": "Lost password form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:lostpassword:end",
+          "value": "Lost password form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_before_main_content",
+          "value": "Before main content",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "woocommerce_after_main_content",
+          "value": "After main content",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas-filters:top",
+          "value": "Offcanvas Filters - Top",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas-filters:bottom",
+          "value": "Offcanvas Filters - Bottom",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas:minicart:empty",
+          "value": "Offcanvas Cart - Empty State",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas:minicart:list:after",
+          "value": "Offcanvas Cart - List After",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "woocommerce_archive_description",
+          "value": "Archive description",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_before_shop_loop",
+          "value": "Before shop loop",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:title:before",
+          "value": "Before shop loop item title",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:title:after",
+          "value": "After shop loop item title",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:price:before",
+          "value": "Before shop loop item price",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:price:after",
+          "value": "After shop loop item price",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:actions:before",
+          "value": "Before shop loop item actions",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:actions:after",
+          "value": "After shop loop item actions",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_after_shop_loop",
+          "value": "After shop loop",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_before_single_product",
+          "value": "Before single product",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_product_meta_start",
+          "value": "Product meta start",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_product_meta_end",
+          "value": "Product meta end",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_share",
+          "value": "Share",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_after_single_product",
+          "value": "After single product",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:excerpt:before",
+          "value": "Before single product excerpt",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:excerpt:after",
+          "value": "After single product excerpt",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:tabs:before",
+          "value": "Before single product tabs",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:tabs:after",
+          "value": "After single product tabs",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-gallery:before",
+          "value": "Before single product gallery",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-gallery:after",
+          "value": "After single product gallery",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:add_to_cart:before",
+          "value": "Before single product \"Add to cart\" button",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:add_to_cart:after",
+          "value": "After single product \"Add to cart\" button",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:meta:before",
+          "value": "Before single product meta",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:meta:after",
+          "value": "After single product meta",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_cart_is_empty",
+          "value": "Cart is empty",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart",
+          "value": "Before cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_table",
+          "value": "Before cart table",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_contents",
+          "value": "Before cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_contents",
+          "value": "Cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_contents",
+          "value": "After cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_coupon",
+          "value": "Cart coupon",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_actions",
+          "value": "Cart actions",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_table",
+          "value": "After cart table",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_collaterals",
+          "value": "Cart collaterals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_totals",
+          "value": "Before cart totals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_totals_before_order_total",
+          "value": "Cart totals before order total",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_totals_after_order_total",
+          "value": "Cart totals after order total",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_proceed_to_checkout",
+          "value": "Proceed to checkout",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_totals",
+          "value": "After cart totals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart",
+          "value": "After cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_mini_cart",
+          "value": "Before Mini Cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_mini_cart_contents",
+          "value": "Before Mini Cart Contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_mini_cart_contents",
+          "value": "Mini Cart Contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_widget_shopping_cart_before_buttons",
+          "value": "Widget Shopping Cart Before Buttons",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_widget_shopping_cart_after_buttons",
+          "value": "Widget Shopping Cart After Buttons",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_mini_cart",
+          "value": "After Mini Cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_checkout_form",
+          "value": "Before checkout form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_before_customer_details",
+          "value": "Before customer details",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_after_customer_details",
+          "value": "After customer details",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_billing",
+          "value": "Checkout billing",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_checkout_billing_form",
+          "value": "Before checkout billing form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_checkout_billing_form",
+          "value": "After checkout billing form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_order_notes",
+          "value": "Before order notes",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_order_notes",
+          "value": "After order notes",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_shipping",
+          "value": "Checkout shipping",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_before_order_review",
+          "value": "Checkout before order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_order_review",
+          "value": "Checkout order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_cart_contents",
+          "value": "Review order before cart contents",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_cart_contents",
+          "value": "Review order after cart contents",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_order_total",
+          "value": "Review order before order total",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_order_total",
+          "value": "Review order after order total",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_payment",
+          "value": "Review order before payment",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_submit",
+          "value": "Review order before submit",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_submit",
+          "value": "Review order after submit",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_payment",
+          "value": "Review order after payment",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_after_order_review",
+          "value": "Checkout after order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_checkout_form",
+          "value": "After checkout form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_my_account",
+          "value": "Before my account",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_before_account_navigation",
+          "value": "Before account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_navigation",
+          "value": "Account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_after_account_navigation",
+          "value": "After account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_content",
+          "value": "Account content",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_dashboard",
+          "value": "Account dashboard",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_after_my_account",
+          "value": "After my account",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:product:before",
+          "value": "Added to Cart: Before product",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:actions:before",
+          "value": "Added to Cart: Before actions",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:suggested_products:before",
+          "value": "Added to Cart: Before suggested products",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:suggested_products:after",
+          "value": "Added to Cart: After suggested products",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "wp_footer",
+          "value": "WP footer",
+          "group": "Footer"
+        },
+        {
+          "key": "blocksy:footer:before",
+          "value": "Footer before",
+          "group": "Footer"
+        },
+        {
+          "key": "blocksy:footer:after",
+          "value": "Footer after",
+          "group": "Footer"
+        },
+        {
+          "key": "custom_hook",
+          "value": "Custom Hook",
+          "group": "Other"
+        }
+      ]
+    },
+    {
+      "id": "priority",
+      "type": "ct-number",
+      "label": null,
+      "default": 10,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 1,
+      "max": 100
+    },
+    {
+      "id": "custom_location",
+      "type": "text",
+      "label": "Custom Hook",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "paragraphs_count",
+      "type": "ct-number",
+      "label": "After Block Number",
+      "default": "3",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "headings_count",
+      "type": "text",
+      "label": "Before Heading Number",
+      "default": "3",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "cards_count",
+      "type": "ct-number",
+      "label": "After Card Number",
+      "default": "3",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "repeat_for_every_card",
+      "type": "ct-switch",
+      "label": "Repeat",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "additional_locations",
+      "type": "blocksy-multiple-locations-select",
+      "label": null,
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "",
+          "value": "None"
+        },
+        {
+          "key": "wp_head",
+          "value": "WP head",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:head:start",
+          "value": "WP head start",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:head:end",
+          "value": "WP head end",
+          "group": "Head"
+        },
+        {
+          "key": "wp_body_open",
+          "value": "WP body open",
+          "group": "Head"
+        },
+        {
+          "key": "blocksy:header:before",
+          "value": "Header before",
+          "group": "Header"
+        },
+        {
+          "key": "blocksy:header:after",
+          "value": "Header after",
+          "group": "Header"
+        },
+        {
+          "key": "blocksy:header:offcanvas:desktop:top",
+          "value": "Desktop top",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:desktop:bottom",
+          "value": "Desktop bottom",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:mobile:top",
+          "value": "Mobile top",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:header:offcanvas:mobile:bottom",
+          "value": "Mobile bottom",
+          "group": "Header offcanvas"
+        },
+        {
+          "key": "blocksy:sidebar:before",
+          "value": "Sidebar before",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:start",
+          "value": "Sidebar start",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:end",
+          "value": "Sidebar end",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "blocksy:sidebar:after",
+          "value": "Sidebar after",
+          "group": "Left/Right sidebar"
+        },
+        {
+          "key": "dynamic_sidebar_before",
+          "value": "Dynamic sidebar before",
+          "group": "All widget areas"
+        },
+        {
+          "key": "dynamic_sidebar",
+          "value": "Dynamic sidebar",
+          "group": "All widget areas"
+        },
+        {
+          "key": "dynamic_sidebar_after",
+          "value": "Dynamic sidebar after",
+          "group": "All widget areas"
+        },
+        {
+          "key": "blocksy:hero:before",
+          "value": "Before section",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:title:before",
+          "value": "Before title",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:description:before",
+          "value": "Before description",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:breadcrumbs:before",
+          "value": "Before breadcrumbs",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:before",
+          "value": "Before post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:first:before",
+          "value": "Before first post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:second:before",
+          "value": "Before second post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:title:after",
+          "value": "After title",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:description:after",
+          "value": "After description",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:breadcrumbs:after",
+          "value": "After breadcrumbs",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:first:after",
+          "value": "After first post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:second:after",
+          "value": "After second post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:custom_meta:after",
+          "value": "After post meta",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:hero:after",
+          "value": "After section",
+          "group": "Page/post title"
+        },
+        {
+          "key": "blocksy:content:before",
+          "value": "Before content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:top",
+          "value": "Top content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:bottom",
+          "value": "Bottom content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:content:after",
+          "value": "After content",
+          "group": "Content"
+        },
+        {
+          "key": "blocksy:comments:before",
+          "value": "Before comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:top",
+          "value": "Top comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:title:before",
+          "value": "Before title",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:title:after",
+          "value": "After title",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:bottom",
+          "value": "Bottom comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:comments:after",
+          "value": "After comments",
+          "group": "Comments"
+        },
+        {
+          "key": "blocksy:single:related_posts:before",
+          "value": "Before related posts",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:top",
+          "value": "Related posts top",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:title:before",
+          "value": "Before title",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:title:after",
+          "value": "After title",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:card:top",
+          "value": "Card top",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:featured_image:before",
+          "value": "Before featured image",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:featured_image:after",
+          "value": "After featured image",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:card:bottom",
+          "value": "Card bottom",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:bottom",
+          "value": "Related posts bottom",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:single:related_posts:after",
+          "value": "After related posts",
+          "group": "Related posts"
+        },
+        {
+          "key": "blocksy:archive:top",
+          "value": "Top",
+          "group": "Archive"
+        },
+        {
+          "key": "blocksy:archive:bottom",
+          "value": "Bottom",
+          "group": "Archive"
+        },
+        {
+          "key": "blocksy:loop:before",
+          "value": "Before",
+          "group": "Loop"
+        },
+        {
+          "key": "blocksy:loop:after",
+          "value": "After",
+          "group": "Loop"
+        },
+        {
+          "key": "blocksy:loop:card:start",
+          "value": "Start",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:loop:card:end",
+          "value": "End",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:loop:card:cards-number",
+          "value": "After certain number of cards",
+          "group": "Loop card"
+        },
+        {
+          "key": "blocksy:single:top",
+          "value": "Top",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:top",
+          "value": "Top content",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:paragraphs-number",
+          "value": "After certain number of blocks",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:headings-number",
+          "value": "Before certain number of headings",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:content:bottom",
+          "value": "Bottom content",
+          "group": "Single Post"
+        },
+        {
+          "key": "blocksy:single:bottom",
+          "value": "Bottom",
+          "group": "Single Post"
+        },
+        {
+          "key": "woocommerce_login_form_start",
+          "value": "Login form start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_login_form_end",
+          "value": "Login form end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:login:start",
+          "value": "Login form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:login:end",
+          "value": "Login form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_register_form_start",
+          "value": "Register form start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_register_form_end",
+          "value": "Register form end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:register:start",
+          "value": "Register form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:register:end",
+          "value": "Register form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:lostpassword:start",
+          "value": "Lost password form modal start",
+          "group": "Auth forms"
+        },
+        {
+          "key": "blocksy:account:modal:lostpassword:end",
+          "value": "Lost password form modal end",
+          "group": "Auth forms"
+        },
+        {
+          "key": "woocommerce_before_main_content",
+          "value": "Before main content",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "woocommerce_after_main_content",
+          "value": "After main content",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas-filters:top",
+          "value": "Offcanvas Filters - Top",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas-filters:bottom",
+          "value": "Offcanvas Filters - Bottom",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas:minicart:empty",
+          "value": "Offcanvas Cart - Empty State",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "blocksy:pro:woo-extra:offcanvas:minicart:list:after",
+          "value": "Offcanvas Cart - List After",
+          "group": "WooCommerce Global"
+        },
+        {
+          "key": "woocommerce_archive_description",
+          "value": "Archive description",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_before_shop_loop",
+          "value": "Before shop loop",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:title:before",
+          "value": "Before shop loop item title",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:title:after",
+          "value": "After shop loop item title",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:price:before",
+          "value": "Before shop loop item price",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:price:after",
+          "value": "After shop loop item price",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:actions:before",
+          "value": "Before shop loop item actions",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "blocksy:woocommerce:product-card:actions:after",
+          "value": "After shop loop item actions",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_after_shop_loop",
+          "value": "After shop loop",
+          "group": "WooCommerce Archive"
+        },
+        {
+          "key": "woocommerce_before_single_product",
+          "value": "Before single product",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_product_meta_start",
+          "value": "Product meta start",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_product_meta_end",
+          "value": "Product meta end",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_share",
+          "value": "Share",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_after_single_product",
+          "value": "After single product",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:excerpt:before",
+          "value": "Before single product excerpt",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:excerpt:after",
+          "value": "After single product excerpt",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:tabs:before",
+          "value": "Before single product tabs",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:tabs:after",
+          "value": "After single product tabs",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-gallery:before",
+          "value": "Before single product gallery",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-gallery:after",
+          "value": "After single product gallery",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:add_to_cart:before",
+          "value": "Before single product \"Add to cart\" button",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:add_to_cart:after",
+          "value": "After single product \"Add to cart\" button",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:meta:before",
+          "value": "Before single product meta",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "blocksy:woocommerce:product-single:meta:after",
+          "value": "After single product meta",
+          "group": "WooCommerce Single Product"
+        },
+        {
+          "key": "woocommerce_cart_is_empty",
+          "value": "Cart is empty",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart",
+          "value": "Before cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_table",
+          "value": "Before cart table",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_contents",
+          "value": "Before cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_contents",
+          "value": "Cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_contents",
+          "value": "After cart contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_coupon",
+          "value": "Cart coupon",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_actions",
+          "value": "Cart actions",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_table",
+          "value": "After cart table",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_collaterals",
+          "value": "Cart collaterals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_cart_totals",
+          "value": "Before cart totals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_totals_before_order_total",
+          "value": "Cart totals before order total",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_cart_totals_after_order_total",
+          "value": "Cart totals after order total",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_proceed_to_checkout",
+          "value": "Proceed to checkout",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart_totals",
+          "value": "After cart totals",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_cart",
+          "value": "After cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_mini_cart",
+          "value": "Before Mini Cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_mini_cart_contents",
+          "value": "Before Mini Cart Contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_mini_cart_contents",
+          "value": "Mini Cart Contents",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_widget_shopping_cart_before_buttons",
+          "value": "Widget Shopping Cart Before Buttons",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_widget_shopping_cart_after_buttons",
+          "value": "Widget Shopping Cart After Buttons",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_after_mini_cart",
+          "value": "After Mini Cart",
+          "group": "WooCommerce Cart"
+        },
+        {
+          "key": "woocommerce_before_checkout_form",
+          "value": "Before checkout form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_before_customer_details",
+          "value": "Before customer details",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_after_customer_details",
+          "value": "After customer details",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_billing",
+          "value": "Checkout billing",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_checkout_billing_form",
+          "value": "Before checkout billing form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_checkout_billing_form",
+          "value": "After checkout billing form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_order_notes",
+          "value": "Before order notes",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_order_notes",
+          "value": "After order notes",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_shipping",
+          "value": "Checkout shipping",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_before_order_review",
+          "value": "Checkout before order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_order_review",
+          "value": "Checkout order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_cart_contents",
+          "value": "Review order before cart contents",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_cart_contents",
+          "value": "Review order after cart contents",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_order_total",
+          "value": "Review order before order total",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_order_total",
+          "value": "Review order after order total",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_payment",
+          "value": "Review order before payment",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_before_submit",
+          "value": "Review order before submit",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_submit",
+          "value": "Review order after submit",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_review_order_after_payment",
+          "value": "Review order after payment",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_checkout_after_order_review",
+          "value": "Checkout after order review",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_after_checkout_form",
+          "value": "After checkout form",
+          "group": "WooCommerce Checkout"
+        },
+        {
+          "key": "woocommerce_before_my_account",
+          "value": "Before my account",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_before_account_navigation",
+          "value": "Before account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_navigation",
+          "value": "Account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_after_account_navigation",
+          "value": "After account navigation",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_content",
+          "value": "Account content",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_account_dashboard",
+          "value": "Account dashboard",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "woocommerce_after_my_account",
+          "value": "After my account",
+          "group": "WooCommerce Account"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:product:before",
+          "value": "Added to Cart: Before product",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:actions:before",
+          "value": "Added to Cart: Before actions",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:suggested_products:before",
+          "value": "Added to Cart: Before suggested products",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "blocksy:ext:woocommerce-extra:added-to-cart:suggested_products:after",
+          "value": "Added to Cart: After suggested products",
+          "group": "WooCommerce: Added to Cart"
+        },
+        {
+          "key": "wp_footer",
+          "value": "WP footer",
+          "group": "Footer"
+        },
+        {
+          "key": "blocksy:footer:before",
+          "value": "Footer before",
+          "group": "Footer"
+        },
+        {
+          "key": "blocksy:footer:after",
+          "value": "Footer after",
+          "group": "Footer"
+        },
+        {
+          "key": "custom_hook",
+          "value": "Custom Hook",
+          "group": "Other"
+        }
+      ]
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "ct-radio",
+      "label": "Container Structure",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "no": "Default",
+        "plain": "None",
+        "yes": "Custom"
+      }
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "previewedPost",
+      "type": "blocksy-previewed-post",
+      "label": "Dynamic Content Preview",
+      "default": {
+        "post_id": "",
+        "post_type": "post"
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "visibility",
+      "type": "ct-visibility",
+      "label": "Visibility",
+      "default": true,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "Desktop"
+        },
+        {
+          "key": "tablet",
+          "value": "Tablet"
+        },
+        {
+          "key": "mobile",
+          "value": "Mobile"
+        }
+      ]
+    },
+    {
+      "id": "custom_class",
+      "type": "text",
+      "label": "Custom Class",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "custom_attributes",
+      "type": "text",
+      "label": "Custom Attribute",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    }
+  ],
+  "popup": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_trigger_condition",
+      "type": "ct-select",
+      "label": "Launch Trigger",
+      "default": "default",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "default",
+          "value": "None"
+        },
+        {
+          "key": "scroll",
+          "value": "On scroll"
+        },
+        {
+          "key": "element_reveal",
+          "value": "On scroll to element"
+        },
+        {
+          "key": "element_click",
+          "value": "On element click"
+        },
+        {
+          "key": "page_load",
+          "value": "On page load"
+        },
+        {
+          "key": "after_inactivity",
+          "value": "After inactivity"
+        },
+        {
+          "key": "after_x_time",
+          "value": "After x time"
+        },
+        {
+          "key": "after_x_pages",
+          "value": "After x pages"
+        },
+        {
+          "key": "exit_intent",
+          "value": "On page exit intent"
+        }
+      ]
+    },
+    {
+      "id": "scroll_to_element",
+      "type": "text",
+      "label": "Element Class",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "click_to_element",
+      "type": "text",
+      "label": "Element Class",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "scroll_direction",
+      "type": "ct-select",
+      "label": "Scroll Direction",
+      "default": "down",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "down",
+          "value": "Scroll Down"
+        },
+        {
+          "key": "up",
+          "value": "Scroll Up"
+        }
+      ]
+    },
+    {
+      "id": "scroll_value",
+      "type": "ct-slider",
+      "label": "Scroll Distance",
+      "default": "200px",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "close_on_scroll_back",
+      "type": "ct-switch",
+      "label": "Close Popup On Scroll Back",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "inactivity_value",
+      "type": "ct-number",
+      "label": "Inactivity Time",
+      "default": 10,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 5000
+    },
+    {
+      "id": "x_time_value",
+      "type": "ct-number",
+      "label": "After X Time",
+      "default": 10,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 5000
+    },
+    {
+      "id": "x_pages_value",
+      "type": "ct-number",
+      "label": "After X Pages",
+      "default": 3,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 1,
+      "max": 15
+    },
+    {
+      "id": "popup_relaunch_strategy",
+      "type": "ct-select",
+      "label": "Relaunch Trigger",
+      "default": "default",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "default",
+          "value": "Never relaunch"
+        },
+        {
+          "key": "always",
+          "value": "Always relaunch"
+        },
+        {
+          "key": "custom",
+          "value": "Custom interval"
+        }
+      ]
+    },
+    {
+      "id": "days_after_close_value",
+      "type": "ct-timer",
+      "label": "Days After Close",
+      "default": {
+        "days": 14,
+        "hours": 0,
+        "minutes": 0
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "days_after_success_value",
+      "type": "ct-timer",
+      "label": null,
+      "default": {
+        "days": 30,
+        "hours": 0,
+        "minutes": 0
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_close_button",
+      "type": "ct-switch",
+      "label": "On Close Button Click",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_close_with_esc",
+      "type": "ct-switch",
+      "label": "On ESC Button Press",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_close_with_backdrop_click",
+      "type": "ct-switch",
+      "label": "On Backdrop Click",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_custom_close",
+      "type": "ct-switch",
+      "label": "On Custom Action",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_custom_close_strategy",
+      "type": "ct-select",
+      "label": null,
+      "default": "form_submit",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "form_submit",
+          "value": "Form Submit"
+        },
+        {
+          "key": "button_click",
+          "value": "Button click"
+        }
+      ]
+    },
+    {
+      "id": "popup_custom_close_button_selector",
+      "type": "text",
+      "label": "Button Class Selector",
+      "default": "",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_custom_close_action_delay",
+      "type": "ct-number",
+      "label": "Delay",
+      "default": 0,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 1000
+    },
+    {
+      "id": "popup_open_animation",
+      "type": "ct-select",
+      "label": "Popup Animation",
+      "default": "fade-in",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "fade-in",
+          "value": "Fade in fade out"
+        },
+        {
+          "key": "zoom-in",
+          "value": "Zoom in zoom out"
+        },
+        {
+          "key": "slide-left",
+          "value": "Slide in from left"
+        },
+        {
+          "key": "slide-right",
+          "value": "Slide in from right"
+        },
+        {
+          "key": "slide-top",
+          "value": "Slide in from top"
+        },
+        {
+          "key": "slide-bottom",
+          "value": "Slide in from bottom"
+        }
+      ]
+    },
+    {
+      "id": "popup_entrance_speed",
+      "type": "ct-number",
+      "label": "Animation Speed",
+      "default": 0.3,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 10
+    },
+    {
+      "id": "popup_entrance_value",
+      "type": "ct-number",
+      "label": "Entrance Value",
+      "default": 50,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 500
+    },
+    {
+      "id": "load_content_with_ajax",
+      "type": "ct-switch",
+      "label": "Load Content With AJAX",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "fetch_popup_content",
+      "type": "ct-radio",
+      "label": "Reload Content",
+      "default": "never",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "never": "Never",
+        "always": "Always"
+      }
+    },
+    {
+      "id": "previewedPost",
+      "type": "blocksy-previewed-post",
+      "label": "Dynamic Content Preview",
+      "default": {
+        "post_id": "",
+        "post_type": "post"
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "visibility",
+      "type": "ct-visibility",
+      "label": "Popup Visibility",
+      "default": true,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "Desktop"
+        },
+        {
+          "key": "tablet",
+          "value": "Tablet"
+        },
+        {
+          "key": "mobile",
+          "value": "Mobile"
+        }
+      ]
+    },
+    {
+      "id": "popup_size",
+      "type": "ct-select",
+      "label": "Popup Size",
+      "default": "medium",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": [
+        {
+          "key": "small",
+          "value": "Small Size"
+        },
+        {
+          "key": "medium",
+          "value": "Medium Size"
+        },
+        {
+          "key": "large",
+          "value": "Large Size"
+        },
+        {
+          "key": "custom",
+          "value": "Custom Size"
+        }
+      ]
+    },
+    {
+      "id": "popup_max_width",
+      "type": "ct-slider",
+      "label": "Max Width",
+      "default": "400px",
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_max_height",
+      "type": "ct-slider",
+      "label": "Max Height",
+      "default": "CT_CSS_SKIP_RULE",
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_position",
+      "type": "blocksy-position",
+      "label": "Popup Position",
+      "default": "bottom:right",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_scroll_lock",
+      "type": "ct-switch",
+      "label": "Scroll Lock",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_tab_trap",
+      "type": "ct-switch",
+      "label": "Focus Trap",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_edges_offset",
+      "type": "ct-slider",
+      "label": "Popup Offset",
+      "default": 25,
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 300
+    },
+    {
+      "id": "popup_shadow",
+      "type": "ct-box-shadow",
+      "label": "Shadow",
+      "default": {
+        "inherit": false,
+        "blur": 20,
+        "spread": 0,
+        "v_offset": 10,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(41, 51, 61, 0.1)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_padding",
+      "type": "ct-spacing",
+      "label": "Padding",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_border_radius",
+      "type": "ct-spacing",
+      "label": "Border Radius",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          },
+          {
+            "value": "",
+            "unit": ""
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "popup_container_overflow",
+      "type": "ct-radio",
+      "label": "Container Overflow",
+      "default": "scroll",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "hidden": "Hidden",
+        "visible": "Visible",
+        "scroll": "Scroll"
+      }
+    },
+    {
+      "id": "close_button_type",
+      "type": "ct-radio",
+      "label": "Close Button Position",
+      "default": "outside",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "inside": "Inside",
+        "outside": "Outside"
+      }
+    },
+    {
+      "id": "popup_close_button_color",
+      "type": "ct-color-picker",
+      "label": "Close Icon Color",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_close_button_shape_color",
+      "type": "ct-color-picker",
+      "label": "Close Icon Background",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_background",
+      "type": "ct-background",
+      "label": "Popup Background",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "#ffffff"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_backdrop_background",
+      "type": "ct-background",
+      "label": "Popup Backdrop Background",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "popup_backdrop_background_blur",
+      "type": "ct-number",
+      "label": "Backdrop Blur",
+      "default": 0,
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "min": 0,
+      "max": 100
+    }
+  ],
+  "maintenance": [
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [
+        {
+          "type": "include",
+          "rule": "everywhere"
+        }
+      ],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "none",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    }
+  ],
+  "nothing_found": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "conditions",
+      "type": "blocksy-display-condition",
+      "label": "Display Conditions",
+      "default": [
+        {
+          "type": "include",
+          "rule": "everywhere"
+        }
+      ],
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    }
+  ]
+}

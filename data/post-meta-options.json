@@ -1,0 +1,1860 @@
+{
+  "post": [
+    {
+      "id": "has_hero_section",
+      "type": "ct-radio",
+      "label": null,
+      "default": "default",
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "default": "استخدام المعيّن مسبقاً",
+        "enabled": "مخصص",
+        "disabled": "مُعطّل"
+      }
+    },
+    {
+      "id": "hero_section",
+      "type": "ct-image-picker",
+      "label": "النوع",
+      "default": "type-1",
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/hero-type-1.svg",
+          "title": "النوع 1"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/hero-type-2.svg",
+          "title": "النوع 2"
+        }
+      }
+    },
+    {
+      "id": "hero_elements",
+      "type": "ct-layers",
+      "label": "العناصر",
+      "default": [
+        {
+          "id": "custom_title",
+          "enabled": true,
+          "heading_tag": "h1",
+          "title": "الرئيسية"
+        },
+        {
+          "id": "custom_description",
+          "enabled": true,
+          "description_visibility": {
+            "desktop": true,
+            "tablet": true,
+            "mobile": false
+          }
+        },
+        {
+          "id": "custom_meta",
+          "enabled": true,
+          "meta_elements": [
+            {
+              "id": "author",
+              "enabled": true,
+              "label": "بواسطة",
+              "has_author_avatar": "yes",
+              "avatar_size": 25
+            },
+            {
+              "id": "post_date",
+              "enabled": true,
+              "label": "في",
+              "date_format_source": "default",
+              "date_format": "M j, Y"
+            },
+            {
+              "id": "updated_date",
+              "enabled": false,
+              "label": "في",
+              "date_format_source": "default",
+              "date_format": "M j, Y"
+            },
+            {
+              "id": "categories",
+              "enabled": true,
+              "label": "في",
+              "style": "simple"
+            },
+            {
+              "id": "comments",
+              "enabled": true
+            }
+          ],
+          "page_meta_elements": {
+            "joined": true,
+            "articles_count": true,
+            "comments": true
+          }
+        },
+        {
+          "id": "breadcrumbs",
+          "enabled": false
+        },
+        {
+          "id": "content-block",
+          "enabled": false
+        }
+      ],
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "hero_alignment1",
+      "type": "ct-radio",
+      "label": "المحاذاة العمودية",
+      "default": "CT_CSS_SKIP_RULE",
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "left": "",
+        "center": "",
+        "right": ""
+      }
+    },
+    {
+      "id": "hero_margin",
+      "type": "ct-slider",
+      "label": "المسافة الفاصلة السفلية للحاوية",
+      "default": "40px",
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "hero_alignment2",
+      "type": "ct-radio",
+      "label": "المحاذاة العمودية",
+      "default": "center",
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "start": "",
+        "center": "",
+        "end": ""
+      }
+    },
+    {
+      "id": "hero_vertical_alignment",
+      "type": "ct-radio",
+      "label": "المحاذاة الأفقية",
+      "default": "center",
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "flex-start": "",
+        "center": "",
+        "flex-end": ""
+      }
+    },
+    {
+      "id": "hero_structure",
+      "type": "ct-radio",
+      "label": "عرض الحاوية",
+      "default": "narrow",
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "normal": "افتراضيّ",
+        "narrow": "ضيق"
+      }
+    },
+    {
+      "id": "page_title_bg_type",
+      "type": "ct-radio",
+      "label": "صورة خلفية الحاوية",
+      "default": "featured_image",
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": {
+        "featured_image": "مميزة",
+        "custom_image": "مخصص",
+        "color": "بدون"
+      }
+    },
+    {
+      "id": "custom_hero_background",
+      "type": "ct-image-uploader",
+      "label": "صورة مخصصة",
+      "default": {
+        "attachment_id": null
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_title_image_size",
+      "type": "ct-select",
+      "label": "حجم الصورة",
+      "default": "full",
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": [
+        {
+          "key": "full",
+          "value": "الحجم الكامل"
+        },
+        {
+          "key": "thumbnail",
+          "value": "الصورة المصغرة"
+        },
+        {
+          "key": "medium",
+          "value": "متوسط"
+        },
+        {
+          "key": "medium_large",
+          "value": "متوسط كبير"
+        },
+        {
+          "key": "large",
+          "value": "كبير"
+        },
+        {
+          "key": "1536x1536",
+          "value": "1536x1536"
+        },
+        {
+          "key": "2048x2048",
+          "value": "2048x2048"
+        }
+      ]
+    },
+    {
+      "id": "parallax",
+      "type": "ct-visibility",
+      "label": "Image Parallax Effect",
+      "default": false,
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel",
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "الحواسيب"
+        },
+        {
+          "key": "tablet",
+          "value": "الأجهزة اللوحية"
+        },
+        {
+          "key": "mobile",
+          "value": "الهاتف المحمول"
+        }
+      ]
+    },
+    {
+      "id": "hero_height",
+      "type": "ct-slider",
+      "label": "الارتفاع الأدنى للحاوية",
+      "default": "250px",
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageTitleFont",
+      "type": "ct-typography",
+      "label": "نوع خط العناوين",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "30px",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageTitleFontColor",
+      "type": "ct-color-picker",
+      "label": "لون الخط في العناوين",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageMetaFont",
+      "type": "ct-typography",
+      "label": "خط الميتا",
+      "default": {
+        "family": "Default",
+        "variation": "n6",
+        "size": "12px",
+        "line-height": "1.3",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "uppercase",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageMetaFontColor",
+      "type": "ct-color-picker",
+      "label": "لون خط قسم الميتا",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_meta_button_type_font_colors",
+      "type": "ct-color-picker",
+      "label": "خط زر ميتا",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_meta_button_type_background_colors",
+      "type": "ct-color-picker",
+      "label": "Meta Button Background",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageExcerptFont",
+      "type": "ct-typography",
+      "label": "نوع خط المقتطف",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "CT_CSS_SKIP_RULE",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageExcerptColor",
+      "type": "ct-color-picker",
+      "label": "لون خط المقتطف",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_social_icons_color",
+      "type": "ct-color-picker",
+      "label": "لون الأيقونات",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_social_icons_background",
+      "type": "ct-color-picker",
+      "label": "لون خلفية الأيقونة",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "breadcrumbsFont",
+      "type": "ct-typography",
+      "label": "نوع خط قائمة التنقل",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "CT_CSS_SKIP_RULE",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "breadcrumbsFontColor",
+      "type": "ct-color-picker",
+      "label": "لون خط مسار التنقل",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "initial": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageTitleOverlay",
+      "type": "ct-background",
+      "label": "لون صورة التغطية",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageTitleBackground",
+      "type": "ct-background",
+      "label": "خلفية الحاوية",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-6)"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "pageTitlePadding",
+      "type": "ct-spacing",
+      "label": "المسافات الفاصلة الداخليّة للحاوية",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 50,
+            "unit": "px"
+          },
+          {
+            "value": "auto",
+            "unit": ""
+          },
+          {
+            "value": 50,
+            "unit": "px"
+          },
+          {
+            "value": "auto",
+            "unit": ""
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "post_title_panel",
+      "section": "post_title_panel"
+    },
+    {
+      "id": "page_structure_type",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "default",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "default": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/default.svg",
+          "title": "استخدام الافتراضيّ"
+        },
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "عرض ضيّق"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "عرض عاديّ"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "title": "الشريط الجانبي الأيسر"
+        },
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "title": "الشريط الجانبي الأيمن"
+        }
+      }
+    },
+    {
+      "id": "content_style_source",
+      "type": "ct-radio",
+      "label": "Content Area Style Source",
+      "default": "inherit",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "inherit": "استخدام المعيّن مسبقاً",
+        "custom": "مخصص"
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "نوع منطقة المحتوى",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "واسع",
+        "boxed": "داخل صندوق"
+      }
+    },
+    {
+      "id": "vertical_spacing_source",
+      "type": "ct-radio",
+      "label": "المسافة الفاصلة العمودية لمنطقة المحتوى",
+      "default": "inherit",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "inherit": "استخدام المعيّن مسبقاً",
+        "custom": "مخصص"
+      }
+    },
+    {
+      "id": "content_area_spacing",
+      "type": "ct-radio",
+      "label": null,
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">أعلى وأسفل</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">فقط في الأعلى</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">فقط في الأسفل</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">مُعطّل</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "disable_featured_image",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم الصورة البارزة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_post_tags",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم وسوم المقال",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_share_box",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم المشاركة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_author_box",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم الكاتب",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_posts_navigation",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم المنشور السابق والتالي",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_related_posts",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم المقالات المشابهة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_header",
+      "type": "ct-switch",
+      "label": "تعطيل الترويسة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_footer",
+      "type": "ct-switch",
+      "label": "تعطيل التذييل",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    }
+  ],
+  "page": [
+    {
+      "id": "has_hero_section",
+      "type": "ct-radio",
+      "label": null,
+      "default": "default",
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "default": "استخدام المعيّن مسبقاً",
+        "enabled": "مخصص",
+        "disabled": "مُعطّل"
+      }
+    },
+    {
+      "id": "hero_section",
+      "type": "ct-image-picker",
+      "label": "النوع",
+      "default": "type-1",
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/hero-type-1.svg",
+          "title": "النوع 1"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/hero-type-2.svg",
+          "title": "النوع 2"
+        }
+      }
+    },
+    {
+      "id": "hero_elements",
+      "type": "ct-layers",
+      "label": "العناصر",
+      "default": [
+        {
+          "id": "custom_title",
+          "enabled": true,
+          "heading_tag": "h1",
+          "title": "الرئيسية"
+        },
+        {
+          "id": "custom_description",
+          "enabled": true,
+          "description_visibility": {
+            "desktop": true,
+            "tablet": true,
+            "mobile": false
+          }
+        },
+        {
+          "id": "custom_meta",
+          "enabled": false,
+          "meta_elements": [
+            {
+              "id": "author",
+              "enabled": true,
+              "label": "بواسطة",
+              "has_author_avatar": "yes",
+              "avatar_size": 25
+            },
+            {
+              "id": "post_date",
+              "enabled": true,
+              "label": "في",
+              "date_format_source": "default",
+              "date_format": "M j, Y"
+            },
+            {
+              "id": "updated_date",
+              "enabled": false,
+              "label": "في",
+              "date_format_source": "default",
+              "date_format": "M j, Y"
+            },
+            {
+              "id": "categories",
+              "enabled": false,
+              "label": "في",
+              "style": "simple"
+            },
+            {
+              "id": "comments",
+              "enabled": true
+            }
+          ],
+          "page_meta_elements": {
+            "joined": true,
+            "articles_count": true,
+            "comments": true
+          }
+        },
+        {
+          "id": "breadcrumbs",
+          "enabled": false
+        },
+        {
+          "id": "content-block",
+          "enabled": false
+        }
+      ],
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "hero_alignment1",
+      "type": "ct-radio",
+      "label": "المحاذاة العمودية",
+      "default": "CT_CSS_SKIP_RULE",
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "left": "",
+        "center": "",
+        "right": ""
+      }
+    },
+    {
+      "id": "hero_margin",
+      "type": "ct-slider",
+      "label": "المسافة الفاصلة السفلية للحاوية",
+      "default": "40px",
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "hero_alignment2",
+      "type": "ct-radio",
+      "label": "المحاذاة العمودية",
+      "default": "center",
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "start": "",
+        "center": "",
+        "end": ""
+      }
+    },
+    {
+      "id": "hero_vertical_alignment",
+      "type": "ct-radio",
+      "label": "المحاذاة الأفقية",
+      "default": "center",
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "flex-start": "",
+        "center": "",
+        "flex-end": ""
+      }
+    },
+    {
+      "id": "hero_structure",
+      "type": "ct-radio",
+      "label": "عرض الحاوية",
+      "default": "narrow",
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "normal": "افتراضيّ",
+        "narrow": "ضيق"
+      }
+    },
+    {
+      "id": "page_title_bg_type",
+      "type": "ct-radio",
+      "label": "صورة خلفية الحاوية",
+      "default": "featured_image",
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": {
+        "featured_image": "مميزة",
+        "custom_image": "مخصص",
+        "color": "بدون"
+      }
+    },
+    {
+      "id": "custom_hero_background",
+      "type": "ct-image-uploader",
+      "label": "صورة مخصصة",
+      "default": {
+        "attachment_id": null
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_title_image_size",
+      "type": "ct-select",
+      "label": "حجم الصورة",
+      "default": "full",
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": [
+        {
+          "key": "full",
+          "value": "الحجم الكامل"
+        },
+        {
+          "key": "thumbnail",
+          "value": "الصورة المصغرة"
+        },
+        {
+          "key": "medium",
+          "value": "متوسط"
+        },
+        {
+          "key": "medium_large",
+          "value": "متوسط كبير"
+        },
+        {
+          "key": "large",
+          "value": "كبير"
+        },
+        {
+          "key": "1536x1536",
+          "value": "1536x1536"
+        },
+        {
+          "key": "2048x2048",
+          "value": "2048x2048"
+        }
+      ]
+    },
+    {
+      "id": "parallax",
+      "type": "ct-visibility",
+      "label": "Image Parallax Effect",
+      "default": false,
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel",
+      "choices": [
+        {
+          "key": "desktop",
+          "value": "الحواسيب"
+        },
+        {
+          "key": "tablet",
+          "value": "الأجهزة اللوحية"
+        },
+        {
+          "key": "mobile",
+          "value": "الهاتف المحمول"
+        }
+      ]
+    },
+    {
+      "id": "hero_height",
+      "type": "ct-slider",
+      "label": "الارتفاع الأدنى للحاوية",
+      "default": "250px",
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageTitleFont",
+      "type": "ct-typography",
+      "label": "نوع خط العناوين",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "30px",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageTitleFontColor",
+      "type": "ct-color-picker",
+      "label": "لون الخط في العناوين",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageMetaFont",
+      "type": "ct-typography",
+      "label": "خط الميتا",
+      "default": {
+        "family": "Default",
+        "variation": "n6",
+        "size": "12px",
+        "line-height": "1.3",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "uppercase",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageMetaFontColor",
+      "type": "ct-color-picker",
+      "label": "لون خط قسم الميتا",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_meta_button_type_font_colors",
+      "type": "ct-color-picker",
+      "label": "خط زر ميتا",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_meta_button_type_background_colors",
+      "type": "ct-color-picker",
+      "label": "Meta Button Background",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageExcerptFont",
+      "type": "ct-typography",
+      "label": "نوع خط المقتطف",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "CT_CSS_SKIP_RULE",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageExcerptColor",
+      "type": "ct-color-picker",
+      "label": "لون خط المقتطف",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_social_icons_color",
+      "type": "ct-color-picker",
+      "label": "لون الأيقونات",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_social_icons_background",
+      "type": "ct-color-picker",
+      "label": "لون خلفية الأيقونة",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "breadcrumbsFont",
+      "type": "ct-typography",
+      "label": "نوع خط قائمة التنقل",
+      "default": {
+        "family": "Default",
+        "variation": "Default",
+        "size": "CT_CSS_SKIP_RULE",
+        "line-height": "CT_CSS_SKIP_RULE",
+        "letter-spacing": "CT_CSS_SKIP_RULE",
+        "text-transform": "CT_CSS_SKIP_RULE",
+        "text-decoration": "CT_CSS_SKIP_RULE"
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "breadcrumbsFontColor",
+      "type": "ct-color-picker",
+      "label": "لون خط مسار التنقل",
+      "default": {
+        "default": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "initial": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        },
+        "hover": {
+          "color": "CT_CSS_SKIP_RULEDEFAULT"
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageTitleOverlay",
+      "type": "ct-background",
+      "label": "لون صورة التغطية",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageTitleBackground",
+      "type": "ct-background",
+      "label": "خلفية الحاوية",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-6)"
+          }
+        }
+      },
+      "responsive": false,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "pageTitlePadding",
+      "type": "ct-spacing",
+      "label": "المسافات الفاصلة الداخليّة للحاوية",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 50,
+            "unit": "px"
+          },
+          {
+            "value": "auto",
+            "unit": ""
+          },
+          {
+            "value": 50,
+            "unit": "px"
+          },
+          {
+            "value": "auto",
+            "unit": ""
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "page_title_panel",
+      "section": "page_title_panel"
+    },
+    {
+      "id": "page_structure_type",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "default",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "default": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/default.svg",
+          "title": "استخدام الافتراضيّ"
+        },
+        "type-3": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "عرض ضيّق"
+        },
+        "type-4": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "عرض عاديّ"
+        },
+        "type-2": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "title": "الشريط الجانبي الأيسر"
+        },
+        "type-1": {
+          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "title": "الشريط الجانبي الأيمن"
+        }
+      }
+    },
+    {
+      "id": "content_style_source",
+      "type": "ct-radio",
+      "label": "Content Area Style Source",
+      "default": "inherit",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "inherit": "استخدام المعيّن مسبقاً",
+        "custom": "مخصص"
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "نوع منطقة المحتوى",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "واسع",
+        "boxed": "داخل صندوق"
+      }
+    },
+    {
+      "id": "vertical_spacing_source",
+      "type": "ct-radio",
+      "label": "المسافة الفاصلة العمودية لمنطقة المحتوى",
+      "default": "inherit",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "inherit": "استخدام المعيّن مسبقاً",
+        "custom": "مخصص"
+      }
+    },
+    {
+      "id": "content_area_spacing",
+      "type": "ct-radio",
+      "label": null,
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">أعلى وأسفل</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">فقط في الأعلى</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">فقط في الأسفل</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t\t<i class=\"ct-tooltip\">مُعطّل</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "خلفية الصفحة",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "لون خلفية منطقة المحتوى",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "ظل منطقة المحتوى",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "انحناء حدود منطقة المحتوى",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "disable_featured_image",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم الصورة البارزة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_share_box",
+      "type": "ct-switch",
+      "label": "إيقاف تفعيل قسم المشاركة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_header",
+      "type": "ct-switch",
+      "label": "تعطيل الترويسة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_footer",
+      "type": "ct-switch",
+      "label": "تعطيل التذييل",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    }
+  ],
+  "blog": [
+    {
+      "id": "disable_header",
+      "type": "ct-switch",
+      "label": "تعطيل الترويسة",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "disable_footer",
+      "type": "ct-switch",
+      "label": "تعطيل التذييل",
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null
+    }
+  ]
+}
