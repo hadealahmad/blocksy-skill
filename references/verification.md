@@ -170,7 +170,7 @@ map, or remove the mod to revert to the default.
 | --- | --- | --- |
 | `Theme mod 'x' is not in the Blocksy allowlist` | Typo, wrong version, or inactive extension | Re-run `schema`; activate the extension first |
 | `Option 'x' is not in the Blocksy Bridge allowlist` | Not a Blocksy option | Use `theme_mods` or the correct `blocksy_*` option |
-| `Extension 'x' is not available` | Pro extension on free plugin, or wrong plan | Check `schema.extensions[].tier/plans` |
+| `Extension 'x' is not available` | Pro extension on free plugin, or wrong plan | Stop; ask for Blocksy Companion Pro installation/activation and the required plan. Do not bypass (`pro-gate.md`) |
 | `Content block 'x' has unknown meta key` | Key not in that template type's schema | Read `content_block_options[type]` |
 | `Content block 'x' has no conditions` | It will never display | Add an include condition |
 | `Content block 'x' uses condition rule 'y' which is not registered` | Extension/plugin that registers the rule is inactive, or typo | Activate the provider or use a known rule |

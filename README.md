@@ -100,6 +100,10 @@ research/                 extraction notes and snapshots used to build this
 ## Safety
 
 - The bridge requires an administrator (`manage_options`).
+- **Pro gate:** when a request needs a Pro-only feature and the site has the free
+  Companion build, stop and ask for Blocksy Companion Pro installation and
+  licence activation. Do not fake or bypass it. See
+  `references/pro-gate.md`.
 - It refuses arbitrary options, arbitrary post types, arbitrary PHP, plugin
   installation, and user management.
 - It never returns Freemius/licence secrets.

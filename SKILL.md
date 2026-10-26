@@ -55,6 +55,32 @@ Read `references/adapters.md` before choosing.
 8. **Check the free/pro tier before activating an extension.** Pro extensions
    are silently unavailable on the free plugin. See
    `references/extensions.md`.
+9. **Stop at a Pro gate. Ask for Pro, do not bypass it.** If the request needs a
+   Pro-only feature and the site has the free Companion build (or no valid
+   licence), stop before composing/applying a plan and ask the user to install
+   and activate Blocksy Companion Pro. Do not fake, patch, emulate, or silently
+   substitute the feature. See `references/pro-gate.md`.
+
+## Pro gate
+
+This is the one rule that overrides "make it work":
+
+- Free build detected (`companion_build: free`, `premium_code: false`,
+  `plan: free`) and the request needs a Pro extension, Content Blocks, extra
+  header/footer sections, Pro builder items, or Pro fonts → **stop**.
+- Tell the user exactly what is Pro-only and that Pro replaces the free
+  Companion plugin (only one can be active).
+- Ask them to install and activate Blocksy Companion Pro and its licence.
+- After they confirm, re-run `info`/`schema` and verify `companion_build: pro`,
+  `premium_code: true`, and the requested extension is `available: true`.
+- Then continue.
+- If they decline, offer a free-scope alternative **only with explicit
+  consent**, and label it as a different design, not a workaround.
+
+Never write `blocksy_active_extensions` by hand to fake activation, never
+activate both Companion plugins, never patch licence checks, and never recreate
+a Pro feature with custom code. Full policy and feature list:
+`references/pro-gate.md`.
 
 ## The plan format
 
@@ -280,5 +306,6 @@ Version differences are real; the extractor is part of the bridge and
 | `references/builder.md` | Header/footer structure, item IDs, free/pro items |
 | `references/content-blocks.md` | Template types, conditions, hooks, popups, maintenance |
 | `references/extensions.md` | All 15 extensions, free/pro, plans, storage, settings |
+| `references/pro-gate.md` | Stop/ask/verify policy when a Pro-only feature is requested on a free build |
 | `references/menus.md` | Menus, items, locations, mega-menu meta |
 | `references/verification.md` | Post-apply checks and cleanup |

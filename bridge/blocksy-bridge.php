@@ -340,6 +340,7 @@ node scripts/remote.mjs info</pre>
 					'active'            => $this->blocksy_is_active(),
 					'theme_version'     => $this->blocksy_theme_version(),
 					'companion_active'  => $this->companion_is_active(),
+					'companion_build'   => $this->companion_build(),
 					'companion_version' => function_exists( 'blocksy_companion_get_version' ) ? blocksy_companion_get_version() : null,
 					'plan'              => function_exists( 'blocksy_companion_get_capabilities' ) ? blocksy_companion_get_capabilities()->get_plan() : null,
 					'premium_code'      => function_exists( 'blocksy_companion_can_use_premium_code' ) ? (bool) blocksy_companion_can_use_premium_code() : false,
@@ -373,6 +374,14 @@ node scripts/remote.mjs info</pre>
 			}
 
 			return $theme->get( 'Version' );
+		}
+
+		private function companion_build() {
+			if ( ! defined( 'BLOCKSY__FILE__' ) ) {
+				return null;
+			}
+
+			return false !== strpos( BLOCKSY__FILE__, 'blocksy-companion-pro' ) ? 'pro' : 'free';
 		}
 
 		private function global_css_path() {
@@ -429,6 +438,7 @@ node scripts/remote.mjs info</pre>
 				],
 				'blocksy' => [
 					'theme_version'      => $this->blocksy_theme_version(),
+					'companion_build'    => $this->companion_build(),
 					'companion_version'  => function_exists( 'blocksy_companion_get_version' ) ? blocksy_companion_get_version() : null,
 					'plan'               => function_exists( 'blocksy_companion_get_capabilities' ) ? blocksy_companion_get_capabilities()->get_plan() : null,
 					'premium_code'       => function_exists( 'blocksy_companion_can_use_premium_code' ) ? (bool) blocksy_companion_can_use_premium_code() : false,
@@ -1110,20 +1120,20 @@ node scripts/remote.mjs info</pre>
 				}
 
 				if ( empty( $available[ $id ]['path'] ) ) {
-					$report['errors'][] = "Extension '$id' is not available (it may require Blocksy Companion Pro or a higher plan).";
+					$report['errors'][] = "Extension '$id' is not available. It requires Blocksy Companion Pro or a higher plan. Install and activate Blocksy Companion Pro; do not bypass the licence.";
 					continue;
 				}
 
 				$is_pro = false !== strpos( (string) $available[ $id ]['path'], '/premium/' );
 				if ( $is_pro && ! $premium_code ) {
-					$report['errors'][] = "Extension '$id' requires a paid Blocksy Companion licence.";
+					$report['errors'][] = "Extension '$id' requires a paid Blocksy Companion licence. Install/activate Blocksy Companion Pro or upgrade the licence; do not bypass it.";
 					continue;
 				}
 
 				if ( $is_pro && function_exists( 'blocksy_companion_exts_get_preliminary_config' ) ) {
 					$preliminary = blocksy_companion_exts_get_preliminary_config( $id );
 					if ( ! empty( $preliminary['plans'] ) && ! in_array( $current_plan, $preliminary['plans'], true ) ) {
-						$report['errors'][] = "Extension '$id' requires one of these plans: " . implode( ', ', $preliminary['plans'] ) . '.';
+						$report['errors'][] = "Extension '$id' requires one of these plans: " . implode( ', ', $preliminary['plans'] ) . '. Upgrade the licence; do not bypass it.';
 						continue;
 					}
 				}
@@ -1577,7 +1587,7 @@ node scripts/remote.mjs info</pre>
 			}
 
 			if ( ! post_type_exists( 'ct_content_block' ) ) {
-				$report['errors'][] = 'Content Blocks are not available on this site. They require Blocksy Companion Pro (and the Pro licence).';
+				$report['errors'][] = 'Content Blocks are not available. They require Blocksy Companion Pro and a valid Pro licence. Install and activate Pro; do not create the post type manually or bypass the licence.';
 				return;
 			}
 

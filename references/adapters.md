@@ -182,7 +182,7 @@ it through a code-snippets plugin. The snippet is exactly what
 | 409 | Blocksy theme is not active | Activate Blocksy or the child theme |
 | 413 | Plan over 2 MB | Split the plan or reduce content |
 | 404 on a specific endpoint | Old bridge version | Update `dist/blocksy-bridge.zip` |
-| `Content Blocks are not available` | Free Companion or no Pro licence | Use the builder or upgrade |
+| `Content Blocks are not available` | Free Companion or no Pro licence | Stop; ask the user to install/activate Blocksy Companion Pro. Do not fake it (`pro-gate.md`) |
 | REST requests blocked by a WAF | POST/JSON blocked | Allowlist `/wp-json/blocksy-bridge/*` or use WP-CLI |
 
 A security plugin that disables REST for logged-out users is fine: the bridge

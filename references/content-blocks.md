@@ -1,6 +1,10 @@
 # Content Blocks, templates, popups, and hooks
 
-Content Blocks are a **Pro** feature. They are a custom post type:
+Content Blocks are a **Pro** feature. If the site has only the free Companion
+build, stop and ask the user to install and activate Blocksy Companion Pro
+before proceeding. Do not create `ct_content_block` posts manually, fake the
+feature with custom code, or silently substitute a builder layout. See
+`pro-gate.md`.
 
 - Post type: `ct_content_block`
 - Post meta `template_type`: what kind of template it is

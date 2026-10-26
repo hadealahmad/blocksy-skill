@@ -255,6 +255,11 @@ requires WooCommerce.
 The Pro footer reuses the theme logo/button/text implementations and the
 premium header item implementations for content block/search/language/contacts.
 
+**Pro gate:** if the site has the free Companion build and the user asks for a
+Pro item, stop and ask for Blocksy Companion Pro installation/activation. Do
+not recreate the item with custom HTML/CSS/JS or silently use a different free
+item. See `pro-gate.md`.
+
 ## Extra sections and conditions (Pro)
 
 Pro can add additional header/footer sections. Use an ID such as

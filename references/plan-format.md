@@ -45,6 +45,9 @@ Required if present; currently `1`. The bridge rejects other versions.
 - Activation goes through `activate_extension()`, so `onActivation()` runs.
 - Pro extensions require a paid plan. The bridge reports an error if the
   extension is unavailable or the plan does not match.
+- If the site has the free Companion build, stop and ask the user to install
+  and activate Blocksy Companion Pro before adding a Pro extension to the plan.
+  Do not fake activation. See `pro-gate.md`.
 - `woocommerce-extra` requires WooCommerce.
 
 `blocksy_active_extensions` is intentionally not a normal option. To change the

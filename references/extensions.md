@@ -3,6 +3,11 @@
 There are 15 extensions in the Blocksy Companion build. Four are free; eleven
 require a paid Companion licence. Plan requirements vary.
 
+**Pro gate:** if the site has the free Companion build (or no valid licence) and
+the user asks for a Pro extension, do not fake or bypass it. Stop and ask the
+user to install and activate Blocksy Companion Pro first. See
+`pro-gate.md`.
+
 Check the live state:
 
 ```sh
