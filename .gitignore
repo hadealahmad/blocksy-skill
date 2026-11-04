@@ -2,3 +2,4 @@ blocksy-skill-test
 .DS_Store
 node_modules/
 *.log
+.omc/
