@@ -1,0 +1,2576 @@
+{
+  "blocksy_version": "2.1.60",
+  "generated": "2026-11-07T20:25:06Z",
+  "source": "static extraction of theme/companion/pro source; see research/builder-items.md",
+  "counts": {
+    "header": 27,
+    "footer": 20,
+    "missing_from_catalog": 3
+  },
+  "items": [
+    {
+      "id": "bottom-row",
+      "builder": "footer",
+      "name": "Bottom Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/bottom-row",
+      "config": {
+        "name": "Bottom Row",
+        "typography_keys": [
+          "footerWidgetsTitleFont",
+          "footerWidgetsFont"
+        ],
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "items_per_row",
+        "2_columns_layout",
+        "3_columns_layout",
+        "4_columns_layout",
+        "5_columns_layout",
+        "6_columns_layout",
+        "footerItemsGap",
+        "footerWidgetsGap",
+        "rowTopBottomSpacing",
+        "footer_row_vertical_alignment",
+        "footerRowWidth",
+        "footerRowVisibility",
+        "footerWidgetsTitleFont",
+        "footerWidgetsTitleColor",
+        "footerWidgetsFont",
+        "rowFontColor",
+        "footerRowBackground",
+        "footerRowTopDivider",
+        "color",
+        "footerRowTopBorderFullWidth",
+        "footerRowBottomDivider",
+        "footerRowBottomBorderFullWidth"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 22,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "button",
+      "builder": "footer",
+      "name": "Button",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:135"
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/button",
+      "config": {
+        "name": "Button",
+        "clone": true,
+        "selective_refresh": [
+          "header_button_open",
+          "header_button_select_popup",
+          "has_header_button_secondary_text",
+          "icon",
+          "icon_position",
+          "user_visibility"
+        ],
+        "typography_keys": [
+          "headerButtonFont",
+          "headerButtonSecondaryLabelFont"
+        ],
+        "translation_keys": [
+          {
+            "key": "header_button_text",
+            "multiline": false
+          },
+          {
+            "key": "header_button_secondary_text",
+            "multiline": false
+          },
+          {
+            "key": "button_aria_label",
+            "multiline": false
+          },
+          {
+            "key": "header_button_link",
+            "multiline": false
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "header_button_type",
+        "header_button_size",
+        "header_button_text",
+        "has_header_button_secondary_text",
+        "<rand>",
+        "header_button_secondary_text",
+        "header_button_text_horizontal_alignment",
+        "header_button_open",
+        "header_button_target",
+        "header_button_nofollow",
+        "header_button_sponsored",
+        "visibility",
+        "footer_button_horizontal_alignment",
+        "footer_button_vertical_alignment",
+        "user_visibility",
+        "header_button_class",
+        "button_aria_label",
+        "headerButtonFont",
+        "transparentHeaderButtonFontColor",
+        "stickyHeaderButtonFontColor",
+        "headerButtonSecondaryLabelFont",
+        "headerButtonSecondaryFontColor",
+        "transparentHeaderButtonSecondaryFontColor",
+        "stickyHeaderButtonSecondaryFontColor",
+        "headerButtonForeground",
+        "transparentHeaderButtonForeground",
+        "stickyHeaderButtonForeground",
+        "headerCtaRadius",
+        "headerCtaPadding",
+        "headerCtaMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 35,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "contacts",
+      "builder": "footer",
+      "name": "Contacts",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:141"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts",
+      "config": {
+        "name": "Contacts",
+        "typography_keys": [
+          "contacts_font"
+        ],
+        "clone": 3,
+        "selective_refresh": [
+          "contact_items",
+          "link_icons"
+        ],
+        "translation_keys": [
+          {
+            "key": "contact_items",
+            "all_layers": [
+              "title",
+              "content",
+              "link"
+            ]
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "contacts_items_direction",
+        "visibility",
+        "content",
+        "link",
+        "icon",
+        "<rand>",
+        "link_target",
+        "link_nofollow",
+        "link_icons",
+        "contacts_icon_size",
+        "contacts_spacing",
+        "contacts_icon_shape",
+        "contacts_icon_fill_type",
+        "footer_contacts_horizontal_alignment",
+        "footer_contacts_vertical_alignment",
+        "footer_contacts_visibility",
+        "contacts_font",
+        "contacts_font_color",
+        "transparent_contacts_font_color",
+        "sticky_contacts_font_color",
+        "contacts_icon_color",
+        "transparent_contacts_icon_color",
+        "sticky_contacts_icon_color",
+        "contacts_icon_background",
+        "transparent_contacts_icon_background",
+        "sticky_contacts_icon_background",
+        "contacts_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 23,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "content-block",
+      "builder": "footer",
+      "name": "Content Block",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:138"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/content-block",
+      "config": {
+        "name": "Content Block",
+        "clone": 10,
+        "selective_refresh": [
+          "hook_id"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "hook_id",
+        "content_width",
+        "margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 2,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "copyright",
+      "builder": "footer",
+      "name": "Copyright",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/copyright",
+      "config": {
+        "name": "Copyright",
+        "typography_keys": [
+          "copyrightFont"
+        ],
+        "translation_keys": [
+          {
+            "key": "copyright_text"
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "copyright_text",
+        "footerCopyrightAlignment",
+        "footerCopyrightVerticalAlignment",
+        "footer_copyright_visibility",
+        "copyrightFont",
+        "copyrightColor",
+        "copyrightMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 7,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "language-switcher",
+      "builder": "footer",
+      "name": "Languages",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [
+          "wpml",
+          "polylang",
+          "translatepress",
+          "weglot"
+        ],
+        "notes": "registered in footer only when Blocksy Companion Pro is active (plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:140) and translation plugin is active (plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/config.php:7-14)"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher",
+      "config": {
+        "enabled": " function_exists('icl_object_id') || function_exists('pll_the_languages') || class_exists('TRP_Translate_Press') || function_exists('weglot_get_current_language') ",
+        "typography_keys": [
+          "ls_font"
+        ],
+        "name": "Languages",
+        "selective_refresh": [
+          "ls_type",
+          "ls_flag_aspect_ratio",
+          "language_type",
+          "language_icon",
+          "language_label",
+          "hide_current_language"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "ls_flag_aspect_ratio",
+        "language_type",
+        "<rand>",
+        "language_label",
+        "language_label_position",
+        "ls_font",
+        "ls_label_color",
+        "transparent_ls_label_color",
+        "sticky_ls_label_color",
+        "ls_border_radius",
+        "ls_margin",
+        "ls_items_spacing",
+        "hide_current_language",
+        "language_icon",
+        "ls_icon_size",
+        "ls_dropdown_offset",
+        "ls_dropdown_items_spacing",
+        "ls_dropdown_arrow",
+        "ls_dropdown_font",
+        "ls_dropdown_font_color",
+        "default",
+        "ls_dropdown_divider",
+        "ls_dropdown_shadow",
+        "ls_dropdown_radius",
+        "hide_missing_language",
+        "footer_ls_horizontal_alignment",
+        "footer_ls_vertical_alignment",
+        "footer_visibility",
+        "ls_type",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 14,
+      "availability": "pro",
+      "availability_conditions": [
+        "plugin:wpml",
+        "plugin:polylang",
+        "plugin:translatepress",
+        "plugin:weglot"
+      ]
+    },
+    {
+      "id": "logo",
+      "builder": "footer",
+      "name": "Logo",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:134"
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/logo",
+      "config": {
+        "name": "Logo",
+        "typography_keys": [
+          "siteTitle",
+          "siteTagline"
+        ],
+        "selective_refresh": [
+          "logo_type",
+          "blogname",
+          "custom_logo",
+          "has_logo_image_link",
+          "transparent_logo",
+          "sticky_logo",
+          "has_mobile_logo",
+          "mobile_header_logo",
+          "has_site_title",
+          "has_site_title_link",
+          "has_tagline",
+          "site_description_wrapper",
+          "site_title_custom_tag",
+          "site_title_wrapper",
+          "inline_svg_logos"
+        ],
+        "translation_keys": [
+          {
+            "key": "blogname"
+          },
+          {
+            "key": "blogdescription"
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "custom_logo",
+        "<rand>",
+        "transparent_logo",
+        "sticky_logo",
+        "logoMaxHeight",
+        "has_sticky_logo_shrink",
+        "sticky_logo_shrink",
+        "has_site_title",
+        "blogname",
+        "has_site_title_link",
+        "blogname_visibility",
+        "has_tagline",
+        "blogdescription",
+        "blogdescription_visibility",
+        "has_logo_image_link",
+        "inline_svg_logos",
+        "logo_position",
+        "header_logo_horizontal_alignment",
+        "footer_logo_horizontal_alignment",
+        "footer_logo_vertical_alignment",
+        "visibility",
+        "header_logo_class",
+        "siteTitle",
+        "siteTitleColor",
+        "transparentSiteTitleColor",
+        "stickySiteTitleColor",
+        "siteTagline",
+        "siteTaglineColor",
+        "transparentSiteTaglineColor",
+        "stickySiteTaglineColor",
+        "headerLogoMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 30,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "menu",
+      "builder": "footer",
+      "name": "Menu",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/menu",
+      "config": {
+        "name": "Menu",
+        "typography_keys": [
+          "footerMenuFont"
+        ],
+        "selective_refresh": [
+          "menu"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "menu_items_direction",
+        "footerMenuItemsSpacing",
+        "stretch_menu",
+        "footerMenuAlignment",
+        "footerMenuVerticalAlignment",
+        "footer_menu_visibility",
+        "footerMenuFont",
+        "footerMenuFontColor",
+        "footerMenuMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 10,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "menu-secondary",
+      "builder": "footer",
+      "name": "Footer Menu 2",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:16"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-footer/items/menu-secondary",
+      "config": {
+        "name": "Footer Menu 2",
+        "typography_keys": [
+          "footerMenuFont"
+        ],
+        "selective_refresh": [
+          "menu"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "menu_items_direction",
+        "footerMenuItemsSpacing",
+        "stretch_menu",
+        "footerMenuAlignment",
+        "footerMenuVerticalAlignment",
+        "footer_menu_visibility",
+        "footerMenuFont",
+        "footerMenuFontColor",
+        "footerMenuMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 10,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "middle-row",
+      "builder": "footer",
+      "name": "Middle Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/middle-row",
+      "config": {
+        "name": "Middle Row",
+        "typography_keys": [
+          "footerWidgetsTitleFont",
+          "footerWidgetsFont"
+        ],
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "items_per_row",
+        "2_columns_layout",
+        "3_columns_layout",
+        "4_columns_layout",
+        "5_columns_layout",
+        "6_columns_layout",
+        "footerItemsGap",
+        "footerWidgetsGap",
+        "rowTopBottomSpacing",
+        "footer_row_vertical_alignment",
+        "footerRowWidth",
+        "footerRowVisibility",
+        "footerWidgetsTitleFont",
+        "footerWidgetsTitleColor",
+        "footerWidgetsFont",
+        "rowFontColor",
+        "footerRowBackground",
+        "footerRowTopDivider",
+        "color",
+        "footerRowTopBorderFullWidth",
+        "footerRowBottomDivider",
+        "footerRowBottomBorderFullWidth"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 22,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "search-input",
+      "builder": "footer",
+      "name": "Search Box",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:139"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input",
+      "config": {
+        "name": "Search Box",
+        "translation_keys": [
+          {
+            "key": "search_box_placeholder"
+          }
+        ],
+        "selective_refresh": [
+          "icon",
+          "search_through",
+          "has_taxonomy_filter",
+          "has_taxonomy_children"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "search_box_placeholder",
+        "searchBoxMaxWidth",
+        "headerSearchBoxHeight",
+        "icon",
+        "enable_live_results",
+        "live_results_images",
+        "searchHeaderProductPrice",
+        "searchHeaderProductStatus",
+        "has_taxonomy_filter",
+        "taxonomy_filter_visibility",
+        "has_taxonomy_children",
+        "search_through",
+        "search_through_taxonomy",
+        "footer_search_box_horizontal_alignment",
+        "footer_search_box_vertical_alignment",
+        "footer_visibility",
+        "sb_font_color",
+        "transparent_sb_font_color",
+        "sticky_sb_font_color",
+        "sb_icon_color",
+        "transparent_sb_icon_color",
+        "sticky_sb_icon_color",
+        "sb_border_color",
+        "transparent_sb_border_color",
+        "sticky_sb_border_color",
+        "sb_background",
+        "transparent_sb_background",
+        "sticky_sb_background",
+        "sb_radius",
+        "sb_padding",
+        "sb_margin",
+        "sb_dropdown_font",
+        "sb_dropdown_text",
+        "sb_dropdown_shadow",
+        "sb_dropdown_divider",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 36,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "socials",
+      "builder": "footer",
+      "name": "Socials",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/socials",
+      "config": {
+        "name": "Socials",
+        "clone": true,
+        "selective_refresh": [
+          "footer_socials",
+          "footerSocialsColor"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "footer_socials",
+        "link_target",
+        "link_nofollow",
+        "socialsIconSize",
+        "socialsIconSpacing",
+        "footerSocialsColor",
+        "socialsType",
+        "socialsFillType",
+        "footer_socials_direction",
+        "footerSocialsAlignment",
+        "footerSocialsVerticalAlignment",
+        "socialsLabelVisibility",
+        "footer_socials_visibility",
+        "footer_socials_label_font",
+        "footer_socials_font_color",
+        "footerSocialsIconColor",
+        "footerSocialsIconBackground",
+        "footerSocialsMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 18,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "text",
+      "builder": "footer",
+      "name": "HTML",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered in footer only when Blocksy Companion Pro is active: plugins/blocksy-companion-pro/framework/premium/features/premium-footer.php:136"
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/text",
+      "config": {
+        "name": "HTML",
+        "typography_keys": [
+          "headerTextFont"
+        ],
+        "clone": 9,
+        "selective_refresh": [
+          "user_visibility"
+        ],
+        "translation_keys": [
+          {
+            "key": "header_text",
+            "multiline": true
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "header_text",
+        "has_header_text_full_width",
+        "headerTextMaxWidth",
+        "header_html_horizontal_alignment",
+        "footer_html_horizontal_alignment",
+        "footer_html_vertical_alignment",
+        "footer_visibility",
+        "user_visibility",
+        "headerTextFont",
+        "headerTextColor",
+        "transparentHeaderTextColor",
+        "stickyHeaderTextColor",
+        "headerTextHeadingColor",
+        "transparentHeaderTextHeadingColor",
+        "stickyHeaderTextHeadingColor",
+        "headerTextMargin",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 15,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "top-row",
+      "builder": "footer",
+      "name": "Top Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/top-row",
+      "config": {
+        "name": "Top Row",
+        "typography_keys": [
+          "footerWidgetsTitleFont",
+          "footerWidgetsFont"
+        ],
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "items_per_row",
+        "2_columns_layout",
+        "3_columns_layout",
+        "4_columns_layout",
+        "5_columns_layout",
+        "6_columns_layout",
+        "footerItemsGap",
+        "footerWidgetsGap",
+        "rowTopBottomSpacing",
+        "footer_row_vertical_alignment",
+        "footerRowWidth",
+        "footerRowVisibility",
+        "footerWidgetsTitleFont",
+        "footerWidgetsTitleColor",
+        "footerWidgetsFont",
+        "rowFontColor",
+        "footerRowBackground",
+        "footerRowTopDivider",
+        "color",
+        "footerRowTopBorderFullWidth",
+        "footerRowBottomDivider",
+        "footerRowBottomBorderFullWidth"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 22,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-1",
+      "builder": "footer",
+      "name": "Widget Area 1",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-1",
+      "config": {
+        "name": "Widget Area 1",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-2",
+      "builder": "footer",
+      "name": "Widget Area 2",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-2",
+      "config": {
+        "name": "Widget Area 2",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-3",
+      "builder": "footer",
+      "name": "Widget Area 3",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-3",
+      "config": {
+        "name": "Widget Area 3",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-4",
+      "builder": "footer",
+      "name": "Widget Area 4",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-4",
+      "config": {
+        "name": "Widget Area 4",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-5",
+      "builder": "footer",
+      "name": "Widget Area 5",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-5",
+      "config": {
+        "name": "Widget Area 5",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-6",
+      "builder": "footer",
+      "name": "Widget Area 6",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/footer/widget-area-6",
+      "config": {
+        "name": "Widget Area 6",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "widget",
+        "horizontal_alignment",
+        "vertical_alignment",
+        "widget_area_colors",
+        "widgets_link_type",
+        "widget_area_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "account",
+      "builder": "header",
+      "name": "Account",
+      "tier": "free-companion",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "plugins/blocksy-companion/framework/features/header/items/account",
+      "config": {
+        "name": "Account",
+        "typography_keys": [
+          "account_label_font"
+        ],
+        "selective_refresh": [
+          "account_state",
+          "loggedin_interaction_type",
+          "dropdown_items",
+          "account_link",
+          "loggedin_media",
+          "account_loggedin_icon",
+          "account_loggedin_icon_position",
+          "loggedin_text",
+          "login_account_action",
+          "loggedout_account_custom_page",
+          "logged_out_style",
+          "accountHeaderIcon",
+          "account_user_visibility",
+          "loggedin_icon_source",
+          "loggedin_custom_icon",
+          "logged_out_icon_source",
+          "logged_out_custom_icon"
+        ],
+        "translation_keys": [
+          {
+            "key": "login_label"
+          },
+          {
+            "key": "loggedin_label"
+          },
+          {
+            "key": "account_custom_page"
+          },
+          {
+            "key": "dropdown_items",
+            "all_layers": [
+              "label",
+              "link"
+            ]
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "account_user_info_display_name",
+        "account_user_info_additional_fields",
+        "has_account_dropdown_avatar",
+        "account_user_info_link",
+        "<rand>",
+        "account_user_info_custom_link",
+        "menu",
+        "hook_id",
+        "account_state",
+        "loggedin_media",
+        "accountHeaderAvatarSize",
+        "loggedin_icon_source",
+        "loggedin_custom_icon",
+        "account_loggedin_icon",
+        "account_loggedin_icon_size",
+        "loggedin_icon_visibility",
+        "loggedin_account_label_visibility",
+        "loggedin_label_position",
+        "loggedin_text",
+        "loggedin_label",
+        "loggedin_interaction_type",
+        "dropdown_items",
+        "dropdown_items_type",
+        "account_dropdown_top_offset",
+        "sticky_state_account_dropdown_top_offset",
+        "account_link",
+        "logged_out_style",
+        "logged_out_icon_source",
+        "logged_out_custom_icon",
+        "accountHeaderIcon",
+        "accountHeaderIconSize",
+        "loggedout_icon_visibility",
+        "loggedout_account_label_visibility",
+        "loggedout_label_position",
+        "login_label",
+        "login_account_action",
+        "loggedout_account_custom_page",
+        "account_user_visibility",
+        "account_label_font",
+        "accountHeaderColor",
+        "transparentAccountHeaderColor",
+        "stickyAccountHeaderColor",
+        "header_account_icon_color",
+        "transparent_header_account_icon_color",
+        "sticky_header_account_icon_color",
+        "accountHeaderMargin",
+        "account_modal_font_color",
+        "account_modal_form_text_color",
+        "account_modal_form_border_color",
+        "account_modal_form_background_color",
+        "accountHeaderFormBackground",
+        "accountHeaderBackground",
+        "account_form_shadow",
+        "account_close_button_type",
+        "account_close_button_border_color",
+        "account_close_button_shape_color",
+        "header_account_dropdown_font",
+        "header_account_dropdown_font_color",
+        "header_account_dropdown_color",
+        "header_account_dropdown_divider",
+        "header_account_dropdown_shadow",
+        "header_account_dropdown_radius",
+        "header_account_visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 57,
+      "pro_overrides": true,
+      "availability": "free-companion",
+      "availability_conditions": []
+    },
+    {
+      "id": "bottom-row",
+      "builder": "header",
+      "name": "Bottom Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/bottom-row",
+      "config": {
+        "name": "Bottom Row",
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "headerRowWidth",
+        "headerRowHeight",
+        "has_sticky_shrink",
+        "stickyHeaderRowShrink",
+        "render_empty_row",
+        "headerRowVisibility",
+        "headerRowBackground",
+        "transparentHeaderRowBackground",
+        "stickyHeaderRowBackground",
+        "headerRowBlur",
+        "transparentHeaderRowBlur",
+        "stickyHeaderRowBlur",
+        "headerRowTopBorder",
+        "transparentHeaderRowTopBorder",
+        "stickyHeaderRowTopBorder",
+        "headerRowTopBorderFullWidth",
+        "headerRowBottomBorder",
+        "transparentHeaderRowBottomBorder",
+        "stickyHeaderRowBottomBorder",
+        "headerRowBottomBorderFullWidth",
+        "headerRowShadow",
+        "transparentHeaderRowShadow",
+        "stickyHeaderRowShadow",
+        "header_row_padding",
+        "header_row_border_radius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 25,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "button",
+      "builder": "header",
+      "name": "Button",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/button",
+      "config": {
+        "name": "Button",
+        "clone": true,
+        "selective_refresh": [
+          "header_button_open",
+          "header_button_select_popup",
+          "has_header_button_secondary_text",
+          "icon",
+          "icon_position",
+          "user_visibility"
+        ],
+        "typography_keys": [
+          "headerButtonFont",
+          "headerButtonSecondaryLabelFont"
+        ],
+        "translation_keys": [
+          {
+            "key": "header_button_text",
+            "multiline": false
+          },
+          {
+            "key": "header_button_secondary_text",
+            "multiline": false
+          },
+          {
+            "key": "button_aria_label",
+            "multiline": false
+          },
+          {
+            "key": "header_button_link",
+            "multiline": false
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "header_button_type",
+        "header_button_size",
+        "header_button_text",
+        "has_header_button_secondary_text",
+        "<rand>",
+        "header_button_secondary_text",
+        "header_button_text_horizontal_alignment",
+        "header_button_open",
+        "header_button_target",
+        "header_button_nofollow",
+        "header_button_sponsored",
+        "visibility",
+        "footer_button_horizontal_alignment",
+        "footer_button_vertical_alignment",
+        "user_visibility",
+        "header_button_class",
+        "button_aria_label",
+        "headerButtonFont",
+        "transparentHeaderButtonFontColor",
+        "stickyHeaderButtonFontColor",
+        "headerButtonSecondaryLabelFont",
+        "headerButtonSecondaryFontColor",
+        "transparentHeaderButtonSecondaryFontColor",
+        "stickyHeaderButtonSecondaryFontColor",
+        "headerButtonForeground",
+        "transparentHeaderButtonForeground",
+        "stickyHeaderButtonForeground",
+        "headerCtaRadius",
+        "headerCtaPadding",
+        "headerCtaMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 33,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "cart",
+      "builder": "header",
+      "name": "Cart",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [
+          "woocommerce"
+        ],
+        "notes": "enabled check: function_exists('is_woocommerce') in themes/blocksy/inc/panel-builder/header/cart/config.php:5-7; filtered at runtime in themes/blocksy/inc/components/woocommerce/boot.php:74"
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/cart",
+      "config": {
+        "name": "Cart",
+        "enabled": " function_exists('is_woocommerce') ",
+        "typography_keys": [
+          "cart_total_font"
+        ],
+        "selective_refresh": [
+          "has_cart_dropdown",
+          "mini_cart_type",
+          "icon_source",
+          "icon",
+          "image_size"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "mini_cart_type",
+        "cartIconSize",
+        "cart_icon_visibility",
+        "has_cart_badge",
+        "cart_subtotal_visibility",
+        "cart_total_position",
+        "cart_total_label",
+        "has_empty_cart",
+        "cart_total_font",
+        "cart_total_font_color",
+        "transparent_cart_total_font_color",
+        "sticky_cart_total_font_color",
+        "cartHeaderIconColor",
+        "transparentCartHeaderIconColor",
+        "stickyCartHeaderIconColor",
+        "cartBadgeColor",
+        "transparentCartBadgeColor",
+        "stickyCartBadgeColor",
+        "headerCartMargin",
+        "has_cart_dropdown",
+        "cartDropdownTopOffset",
+        "auto_open_cart",
+        "thumb_ratio",
+        "image_size",
+        "cartFontColor",
+        "default",
+        "cartTotalFontColor",
+        "mini_cart_image_radius",
+        "header_cart_visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 47,
+      "availability": "free",
+      "availability_conditions": [
+        "plugin:woocommerce"
+      ]
+    },
+    {
+      "id": "color-mode-switcher",
+      "builder": "header",
+      "name": "Color Switch",
+      "tier": "pro",
+      "requires": {
+        "extension": "color-mode-switch",
+        "plugins": [],
+        "notes": "registered only when extension color-mode-switch is active: plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/extension.php:95"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher",
+      "config": {
+        "name": "Color Switch",
+        "selective_refresh": [
+          "color_switch_icon_type"
+        ],
+        "translation_keys": [
+          {
+            "key": "dark_mode_label"
+          },
+          {
+            "key": "light_mode_label"
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "color_switch_icon_type",
+        "color_switch_icon_state",
+        "icon_size",
+        "color_switch_label_visibility",
+        "color_switch_label_position",
+        "dark_mode_label",
+        "light_mode_label",
+        "default_color_mode",
+        "color_switch_label_font",
+        "header_color_switch_font_color",
+        "transparent_header_color_switch_font_color",
+        "sticky_header_color_switch_font_color",
+        "header_color_switch_icon_color",
+        "transparent_header_color_switch_icon_color",
+        "sticky_header_color_switch_icon_color",
+        "container_margin",
+        "header_color_switch_visibility"
+      ],
+      "in_catalog": false,
+      "catalog_option_count": null,
+      "availability": "pro",
+      "availability_conditions": [
+        "extension:color-mode-switch"
+      ]
+    },
+    {
+      "id": "compare",
+      "builder": "header",
+      "name": "Compare",
+      "tier": "pro",
+      "requires": {
+        "extension": "woocommerce-extra",
+        "plugins": [
+          "woocommerce"
+        ],
+        "notes": "requires WooCommerce active (plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/extension.php:26-38) and compareview feature enabled (extension.php:60-63; feature registered in features/compare/feature.php:20)"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare",
+      "config": {
+        "name": "Compare",
+        "translation_keys": [
+          {
+            "key": "compare_label"
+          }
+        ],
+        "typography_keys": [
+          "compare_label_font"
+        ],
+        "selective_refresh": [
+          "compare_item_type",
+          "icon_source",
+          "icon"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "icon_source",
+        "icon",
+        "compare_item_type",
+        "compare_icon_size",
+        "compare_icon_visibility",
+        "has_compare_badge",
+        "compare_label_visibility",
+        "compare_label_position",
+        "compare_label",
+        "compare_label_font",
+        "header_compare_font_color",
+        "transparent_header_compare_font_color",
+        "sticky_header_compare_font_color",
+        "header_compare_icon_color",
+        "transparent_header_compare_icon_color",
+        "sticky_header_compare_icon_color",
+        "transparent_header_compare_badge_color",
+        "sticky_header_compare_badge_color",
+        "header_compare_margin",
+        "header_compare_visibility"
+      ],
+      "in_catalog": false,
+      "catalog_option_count": null,
+      "availability": "pro",
+      "availability_conditions": [
+        "extension:woocommerce-extra",
+        "plugin:woocommerce"
+      ]
+    },
+    {
+      "id": "contacts",
+      "builder": "header",
+      "name": "Contacts",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts",
+      "config": {
+        "name": "Contacts",
+        "typography_keys": [
+          "contacts_font"
+        ],
+        "clone": 3,
+        "selective_refresh": [
+          "contact_items",
+          "link_icons"
+        ],
+        "translation_keys": [
+          {
+            "key": "contact_items",
+            "all_layers": [
+              "title",
+              "content",
+              "link"
+            ]
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "contacts_items_direction",
+        "visibility",
+        "content",
+        "link",
+        "icon",
+        "<rand>",
+        "link_target",
+        "link_nofollow",
+        "link_icons",
+        "contacts_icon_size",
+        "contacts_spacing",
+        "contacts_icon_shape",
+        "contacts_icon_fill_type",
+        "footer_contacts_horizontal_alignment",
+        "footer_contacts_vertical_alignment",
+        "footer_contacts_visibility",
+        "contacts_font",
+        "contacts_font_color",
+        "transparent_contacts_font_color",
+        "sticky_contacts_font_color",
+        "contacts_icon_color",
+        "transparent_contacts_icon_color",
+        "sticky_contacts_icon_color",
+        "contacts_icon_background",
+        "transparent_contacts_icon_background",
+        "sticky_contacts_icon_background",
+        "contacts_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 21,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "content-block",
+      "builder": "header",
+      "name": "Content Block",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/content-block",
+      "config": {
+        "name": "Content Block",
+        "clone": 10,
+        "selective_refresh": [
+          "hook_id"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "hook_id",
+        "content_width",
+        "margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 2,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "divider",
+      "builder": "header",
+      "name": "Divider",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/divider",
+      "config": {
+        "name": "Divider",
+        "clone": 7,
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "divider_height",
+        "<rand>",
+        "header_divider",
+        "transparent_header_divider",
+        "sticky_header_divider",
+        "divider_horizontal_margin",
+        "divider_vertical_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 6,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "language-switcher",
+      "builder": "header",
+      "name": "Languages",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [
+          "wpml",
+          "polylang",
+          "translatepress",
+          "weglot"
+        ],
+        "notes": "enabled only when translation plugin is active (function_exists('icl_object_id') || function_exists('pll_the_languages') || class_exists('TRP_Translate_Press') || function_exists('weglot_get_current_language') in plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/config.php:7-14; registered in premium-header.php:78)"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher",
+      "config": {
+        "enabled": " function_exists('icl_object_id') || function_exists('pll_the_languages') || class_exists('TRP_Translate_Press') || function_exists('weglot_get_current_language') ",
+        "typography_keys": [
+          "ls_font"
+        ],
+        "name": "Languages",
+        "selective_refresh": [
+          "ls_type",
+          "ls_flag_aspect_ratio",
+          "language_type",
+          "language_icon",
+          "language_label",
+          "hide_current_language"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "ls_flag_aspect_ratio",
+        "language_type",
+        "<rand>",
+        "language_label",
+        "language_label_position",
+        "ls_font",
+        "ls_label_color",
+        "transparent_ls_label_color",
+        "sticky_ls_label_color",
+        "ls_border_radius",
+        "ls_margin",
+        "ls_items_spacing",
+        "hide_current_language",
+        "language_icon",
+        "ls_icon_size",
+        "ls_dropdown_offset",
+        "ls_dropdown_items_spacing",
+        "ls_dropdown_arrow",
+        "ls_dropdown_font",
+        "ls_dropdown_font_color",
+        "default",
+        "ls_dropdown_divider",
+        "ls_dropdown_shadow",
+        "ls_dropdown_radius",
+        "hide_missing_language",
+        "footer_ls_horizontal_alignment",
+        "footer_ls_vertical_alignment",
+        "footer_visibility",
+        "ls_type",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 27,
+      "availability": "pro",
+      "availability_conditions": [
+        "plugin:wpml",
+        "plugin:polylang",
+        "plugin:translatepress",
+        "plugin:weglot"
+      ]
+    },
+    {
+      "id": "logo",
+      "builder": "header",
+      "name": "Logo",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/logo",
+      "config": {
+        "name": "Logo",
+        "typography_keys": [
+          "siteTitle",
+          "siteTagline"
+        ],
+        "selective_refresh": [
+          "logo_type",
+          "blogname",
+          "custom_logo",
+          "has_logo_image_link",
+          "transparent_logo",
+          "sticky_logo",
+          "has_mobile_logo",
+          "mobile_header_logo",
+          "has_site_title",
+          "has_site_title_link",
+          "has_tagline",
+          "site_description_wrapper",
+          "site_title_custom_tag",
+          "site_title_wrapper",
+          "inline_svg_logos"
+        ],
+        "translation_keys": [
+          {
+            "key": "blogname"
+          },
+          {
+            "key": "blogdescription"
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "custom_logo",
+        "<rand>",
+        "transparent_logo",
+        "sticky_logo",
+        "logoMaxHeight",
+        "has_sticky_logo_shrink",
+        "sticky_logo_shrink",
+        "has_site_title",
+        "blogname",
+        "has_site_title_link",
+        "blogname_visibility",
+        "has_tagline",
+        "blogdescription",
+        "blogdescription_visibility",
+        "has_logo_image_link",
+        "inline_svg_logos",
+        "logo_position",
+        "header_logo_horizontal_alignment",
+        "footer_logo_horizontal_alignment",
+        "footer_logo_vertical_alignment",
+        "visibility",
+        "header_logo_class",
+        "siteTitle",
+        "siteTitleColor",
+        "transparentSiteTitleColor",
+        "stickySiteTitleColor",
+        "siteTagline",
+        "siteTaglineColor",
+        "transparentSiteTaglineColor",
+        "stickySiteTaglineColor",
+        "headerLogoMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 28,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "menu",
+      "builder": "header",
+      "name": "Menu 1",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/menu",
+      "config": {
+        "name": "Menu 1",
+        "typography_keys": [
+          "headerMenuFont",
+          "headerDropdownFont"
+        ],
+        "devices": [
+          "desktop"
+        ],
+        "excluded_from": [
+          "offcanvas"
+        ],
+        "selective_refresh": [
+          "menu",
+          "stretch_menu",
+          "dropdown_interaction",
+          "dropdown_click_interaction",
+          "collapse_non_fitting_menu_items"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "header_menu_type",
+        "menu_indicator_effect",
+        "headerMenuItemsGap",
+        "headerMenuItemsSpacing",
+        "headerMenuItemsHeight",
+        "stretch_menu",
+        "collapse_non_fitting_menu_items",
+        "headerMenuFont",
+        "transparentMenuFontColor",
+        "stickyMenuFontColor",
+        "menuIndicatorColor",
+        "transparentMenuIndicatorColor",
+        "stickyMenuIndicatorColor",
+        "headerToplevelBorderRadius",
+        "headerMenuMargin",
+        "dropdown_interaction",
+        "dropdown_click_interaction",
+        "dropdown_items_type",
+        "dropdownItemsSpacing",
+        "dropdown_animation",
+        "dropdownMenuWidth",
+        "dropdownTopOffset",
+        "stickyStateDropdownTopOffset",
+        "dropdown_horizontal_offset",
+        "headerDropdownFont",
+        "headerDropdownFontColor",
+        "transparentHeaderDropdownFontColor",
+        "stickyHeaderDropdownFontColor",
+        "headerDropdownBackground",
+        "transparentHeaderDropdownBackground",
+        "stickyHeaderDropdownBackground",
+        "headerDropdownDivider",
+        "headerDropdownShadow",
+        "headerDropdownRadius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 36,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "menu-secondary",
+      "builder": "header",
+      "name": "Menu 2",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/menu-secondary",
+      "config": {
+        "name": "Menu 2",
+        "typography_keys": [
+          "headerMenuFont",
+          "headerDropdownFont"
+        ],
+        "devices": [
+          "desktop"
+        ],
+        "selective_refresh": [
+          "menu"
+        ],
+        "excluded_from": [
+          "offcanvas"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "header_menu_type",
+        "menu_indicator_effect",
+        "headerMenuItemsGap",
+        "headerMenuItemsSpacing",
+        "headerMenuItemsHeight",
+        "stretch_menu",
+        "collapse_non_fitting_menu_items",
+        "headerMenuFont",
+        "transparentMenuFontColor",
+        "stickyMenuFontColor",
+        "menuIndicatorColor",
+        "transparentMenuIndicatorColor",
+        "stickyMenuIndicatorColor",
+        "headerToplevelBorderRadius",
+        "headerMenuMargin",
+        "dropdown_interaction",
+        "dropdown_click_interaction",
+        "dropdown_items_type",
+        "dropdownItemsSpacing",
+        "dropdown_animation",
+        "dropdownMenuWidth",
+        "dropdownTopOffset",
+        "stickyStateDropdownTopOffset",
+        "dropdown_horizontal_offset",
+        "headerDropdownFont",
+        "headerDropdownFontColor",
+        "transparentHeaderDropdownFontColor",
+        "stickyHeaderDropdownFontColor",
+        "headerDropdownBackground",
+        "transparentHeaderDropdownBackground",
+        "stickyHeaderDropdownBackground",
+        "headerDropdownDivider",
+        "headerDropdownShadow",
+        "headerDropdownRadius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 36,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "menu-tertiary",
+      "builder": "header",
+      "name": "Menu 3",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/menu-tertiary",
+      "config": {
+        "name": "Menu 3",
+        "typography_keys": [
+          "headerMenuFont",
+          "headerDropdownFont"
+        ],
+        "devices": [
+          "desktop"
+        ],
+        "selective_refresh": [
+          "menu"
+        ],
+        "excluded_from": [
+          "offcanvas"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "header_menu_type",
+        "menu_indicator_effect",
+        "headerMenuItemsGap",
+        "headerMenuItemsSpacing",
+        "headerMenuItemsHeight",
+        "stretch_menu",
+        "collapse_non_fitting_menu_items",
+        "headerMenuFont",
+        "transparentMenuFontColor",
+        "stickyMenuFontColor",
+        "menuIndicatorColor",
+        "transparentMenuIndicatorColor",
+        "stickyMenuIndicatorColor",
+        "headerToplevelBorderRadius",
+        "headerMenuMargin",
+        "dropdown_interaction",
+        "dropdown_click_interaction",
+        "dropdown_items_type",
+        "dropdownItemsSpacing",
+        "dropdown_animation",
+        "dropdownMenuWidth",
+        "dropdownTopOffset",
+        "stickyStateDropdownTopOffset",
+        "dropdown_horizontal_offset",
+        "headerDropdownFont",
+        "headerDropdownFontColor",
+        "transparentHeaderDropdownFontColor",
+        "stickyHeaderDropdownFontColor",
+        "headerDropdownBackground",
+        "transparentHeaderDropdownBackground",
+        "stickyHeaderDropdownBackground",
+        "headerDropdownDivider",
+        "headerDropdownShadow",
+        "headerDropdownRadius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 36,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "middle-row",
+      "builder": "header",
+      "name": "Main Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/middle-row",
+      "config": {
+        "name": "Main Row",
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "headerRowWidth",
+        "headerRowHeight",
+        "has_sticky_shrink",
+        "stickyHeaderRowShrink",
+        "render_empty_row",
+        "headerRowVisibility",
+        "headerRowBackground",
+        "transparentHeaderRowBackground",
+        "stickyHeaderRowBackground",
+        "headerRowBlur",
+        "transparentHeaderRowBlur",
+        "stickyHeaderRowBlur",
+        "headerRowTopBorder",
+        "transparentHeaderRowTopBorder",
+        "stickyHeaderRowTopBorder",
+        "headerRowTopBorderFullWidth",
+        "headerRowBottomBorder",
+        "transparentHeaderRowBottomBorder",
+        "stickyHeaderRowBottomBorder",
+        "headerRowBottomBorderFullWidth",
+        "headerRowShadow",
+        "transparentHeaderRowShadow",
+        "stickyHeaderRowShadow",
+        "header_row_padding",
+        "header_row_border_radius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 25,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "mobile-menu",
+      "builder": "header",
+      "name": "Mobile Menu",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/mobile-menu",
+      "config": {
+        "name": "Mobile Menu",
+        "typography_keys": [
+          "mobileMenuFont",
+          "inline_mobile_menu_font"
+        ],
+        "devices": [
+          "mobile"
+        ],
+        "allowed_in": [
+          "offcanvas"
+        ],
+        "selective_refresh": [
+          "menu",
+          "mobile_menu_type",
+          "mobile_menu_interactive",
+          "mobile_menu_toggle_shape",
+          "mobile_menu_submenu_dots"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "mobile_menu_interactive",
+        "mobile_menu_interactive_auto_expand",
+        "mobile_menu_type",
+        "mobile_menu_toggle_shape",
+        "mobile_menu_submenu_dots",
+        "mobile_menu_items_spacing",
+        "inline_menu_items_spacing",
+        "inline_menu_stretch_menu",
+        "inline_menu_horizontal_alignment",
+        "inline_menu_visibility",
+        "mobileMenuFont",
+        "mobileMenuDropdownFont",
+        "mobileMenuDropdownColor",
+        "mobile_menu_items_divider",
+        "mobileMenuMargin",
+        "inline_mobile_menu_font",
+        "inline_menu_font_color",
+        "transparent_inline_menu_font_color",
+        "sticky_inline_menu_font_color",
+        "inline_menu_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 22,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "mobile-menu-secondary",
+      "builder": "header",
+      "name": "Mobile Menu 2",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/mobile-menu-secondary",
+      "config": {
+        "name": "Mobile Menu 2",
+        "typography_keys": [
+          "mobileMenuFont"
+        ],
+        "devices": [
+          "mobile"
+        ],
+        "allowed_in": {
+          "desktop": [
+            "offcanvas"
+          ]
+        },
+        "selective_refresh": [
+          "menu",
+          "mobile_menu_type",
+          "mobile_menu_interactive"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "menu",
+        "<rand>",
+        "mobile_menu_interactive",
+        "mobile_menu_interactive_auto_expand",
+        "mobile_menu_type",
+        "mobile_menu_toggle_shape",
+        "mobile_menu_submenu_dots",
+        "mobile_menu_items_spacing",
+        "inline_menu_items_spacing",
+        "inline_menu_stretch_menu",
+        "inline_menu_horizontal_alignment",
+        "inline_menu_visibility",
+        "mobileMenuFont",
+        "mobileMenuDropdownFont",
+        "mobileMenuDropdownColor",
+        "mobile_menu_items_divider",
+        "mobileMenuMargin",
+        "inline_mobile_menu_font",
+        "inline_menu_font_color",
+        "transparent_inline_menu_font_color",
+        "sticky_inline_menu_font_color",
+        "inline_menu_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 22,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "offcanvas",
+      "builder": "header",
+      "name": "Offcanvas",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/offcanvas",
+      "config": {
+        "name": "Offcanvas",
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "offcanvas_behavior",
+        "offcanvas_content_vertical_alignment",
+        "offcanvasContentAlignment",
+        "has_offcanvas_heading",
+        "offcanvas_heading",
+        "has_offcanvas_close_trigger",
+        "has_offcanvas_offset",
+        "offcanvas_offset",
+        "offcanvasBackground",
+        "offcanvasBackdrop",
+        "offcanvas_heading_font_color",
+        "default",
+        "menu_close_button_type",
+        "menu_close_button_icon_size",
+        "menu_close_button_border_color",
+        "menu_close_button_shape_color",
+        "menu_close_button_border_radius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 21,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "offcanvas-logo",
+      "builder": "header",
+      "name": "Off Canvas Logo",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/offcanvas-logo",
+      "config": {
+        "name": "Off Canvas Logo",
+        "devices": [
+          "mobile"
+        ],
+        "allowed_in": [
+          "offcanvas"
+        ],
+        "selective_refresh": [
+          "custom_logo",
+          "inline_svg_logos"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "custom_logo",
+        "off_canvas_logo_max_height",
+        "inline_svg_logos",
+        "off_canvas_logo_margin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 4,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "search",
+      "builder": "header",
+      "name": "Search",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/search",
+      "config": {
+        "name": "Search",
+        "excluded_from": [
+          "offcanvas"
+        ],
+        "translation_keys": [
+          {
+            "key": "search_label"
+          },
+          {
+            "key": "header_search_placeholder"
+          }
+        ],
+        "selective_refresh": [
+          "icon"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "searchHeaderIconSize",
+        "search_icon_visibility",
+        "search_label_visibility",
+        "search_label_position",
+        "search_label",
+        "search_label_font",
+        "header_search_font_color",
+        "transparent_header_search_font_color",
+        "sticky_header_search_font_color",
+        "searchHeaderIconColor",
+        "transparentSearchHeaderIconColor",
+        "stickySearchHeaderIconColor",
+        "headerSearchMargin",
+        "header_search_placeholder",
+        "enable_live_results",
+        "searchHeaderImages",
+        "searchHeaderProductPrice",
+        "searchHeaderProductStatus",
+        "search_through",
+        "search_through_taxonomy",
+        "searchHeaderModalFont",
+        "searchHeaderLinkColor",
+        "default",
+        "searchHeaderInputColor",
+        "focus",
+        "searchHeaderInputBorderColor",
+        "search_button_icon_color",
+        "hover",
+        "search_button_background_color",
+        "search_form_border_radius",
+        "search_thumb_radius",
+        "searchHeaderBackground",
+        "search_close_button_type",
+        "search_close_button_icon_size",
+        "search_close_button_border_color",
+        "search_close_button_shape_color",
+        "search_close_button_border_radius",
+        "header_search_visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 37,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "search-input",
+      "builder": "header",
+      "name": "Search Box",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input",
+      "config": {
+        "name": "Search Box",
+        "translation_keys": [
+          {
+            "key": "search_box_placeholder"
+          }
+        ],
+        "selective_refresh": [
+          "icon",
+          "search_through",
+          "has_taxonomy_filter",
+          "has_taxonomy_children"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "search_box_placeholder",
+        "searchBoxMaxWidth",
+        "headerSearchBoxHeight",
+        "icon",
+        "enable_live_results",
+        "live_results_images",
+        "searchHeaderProductPrice",
+        "searchHeaderProductStatus",
+        "has_taxonomy_filter",
+        "taxonomy_filter_visibility",
+        "has_taxonomy_children",
+        "search_through",
+        "search_through_taxonomy",
+        "footer_search_box_horizontal_alignment",
+        "footer_search_box_vertical_alignment",
+        "footer_visibility",
+        "sb_font_color",
+        "transparent_sb_font_color",
+        "sticky_sb_font_color",
+        "sb_icon_color",
+        "transparent_sb_icon_color",
+        "sticky_sb_icon_color",
+        "sb_border_color",
+        "transparent_sb_border_color",
+        "sticky_sb_border_color",
+        "sb_background",
+        "transparent_sb_background",
+        "sticky_sb_background",
+        "sb_radius",
+        "sb_padding",
+        "sb_margin",
+        "sb_dropdown_font",
+        "sb_dropdown_text",
+        "sb_dropdown_shadow",
+        "sb_dropdown_divider",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 34,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "socials",
+      "builder": "header",
+      "name": "Socials",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/socials",
+      "config": {
+        "name": "Socials",
+        "clone": true,
+        "selective_refresh": [
+          "header_socials",
+          "headerSocialsColor"
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "header_socials",
+        "link_target",
+        "link_nofollow",
+        "socialsIconSize",
+        "socialsIconSpacing",
+        "headerSocialsColor",
+        "socialsType",
+        "socialsFillType",
+        "socialsLabelVisibility",
+        "visibility",
+        "socials_label_font",
+        "header_socials_font_color",
+        "transparent_header_socials_font_color",
+        "sticky_header_socials_font_color",
+        "headerSocialsIconColor",
+        "transparentHeaderSocialsIconColor",
+        "stickyHeaderSocialsIconColor",
+        "headerSocialsIconBackground",
+        "transparentHeaderSocialsIconBackground",
+        "stickyHeaderSocialsIconBackground",
+        "headerSocialsMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 21,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "text",
+      "builder": "header",
+      "name": "HTML",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/text",
+      "config": {
+        "name": "HTML",
+        "typography_keys": [
+          "headerTextFont"
+        ],
+        "clone": 9,
+        "selective_refresh": [
+          "user_visibility"
+        ],
+        "translation_keys": [
+          {
+            "key": "header_text",
+            "multiline": true
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "header_text",
+        "has_header_text_full_width",
+        "headerTextMaxWidth",
+        "header_html_horizontal_alignment",
+        "footer_html_horizontal_alignment",
+        "footer_html_vertical_alignment",
+        "footer_visibility",
+        "user_visibility",
+        "headerTextFont",
+        "headerTextColor",
+        "transparentHeaderTextColor",
+        "stickyHeaderTextColor",
+        "headerTextHeadingColor",
+        "transparentHeaderTextHeadingColor",
+        "stickyHeaderTextHeadingColor",
+        "headerTextMargin",
+        "visibility"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 14,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "top-row",
+      "builder": "header",
+      "name": "Top Row",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/top-row",
+      "config": {
+        "name": "Top Row",
+        "is_primary": true
+      },
+      "option_ids_static": [
+        "<rand>",
+        "headerRowWidth",
+        "headerRowHeight",
+        "has_sticky_shrink",
+        "stickyHeaderRowShrink",
+        "render_empty_row",
+        "headerRowVisibility",
+        "headerRowBackground",
+        "transparentHeaderRowBackground",
+        "stickyHeaderRowBackground",
+        "headerRowBlur",
+        "transparentHeaderRowBlur",
+        "stickyHeaderRowBlur",
+        "headerRowTopBorder",
+        "transparentHeaderRowTopBorder",
+        "stickyHeaderRowTopBorder",
+        "headerRowTopBorderFullWidth",
+        "headerRowBottomBorder",
+        "transparentHeaderRowBottomBorder",
+        "stickyHeaderRowBottomBorder",
+        "headerRowBottomBorderFullWidth",
+        "headerRowShadow",
+        "transparentHeaderRowShadow",
+        "stickyHeaderRowShadow",
+        "header_row_padding",
+        "header_row_border_radius"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 25,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "trigger",
+      "builder": "header",
+      "name": "Trigger",
+      "tier": "free-theme",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": null
+      },
+      "source_dir": "themes/blocksy/inc/panel-builder/header/trigger",
+      "config": {
+        "name": "Trigger",
+        "devices": [
+          "mobile"
+        ],
+        "shortcut_style": "drop",
+        "excluded_from": [
+          "offcanvas"
+        ],
+        "translation_keys": [
+          {
+            "key": "trigger_label",
+            "multiline": false
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "mobile_menu_trigger_type",
+        "trigger_icon_size",
+        "trigger_icon_visibility",
+        "trigger_design",
+        "trigger_icon_container_spacing",
+        "trigger_label_visibility",
+        "trigger_label_alignment",
+        "trigger_label",
+        "header_trigger_visibility",
+        "trigger_label_font",
+        "header_trigger_font_color",
+        "transparent_header_trigger_font_color",
+        "sticky_header_trigger_font_color",
+        "triggerIconColor",
+        "transparentTriggerIconColor",
+        "stickyTriggerIconColor",
+        "triggerSecondColor",
+        "transparentTriggerSecondColor",
+        "stickyTriggerSecondColor",
+        "trigger_border_radius",
+        "triggerMargin"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 21,
+      "availability": "free",
+      "availability_conditions": []
+    },
+    {
+      "id": "widget-area-1",
+      "builder": "header",
+      "name": "Widget Area",
+      "tier": "pro",
+      "requires": {
+        "extension": null,
+        "plugins": [],
+        "notes": "registered via blocksy:header:items-paths in plugins/blocksy-companion-pro/framework/premium/features/premium-header.php:78"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/widget-area-1",
+      "config": {
+        "name": "Widget Area",
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "widget"
+      ],
+      "in_catalog": true,
+      "catalog_option_count": 1,
+      "availability": "pro",
+      "availability_conditions": []
+    },
+    {
+      "id": "wish-list",
+      "builder": "header",
+      "name": "Wishlist",
+      "tier": "pro",
+      "requires": {
+        "extension": "woocommerce-extra",
+        "plugins": [
+          "woocommerce"
+        ],
+        "notes": "requires WooCommerce active (plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/extension.php:26-38) and wishlist feature enabled (extension.php:53-56; feature registered in features/wish-list/feature.php:100)"
+      },
+      "source_dir": "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list",
+      "config": {
+        "name": "Wishlist",
+        "selective_refresh": [
+          "wishlist_item_type",
+          "icon_source",
+          "icon"
+        ],
+        "translation_keys": [
+          {
+            "key": "wishlist_label"
+          }
+        ],
+        "is_primary": false
+      },
+      "option_ids_static": [
+        "<rand>",
+        "icon_source",
+        "icon",
+        "wishlist_item_type",
+        "wishlist_icon_size",
+        "has_wishlist_badge",
+        "wishlist_icon_visibility",
+        "wishlist_label_visibility",
+        "wishlist_label_position",
+        "wishlist_label",
+        "wishlist_label_font",
+        "header_wishlist_font_color",
+        "transparent_header_wishlist_font_color",
+        "sticky_header_wishlist_font_color",
+        "header_wishlist_icon_color",
+        "transparent_header_wishlist_icon_color",
+        "sticky_header_wishlist_icon_color",
+        "transparent_header_wishlist_badge_color",
+        "sticky_header_wishlist_badge_color",
+        "header_wishlist_margin",
+        "header_wishlist_visibility"
+      ],
+      "in_catalog": false,
+      "catalog_option_count": null,
+      "availability": "pro",
+      "availability_conditions": [
+        "extension:woocommerce-extra",
+        "plugin:woocommerce"
+      ]
+    }
+  ],
+  "notes": [
+    "availability: what the site needs for the item to be usable in THIS builder. tier: where the code lives.",
+    "option_ids_static is a regex parse of options.php (~95% overlap with live ids for catalogued items); for items not in builder-options.json, read live ids with the schema command on a site that meets availability_conditions.",
+    "Items with plugins conditions are listed by the builder but disabled ('enabled' => false) until the plugin is active."
+  ]
+}

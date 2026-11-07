@@ -12,6 +12,14 @@ A portable OpenCode skill for configuring WordPress sites that run:
 It sets global theme options, the header/footer builder, color palettes,
 typography, menus, per-page settings, Content Blocks/popups, and extensions.
 
+It also exports the site's **design tokens** (palette, typography, widths,
+breakpoints, CSS variables and classes) so other skills that build Gutenberg
+pages, such as [GreenLight](https://github.com/wpsoul/greenlight-vibe), core
+blocks, or any block suite, style content with Blocksy's variables instead of
+hard-coded values. See `references/design-tokens.md`.
+
+![Blocksy tokens for any block builder](assets/design-tokens.png)
+
 ## Why there are two adapters
 
 | Access | Adapter |
@@ -67,6 +75,7 @@ node scripts/remote.mjs schema > schema.json
 node scripts/remote.mjs export --portable --post-meta > backup.json
 node scripts/remote.mjs apply examples/example-plan.json --dry-run
 node scripts/remote.mjs apply examples/example-plan.json
+node scripts/remote.mjs tokens > blocksy-tokens.json   # for block-building skills
 ```
 
 Application Passwords are also supported:
@@ -99,11 +108,13 @@ bridge/
   blocksy-bridge.php      single-file bridge plugin source
 dist/
   blocksy-bridge.zip      uploadable plugin
-data/                     versioned option/builder catalogs
+data/                     versioned option/builder catalogs, builder item
+                          inventory, CSS variable/class catalogs
 examples/
   example-plan.json       one end-to-end example
 assets/
   example-plan.png        social/repo preview image
+  design-tokens.png       design tokens update image (source in assets/src/)
 research/                 extraction notes and snapshots used to build this
 ```
 

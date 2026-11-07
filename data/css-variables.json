@@ -1,0 +1,3827 @@
+{
+  "blocksy_version": "2.1.60",
+  "generated": "2026-11-07T20:23:09.311821+00:00",
+  "source": "static extraction, see research/css-tokens.md",
+  "count": 153,
+  "variables": [
+    {
+      "name": "--admin-bar",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 12,
+      "global": false
+    },
+    {
+      "name": "--false",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 28,
+      "global": false
+    },
+    {
+      "name": "--has-background",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 0,
+      "global": false
+    },
+    {
+      "name": "--has-boxed",
+      "category": "other",
+      "value_in_global_css": "var(--false)",
+      "selectors_in_global_css": [
+        "[data-prefix=\"single_blog_post\"] [class*=\"ct-container\"] > article[class*=\"post\"]",
+        "[data-prefix=\"single_page\"] [class*=\"ct-container\"] > article[class*=\"post\"]"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 15,
+      "global": false
+    },
+    {
+      "name": "--has-boxed-structure",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/sidebar.min.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--has-classic-forms",
+      "category": "other",
+      "value_in_global_css": "var(--true)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "forms_type"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 26,
+      "global": true
+    },
+    {
+      "name": "--has-container",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--has-content-spacing",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--has-divider",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php"
+      ],
+      "used_in_count": 5,
+      "global": false
+    },
+    {
+      "name": "--has-height",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce-cart-checkout-blocks.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--has-indentation",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/header/offcanvas/dynamic-styles.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--has-link-decoration",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 16,
+      "global": false
+    },
+    {
+      "name": "--has-modern-forms",
+      "category": "other",
+      "value_in_global_css": "var(--false)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "forms_type"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 0,
+      "global": true
+    },
+    {
+      "name": "--has-taxonomy-filter",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php"
+      ],
+      "used_in_count": 0,
+      "global": false
+    },
+    {
+      "name": "--has-theme-content-spacing",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "contentSpacing"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--has-transparent-header",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global-inline.php",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--has-wide",
+      "category": "other",
+      "value_in_global_css": "var(--true)",
+      "selectors_in_global_css": [
+        "[data-prefix=\"single_blog_post\"] [class*=\"ct-container\"] > article[class*=\"post\"]",
+        "[data-prefix=\"single_page\"] [class*=\"ct-container\"] > article[class*=\"post\"]"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/sidebar.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 10,
+      "global": false
+    },
+    {
+      "name": "--has-width",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--header-height",
+      "category": "layout",
+      "value_in_global_css": "120px",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"]"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/header/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 6,
+      "global": false
+    },
+    {
+      "name": "--theme-backdrop-blur",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "themes/blocksy/inc/panel-builder/header/middle-row/dynamic-styles.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-block-max-width",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 21,
+      "global": false
+    },
+    {
+      "name": "--theme-block-text-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php"
+      ],
+      "used_in_count": 8,
+      "global": false
+    },
+    {
+      "name": "--theme-block-wide-max-width",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-block-width",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 12,
+      "global": false
+    },
+    {
+      "name": "--theme-border",
+      "category": "border",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"] > div"
+      ],
+      "option_ids": [
+        "footerColumnsDivider",
+        "sidebarBorder",
+        "sidebarDivider"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 12,
+      "global": false
+    },
+    {
+      "name": "--theme-border-bottom",
+      "category": "border",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-row*=\"middle\"]",
+        "[data-header*=\"type-1\"] .ct-header [data-row*=\"middle\"] > div",
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"] > div",
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"]"
+      ],
+      "option_ids": [
+        "headerRowBottomBorder",
+        "stickyHeaderRowBottomBorder",
+        "transparentHeaderRowBottomBorder"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/middle-row/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-border-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-5)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "border_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 53,
+      "global": true
+    },
+    {
+      "name": "--theme-border-radius",
+      "category": "border",
+      "value_in_global_css": "0px 0px 2px 2px",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] .sub-menu"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_image_radius",
+        "cardProductRadius",
+        "checkout_product_image_border_radius",
+        "compare_modal_radius",
+        "newsletter_subscribe_container_border_radius",
+        "quick_view_radius",
+        "shortcuts_container_border_radius",
+        "sidebarRadius",
+        "size_guide_modal_radius",
+        "topButtonRadius"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/size-guide/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/static/bundle/back-to-top.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 22,
+      "global": false
+    },
+    {
+      "name": "--theme-border-top",
+      "category": "border",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-row*=\"middle\"]",
+        "[data-header*=\"type-1\"] .ct-header [data-row*=\"middle\"] > div",
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"] > div",
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"]"
+      ],
+      "option_ids": [
+        "headerRowTopBorder",
+        "stickyHeaderRowTopBorder",
+        "transparentHeaderRowTopBorder"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/middle-row/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-box-shadow",
+      "category": "shadow",
+      "value_in_global_css": "0px 10px 20px rgba(41, 51, 61, 0.1)",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] .sub-menu",
+        "[data-header*=\"type-1\"] .ct-header [data-row*=\"middle\"]",
+        "[data-header*=\"type-1\"] #offcanvas",
+        "[data-prefix=\"blog\"] .entry-card",
+        "[data-prefix=\"categories\"] .entry-card",
+        "[data-prefix=\"author\"] .entry-card",
+        "[data-prefix=\"search\"] .entry-card"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 16,
+      "global": false
+    },
+    {
+      "name": "--theme-boxed-content-border",
+      "category": "border",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-boxed-content-border-radius",
+      "category": "border",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-boxed-content-box-shadow",
+      "category": "shadow",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-boxed-content-max-width",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-boxed-content-spacing",
+      "category": "spacing",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/content-area-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-content.php"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-button-background-hover-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-2)",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root"
+      ],
+      "option_ids": [
+        "add_to_cart_background",
+        "additional_actions_button_background_color",
+        "buttonColor",
+        "cardProductButtonBackground",
+        "card_product_categories_button_type_background_colors",
+        "cookieButtonBackground",
+        "cookieDeclineButtonBackground",
+        "error_message_button_background",
+        "headerButtonForeground",
+        "info_message_button_background",
+        "newsletter_subscribe_button",
+        "product_compare_bar_button_background_color",
+        "quick_view_add_to_cart_background",
+        "quick_view_product_page_button_background",
+        "quick_view_view_cart_button_background",
+        "search_button_background_color",
+        "stickyHeaderButtonForeground",
+        "success_message_button_background",
+        "transparentHeaderButtonForeground",
+        "trending_categories_button_type_background_colors",
+        "view_cart_button_background"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/taxonomies-customization/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/global.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 24,
+      "global": true
+    },
+    {
+      "name": "--theme-button-background-initial-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-1)",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root"
+      ],
+      "option_ids": [
+        "add_to_cart_background",
+        "additional_actions_button_background_color",
+        "buttonColor",
+        "cardProductButtonBackground",
+        "card_product_categories_button_type_background_colors",
+        "cookieButtonBackground",
+        "cookieDeclineButtonBackground",
+        "error_message_button_background",
+        "headerButtonForeground",
+        "info_message_button_background",
+        "newsletter_subscribe_button",
+        "product_compare_bar_button_background_color",
+        "quick_view_add_to_cart_background",
+        "quick_view_product_page_button_background",
+        "quick_view_view_cart_button_background",
+        "search_button_background_color",
+        "stickyHeaderButtonForeground",
+        "success_message_button_background",
+        "transparentHeaderButtonForeground",
+        "trending_categories_button_type_background_colors",
+        "view_cart_button_background"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/taxonomies-customization/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/global.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 26,
+      "global": true
+    },
+    {
+      "name": "--theme-button-border",
+      "category": "button",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonBorder"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-button-border-hover-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttonBorder"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-border-radius",
+      "category": "button",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttonRadius"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-button-flex",
+      "category": "button",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-font-family",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-font-size",
+      "category": "typography",
+      "value_in_global_css": "15px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-button-font-style",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-font-weight",
+      "category": "typography",
+      "value_in_global_css": "500",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-button-gap",
+      "category": "button",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-button-letter-spacing",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-line-height",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-min-height",
+      "category": "button",
+      "value_in_global_css": "40px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonMinHeight"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/static/bundle/bbpress.min.css",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/getwid.min.css",
+        "themes/blocksy/static/bundle/jet-woo-builder.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 7,
+      "global": true
+    },
+    {
+      "name": "--theme-button-padding",
+      "category": "button",
+      "value_in_global_css": "5px 20px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonPadding"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/getwid.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "themes/blocksy/static/bundle/wpforms.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 4,
+      "global": true
+    },
+    {
+      "name": "--theme-button-shadow",
+      "category": "button",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonHoverEffect",
+        "buttonMinHeight"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/static/bundle/bbpress.min.css",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/elementor-frontend.min.css",
+        "themes/blocksy/static/bundle/getwid.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 1,
+      "global": true
+    },
+    {
+      "name": "--theme-button-spinner-size",
+      "category": "button",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-text-decoration",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-button-text-hover-color",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root"
+      ],
+      "option_ids": [
+        "add_to_cart_text",
+        "additional_actions_button_icon_color",
+        "buttonTextColor",
+        "cardProductButton1Text",
+        "cardProductButton2Text",
+        "card_product_categories_button_type_font_colors",
+        "cookieButtonText",
+        "cookieDeclineButtonText",
+        "error_message_button_text_color",
+        "headerButtonFontColor",
+        "headerButtonSecondaryFontColor",
+        "info_message_button_text_color",
+        "product_compare_bar_button_font_color",
+        "quick_view_add_to_cart_text",
+        "quick_view_product_page_button_text",
+        "quick_view_view_cart_button_text",
+        "search_button_icon_color",
+        "stickyHeaderButtonFontColor",
+        "stickyHeaderButtonSecondaryFontColor",
+        "success_message_button_text_color",
+        "transparentHeaderButtonFontColor",
+        "transparentHeaderButtonSecondaryFontColor",
+        "trending_categories_button_type_font_colors",
+        "view_cart_button_text"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 21,
+      "global": true
+    },
+    {
+      "name": "--theme-button-text-initial-color",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root"
+      ],
+      "option_ids": [
+        "add_to_cart_text",
+        "additional_actions_button_icon_color",
+        "buttonTextColor",
+        "cardProductButton1Text",
+        "cardProductButton2Text",
+        "card_product_categories_button_type_font_colors",
+        "cookieButtonText",
+        "cookieDeclineButtonText",
+        "error_message_button_text_color",
+        "headerButtonFontColor",
+        "headerButtonSecondaryFontColor",
+        "info_message_button_text_color",
+        "product_compare_bar_button_font_color",
+        "quick_view_add_to_cart_text",
+        "quick_view_product_page_button_text",
+        "quick_view_view_cart_button_text",
+        "search_button_icon_color",
+        "stickyHeaderButtonFontColor",
+        "stickyHeaderButtonSecondaryFontColor",
+        "success_message_button_text_color",
+        "transparentHeaderButtonFontColor",
+        "transparentHeaderButtonSecondaryFontColor",
+        "trending_categories_button_type_font_colors",
+        "view_cart_button_text"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 18,
+      "global": true
+    },
+    {
+      "name": "--theme-button-text-transform",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "buttons",
+        "headerButtonFont",
+        "headerButtonSecondaryLabelFont"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-button-transform",
+      "category": "button",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonHoverEffect",
+        "buttonMinHeight"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/static/bundle/bbpress.min.css",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/elementor-frontend.min.css",
+        "themes/blocksy/static/bundle/getwid.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 1,
+      "global": true
+    },
+    {
+      "name": "--theme-cart-badge-background",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "cartBadgeColor",
+        "shortcuts_cart_badge_color",
+        "shortcuts_compare_badge_color",
+        "shortcuts_wishlist_badge_color",
+        "stickyCartBadgeColor",
+        "transparentCartBadgeColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-cart-badge-text",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "cartBadgeColor",
+        "shortcuts_cart_badge_color",
+        "shortcuts_compare_badge_color",
+        "shortcuts_wishlist_badge_color",
+        "stickyCartBadgeColor",
+        "transparentCartBadgeColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-container-edge-spacing",
+      "category": "spacing",
+      "value_in_global_css": "90vw",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-container-width",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 12,
+      "global": false
+    },
+    {
+      "name": "--theme-container-width-base",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-content-spacing",
+      "category": "spacing",
+      "value_in_global_css": "1.5em",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "contentSpacing"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/static/bundle/header-account-modal-lazy.min.css",
+        "plugins/blocksy-companion/static/bundle/header-account-modal-lazy.min.css",
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/cf-7.min.css",
+        "themes/blocksy/static/bundle/comments.min.css",
+        "themes/blocksy/static/bundle/forminator.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 21,
+      "global": true
+    },
+    {
+      "name": "--theme-content-vertical-spacing",
+      "category": "spacing",
+      "value_in_global_css": "60px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "contentAreaSpacing"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 6,
+      "global": true
+    },
+    {
+      "name": "--theme-description-list-indent",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-description-list-spacing",
+      "category": "spacing",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-font-family",
+      "category": "typography",
+      "value_in_global_css": "var(--theme-font-stack-default)",
+      "selectors_in_global_css": [
+        ":root",
+        ".wp-block-pullquote",
+        "pre, code, samp, kbd"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 4,
+      "global": true
+    },
+    {
+      "name": "--theme-font-size",
+      "category": "typography",
+      "value_in_global_css": "16px",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"logo\"] .site-title",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] > ul > li > a",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] .sub-menu .ct-menu-link",
+        "[data-header*=\"type-1\"] [data-id=\"mobile-menu\"]",
+        "[data-header*=\"type-1\"] #search-modal .ct-search-results",
+        "[data-footer*=\"type-1\"] .ct-footer [data-row*=\"bottom\"] .widget-title",
+        "[data-footer*=\"type-1\"] [data-id=\"copyright\"]",
+        ":root",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        ".wp-block-pullquote",
+        "pre, code, samp, kbd",
+        "figcaption",
+        ".ct-sidebar .widget-title",
+        ".ct-breadcrumbs",
+        "[data-prefix=\"single_blog_post\"] .entry-header .page-title",
+        "[data-prefix=\"single_blog_post\"] .entry-header .entry-meta",
+        "[data-prefix=\"categories\"] .entry-header .page-title",
+        "[data-prefix=\"categories\"] .entry-header .entry-meta",
+        "[data-prefix=\"search\"] .entry-header .page-title",
+        "[data-prefix=\"search\"] .entry-header .entry-meta",
+        "[data-prefix=\"author\"] .entry-header .page-title",
+        "[data-prefix=\"author\"] .entry-header .entry-meta",
+        "[data-prefix=\"single_page\"] .entry-header .page-title",
+        "[data-prefix=\"single_page\"] .entry-header .entry-meta",
+        "[data-prefix=\"blog\"] .entry-card .entry-title",
+        "[data-prefix=\"blog\"] .entry-card .entry-meta",
+        "[data-prefix=\"categories\"] .entry-card .entry-title",
+        "[data-prefix=\"categories\"] .entry-card .entry-meta",
+        "[data-prefix=\"author\"] .entry-card .entry-title",
+        "[data-prefix=\"author\"] .entry-card .entry-meta",
+        "[data-prefix=\"search\"] .entry-card .entry-title",
+        "[data-prefix=\"search\"] .entry-card .entry-meta"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/comments.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-font-stack-default",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-font-style",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-font-weight",
+      "category": "typography",
+      "value_in_global_css": "400",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"logo\"] .site-title",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] > ul > li > a",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] .sub-menu .ct-menu-link",
+        "[data-header*=\"type-1\"] [data-id=\"mobile-menu\"]",
+        "[data-header*=\"type-1\"] #search-modal .ct-search-results",
+        "[data-footer*=\"type-1\"] [data-id=\"copyright\"]",
+        ":root",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        ".wp-block-pullquote",
+        "pre, code, samp, kbd",
+        ".ct-breadcrumbs",
+        "[data-prefix=\"single_blog_post\"] .entry-header .entry-meta",
+        "[data-prefix=\"categories\"] .entry-header .entry-meta",
+        "[data-prefix=\"search\"] .entry-header .entry-meta",
+        "[data-prefix=\"author\"] .entry-header .entry-meta",
+        "[data-prefix=\"single_page\"] .entry-header .entry-meta",
+        "[data-prefix=\"blog\"] .entry-card .entry-meta",
+        "[data-prefix=\"categories\"] .entry-card .entry-meta",
+        "[data-prefix=\"author\"] .entry-card .entry-meta",
+        "[data-prefix=\"search\"] .entry-card .entry-meta"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 3,
+      "global": true
+    },
+    {
+      "name": "--theme-form-border-radius",
+      "category": "form",
+      "value_in_global_css": "20px",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form"
+      ],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-form-checkbox-border-radius",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "checkboxBorderRadius"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-background-focus-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formBackgroundColor",
+        "newsletter_subscribe_input_background"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 7,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-background-initial-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formBackgroundColor",
+        "newsletter_subscribe_input_background"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 6,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-border-focus-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-1)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "formBorderColor",
+        "newsletter_subscribe_border_color",
+        "searchHeaderInputBorderColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 17,
+      "global": true
+    },
+    {
+      "name": "--theme-form-field-border-initial-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-border-color)",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root"
+      ],
+      "option_ids": [
+        "formBorderColor",
+        "newsletter_subscribe_border_color",
+        "searchHeaderInputBorderColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 25,
+      "global": true
+    },
+    {
+      "name": "--theme-form-field-border-radius",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formFieldBorderRadius",
+        "formInputHeight",
+        "formTextAreaHeight"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php",
+        "plugins/blocksy-companion-pro/framework/features/blocks/search/view.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php",
+        "plugins/blocksy-companion/framework/features/blocks/search/view.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 18,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-border-style",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-border-width",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formBorderSize"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 16,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-gap",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php"
+      ],
+      "used_in_count": 0,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-height",
+      "category": "form",
+      "value_in_global_css": "170px",
+      "selectors_in_global_css": [
+        "form textarea"
+      ],
+      "option_ids": [
+        "formInputHeight",
+        "formTextAreaHeight"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php",
+        "plugins/blocksy-companion-pro/framework/features/blocks/search/view.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/ct-newsletter-subscribe/view.php",
+        "plugins/blocksy-companion/framework/features/blocks/search/view.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/static/bundle/bbpress.min.css",
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/elementor-frontend.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 21,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-padding",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-form-field-width",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-form-font-family",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-font-size",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formFontSize",
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-form-font-style",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-font-weight",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-inner-spacing",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css"
+      ],
+      "used_in_count": 11,
+      "global": false
+    },
+    {
+      "name": "--theme-form-letter-spacing",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-line-height",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-max-width",
+      "category": "form",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-form-select-background-active-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formSelectBackgroundColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-select-background-initial-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "formSelectBackgroundColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-form-selection-field-active-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-1)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "radioCheckboxColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 9,
+      "global": true
+    },
+    {
+      "name": "--theme-form-selection-field-initial-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-border-color)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "radioCheckboxColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 5,
+      "global": true
+    },
+    {
+      "name": "--theme-form-text-decoration",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-form-text-focus-color",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form"
+      ],
+      "option_ids": [
+        "formTextColor",
+        "newsletter_subscribe_input_font_color",
+        "searchHeaderInputColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 8,
+      "global": false
+    },
+    {
+      "name": "--theme-form-text-initial-color",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form"
+      ],
+      "option_ids": [
+        "formTextColor",
+        "newsletter_subscribe_input_font_color",
+        "searchHeaderInputColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/admin/editor.php",
+        "themes/blocksy/inc/dynamic-styles/global/forms.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 14,
+      "global": false
+    },
+    {
+      "name": "--theme-form-text-transform",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "form_font"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/forms.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-frame-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "passepartoutColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-frame-size",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "passepartoutSize"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 23,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-1-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_1_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 7,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-2-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_2_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 7,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-3-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_3_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 7,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-4-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_4_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 5,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-5-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_5_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 6,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-6-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "heading_6_color"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php"
+      ],
+      "used_in_count": 5,
+      "global": false
+    },
+    {
+      "name": "--theme-heading-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "added_to_cart_popup_title_color",
+        "cardProductTitleColor",
+        "footerWidgetsTitleColor",
+        "headerTextHeadingColor",
+        "newsletter_subscribe_title_color",
+        "quick_view_title_color",
+        "related_upsells_heading_font_color",
+        "sidebarWidgetsTitleColor",
+        "singleProductTitleColor",
+        "stickyHeaderTextHeadingColor",
+        "transparentHeaderTextHeadingColor",
+        "trendingBlockHeadingFontColor",
+        "waitlist_title_color"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/comments.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php"
+      ],
+      "used_in_count": 18,
+      "global": false
+    },
+    {
+      "name": "--theme-headings-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-4)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "headingColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 43,
+      "global": true
+    },
+    {
+      "name": "--theme-icon-active-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-icon-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "added_to_cart_popup_close_button_color",
+        "cartHeaderIconColor",
+        "cart_panel_close_button_color",
+        "filter_panel_close_button_color",
+        "footerSocialsIconColor",
+        "headerSocialsIconColor",
+        "menu_close_button_color",
+        "payment_method_icons_color",
+        "product_share_items_icon_color",
+        "searchHeaderIconColor",
+        "search_close_button_color",
+        "shortcuts_icon_color",
+        "size_guide_close_button_color",
+        "stickyCartHeaderIconColor",
+        "stickyHeaderSocialsIconColor",
+        "stickySearchHeaderIconColor",
+        "stickyTriggerIconColor",
+        "topButtonIconColor",
+        "transparentCartHeaderIconColor",
+        "transparentHeaderSocialsIconColor",
+        "transparentSearchHeaderIconColor",
+        "transparentTriggerIconColor",
+        "triggerIconColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/share-box-layer/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/size-guide/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/content-blocks/popup-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/static/bundle/header-account-dropdown-lazy.min.css",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion/static/bundle/header-account-dropdown-lazy.min.css",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/offcanvas/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/non-critical-styles.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-icon-color-2",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 0,
+      "global": false
+    },
+    {
+      "name": "--theme-icon-hover-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "cartHeaderIconColor",
+        "footerSocialsIconColor",
+        "headerSocialsIconColor",
+        "product_share_items_icon_color",
+        "searchHeaderIconColor",
+        "shortcuts_icon_color",
+        "stickyCartHeaderIconColor",
+        "stickyHeaderSocialsIconColor",
+        "stickySearchHeaderIconColor",
+        "stickyTriggerIconColor",
+        "topButtonIconColor",
+        "transparentCartHeaderIconColor",
+        "transparentHeaderSocialsIconColor",
+        "transparentSearchHeaderIconColor",
+        "transparentTriggerIconColor",
+        "triggerIconColor"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/share-box-layer/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css"
+      ],
+      "used_in_count": 8,
+      "global": false
+    },
+    {
+      "name": "--theme-icon-size",
+      "category": "other",
+      "value_in_global_css": "18px",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] [data-id=\"trigger\"]"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_close_button_icon_size",
+        "breadcrumbs_separator_size",
+        "cart_panel_close_button_icon_size",
+        "filter_panel_close_button_icon_size",
+        "search_close_button_icon_size",
+        "size_guide_close_button_icon_size"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/features/blocks/about-me/view.php",
+        "plugins/blocksy-companion-pro/framework/features/blocks/contact-info/view.php",
+        "plugins/blocksy-companion-pro/framework/features/blocks/share-box/view.php",
+        "plugins/blocksy-companion-pro/framework/features/blocks/socials/view.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/size-guide/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/features/blocks/about-me/view.php",
+        "plugins/blocksy-companion/framework/features/blocks/contact-info/view.php",
+        "plugins/blocksy-companion/framework/features/blocks/share-box/view.php",
+        "plugins/blocksy-companion/framework/features/blocks/socials/view.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/button/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/offcanvas/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/back-to-top.min.css",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/non-critical-styles.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 12,
+      "global": false
+    },
+    {
+      "name": "--theme-icon-transition",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-image-border-radius",
+      "category": "border",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php"
+      ],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-image-shadow",
+      "category": "shadow",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-letter-spacing",
+      "category": "typography",
+      "value_in_global_css": "0em",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-line-height",
+      "category": "typography",
+      "value_in_global_css": "1.65",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"logo\"] .site-title",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] > ul > li > a",
+        "[data-header*=\"type-1\"] #search-modal .ct-search-results",
+        "[data-footer*=\"type-1\"] [data-id=\"copyright\"]",
+        ":root",
+        "h1",
+        "h2",
+        "h3",
+        "h4",
+        "h5",
+        "h6",
+        "[data-prefix=\"single_blog_post\"] .entry-header .entry-meta",
+        "[data-prefix=\"categories\"] .entry-header .entry-meta",
+        "[data-prefix=\"search\"] .entry-header .entry-meta",
+        "[data-prefix=\"author\"] .entry-header .entry-meta",
+        "[data-prefix=\"single_page\"] .entry-header .entry-meta",
+        "[data-prefix=\"blog\"] .entry-card .entry-title",
+        "[data-prefix=\"categories\"] .entry-card .entry-title",
+        "[data-prefix=\"author\"] .entry-card .entry-title",
+        "[data-prefix=\"search\"] .entry-card .entry-title"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-link-active-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [
+        "headerDropdownFontColor",
+        "inline_menu_font_color",
+        "mobileMenuColor",
+        "mobileMenuDropdownColor",
+        "stickyHeaderDropdownFontColor",
+        "sticky_inline_menu_font_color",
+        "transparentHeaderDropdownFontColor",
+        "transparent_inline_menu_font_color",
+        "woo_tabs_font_color"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/panel-builder/footer/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php"
+      ],
+      "used_in_count": 7,
+      "global": false
+    },
+    {
+      "name": "--theme-link-hover-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-2)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "breadcrumbsFontColor",
+        "cardProductCategoriesColor",
+        "cardProductTitleColor",
+        "cartFontColor",
+        "cart_panel_font_color",
+        "cart_total_font_color",
+        "color",
+        "cookieContentColor",
+        "copyrightColor",
+        "error_message_text_color",
+        "filter_panel_widgets_font_color",
+        "footer_socials_font_color",
+        "headerDropdownFontColor",
+        "headerTextColor",
+        "header_search_font_color",
+        "header_socials_font_color",
+        "header_trigger_font_color",
+        "info_message_text_color",
+        "inline_menu_font_color",
+        "linkColor",
+        "mobileMenuColor",
+        "mobileMenuDropdownColor",
+        "newsletter_subscribe_content",
+        "rowFontColor",
+        "searchHeaderLinkColor",
+        "shortcuts_font_color",
+        "sidebarWidgetsFontColor",
+        "singleProductBreadcrumbsFontColor",
+        "siteTitleColor",
+        "stickyHeaderDropdownFontColor",
+        "stickyHeaderTextColor",
+        "stickySiteTitleColor",
+        "sticky_cart_total_font_color",
+        "sticky_header_search_font_color",
+        "sticky_header_socials_font_color",
+        "sticky_header_trigger_font_color",
+        "sticky_inline_menu_font_color",
+        "success_message_text_color",
+        "transparentHeaderDropdownFontColor",
+        "transparentHeaderTextColor",
+        "transparentSiteTitleColor",
+        "transparent_cart_total_font_color",
+        "transparent_header_search_font_color",
+        "transparent_header_socials_font_color",
+        "transparent_header_trigger_font_color",
+        "transparent_inline_menu_font_color",
+        "trendingBlockArrowsColor",
+        "trendingBlockFontColor",
+        "trendingBlockTaxonomyFontColor",
+        "trending_categories_font_colors",
+        "widget_area_colors",
+        "woo_tabs_font_color"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/taxonomies-customization/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/newsletter-subscribe/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/comments.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/widget-area-1/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 82,
+      "global": true
+    },
+    {
+      "name": "--theme-link-initial-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-1)",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"logo\"] .site-title",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] > ul > li > a",
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] .sub-menu .ct-menu-link",
+        "[data-header*=\"type-1\"] [data-id=\"mobile-menu\"]",
+        "[data-header*=\"type-1\"] #search-modal .ct-search-form",
+        ":root",
+        ".ct-sidebar"
+      ],
+      "option_ids": [
+        "breadcrumbsFontColor",
+        "cardProductCategoriesColor",
+        "cartFontColor",
+        "cart_panel_font_color",
+        "cart_total_font_color",
+        "copyrightColor",
+        "filter_panel_widgets_font_color",
+        "footer_socials_font_color",
+        "headerDropdownFontColor",
+        "headerTextColor",
+        "header_search_font_color",
+        "header_socials_font_color",
+        "header_trigger_font_color",
+        "inline_menu_font_color",
+        "linkColor",
+        "mobileMenuColor",
+        "mobileMenuDropdownColor",
+        "rowFontColor",
+        "searchHeaderLinkColor",
+        "shortcuts_font_color",
+        "sidebarWidgetsFontColor",
+        "singleProductBreadcrumbsFontColor",
+        "siteTitleColor",
+        "stickyHeaderDropdownFontColor",
+        "stickyHeaderTextColor",
+        "stickySiteTitleColor",
+        "sticky_cart_total_font_color",
+        "sticky_header_search_font_color",
+        "sticky_header_socials_font_color",
+        "sticky_header_trigger_font_color",
+        "sticky_inline_menu_font_color",
+        "transparentHeaderDropdownFontColor",
+        "transparentHeaderTextColor",
+        "transparentSiteTitleColor",
+        "transparent_cart_total_font_color",
+        "transparent_header_search_font_color",
+        "transparent_header_socials_font_color",
+        "transparent_header_trigger_font_color",
+        "transparent_inline_menu_font_color",
+        "trendingBlockFontColor",
+        "trendingBlockTaxonomyFontColor",
+        "trending_categories_font_colors",
+        "widget_area_colors",
+        "woo_tabs_font_color"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/taxonomies-customization/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/static/bundle/header-account-dropdown-lazy.min.css",
+        "plugins/blocksy-companion-pro/static/bundle/header-account-modal-lazy.min.css",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion/static/bundle/header-account-dropdown-lazy.min.css",
+        "plugins/blocksy-companion/static/bundle/header-account-modal-lazy.min.css",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/widget-area-1/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/cart-header-element-lazy.min.css",
+        "themes/blocksy/static/bundle/comments.min.css",
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/entries.min.css",
+        "themes/blocksy/static/bundle/main.min.css",
+        "themes/blocksy/static/bundle/pagination.min.css",
+        "themes/blocksy/static/bundle/related-posts.min.css",
+        "themes/blocksy/static/bundle/theme-block-about-me.min.css",
+        "themes/blocksy/static/bundle/theme-blocks-editor-styles.min.css",
+        "themes/blocksy/static/bundle/woocommerce.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 14,
+      "global": true
+    },
+    {
+      "name": "--theme-list-indent",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/static/bundle/header-account-modal-lazy.min.css",
+        "plugins/blocksy-companion/static/bundle/header-account-modal-lazy.min.css",
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-narrow-container-max-width",
+      "category": "layout",
+      "value_in_global_css": "750px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "maxSiteWidth",
+        "narrowContainerWidth"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/comments.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 10,
+      "global": true
+    },
+    {
+      "name": "--theme-normal-container-max-width",
+      "category": "layout",
+      "value_in_global_css": "1290px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "buttonPadding",
+        "maxSiteWidth",
+        "woocommerce_quick_view_width"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 13,
+      "global": true
+    },
+    {
+      "name": "--theme-object-fit",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/filters/filter-types/taxonomies.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-palette-color-1",
+      "category": "color",
+      "value_in_global_css": "#2872fa",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 96,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-2",
+      "category": "color",
+      "value_in_global_css": "#1559ed",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 36,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-3",
+      "category": "color",
+      "value_in_global_css": "#3A4F66",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 17,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-4",
+      "category": "color",
+      "value_in_global_css": "#192a3d",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 16,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-5",
+      "category": "color",
+      "value_in_global_css": "#e1e8ed",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 16,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-6",
+      "category": "color",
+      "value_in_global_css": "#f2f5f7",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 10,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-7",
+      "category": "color",
+      "value_in_global_css": "#FAFBFC",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 6,
+      "global": true
+    },
+    {
+      "name": "--theme-palette-color-8",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "colorPalette"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 62,
+      "global": true
+    },
+    {
+      "name": "--theme-panel-reveal-left",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-panel-reveal-right",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-selection-background-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-1)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "selectionColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 1,
+      "global": true
+    },
+    {
+      "name": "--theme-selection-text-color",
+      "category": "color",
+      "value_in_global_css": "#ffffff",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "selectionColor"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 1,
+      "global": true
+    },
+    {
+      "name": "--theme-submenu-inline-offset",
+      "category": "layout",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 8,
+      "global": false
+    },
+    {
+      "name": "--theme-table-border-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [],
+      "used_in_count": 4,
+      "global": false
+    },
+    {
+      "name": "--theme-table-border-style",
+      "category": "border",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-table-border-width",
+      "category": "border",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-table-font-size",
+      "category": "typography",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-table-padding",
+      "category": "spacing",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 1,
+      "global": false
+    },
+    {
+      "name": "--theme-table-text-align",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/woocommerce.min.css"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-text-active-color",
+      "category": "color",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php"
+      ],
+      "used_in_count": 2,
+      "global": false
+    },
+    {
+      "name": "--theme-text-color",
+      "category": "color",
+      "value_in_global_css": "var(--theme-palette-color-3)",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_color",
+        "breadcrumbsFontColor",
+        "cardProductExcerptColor",
+        "cardProductPriceColor",
+        "cardProductSkuColor",
+        "cardProductStockColor",
+        "cartFontColor",
+        "cartTotalFontColor",
+        "cart_panel_font_color",
+        "cart_panel_heading_font_color",
+        "cart_panel_total_font_color",
+        "color",
+        "cookieContentColor",
+        "copyrightColor",
+        "error_message_text_color",
+        "filter_panel_widgets_font_color",
+        "floatingBarFontColor",
+        "fontColor",
+        "headerTextColor",
+        "info_message_text_color",
+        "offcanvas_heading_font_color",
+        "quick_view_description_color",
+        "quick_view_price_color",
+        "rowFontColor",
+        "shop_results_count_color",
+        "sidebarWidgetsFontColor",
+        "singleProductBreadcrumbsFontColor",
+        "singleProductPriceColor",
+        "siteTaglineColor",
+        "stickyHeaderTextColor",
+        "stickySiteTaglineColor",
+        "success_message_text_color",
+        "transparentHeaderTextColor",
+        "transparentSiteTaglineColor",
+        "trendingBlockArrowsColor",
+        "trendingBlockPriceFontColor",
+        "waitlist_message_color",
+        "widget_area_colors",
+        "wooNoticeContent"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/floating-cart/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/cookies-consent/global.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/admin/colors.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "themes/blocksy/inc/dynamic-styles/global/comments.php",
+        "themes/blocksy/inc/dynamic-styles/global/pagination.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/widget-area-1/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/offcanvas/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 217,
+      "global": true
+    },
+    {
+      "name": "--theme-text-decoration",
+      "category": "typography",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "themes/blocksy/static/bundle/main.min.css",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 6,
+      "global": true
+    },
+    {
+      "name": "--theme-text-transform",
+      "category": "typography",
+      "value_in_global_css": "none",
+      "selectors_in_global_css": [
+        "[data-header*=\"type-1\"] .ct-header [data-id=\"menu\"] > ul > li > a",
+        ":root",
+        ".ct-breadcrumbs",
+        "[data-prefix=\"single_blog_post\"] .entry-header .entry-meta",
+        "[data-prefix=\"categories\"] .entry-header .entry-meta",
+        "[data-prefix=\"search\"] .entry-header .entry-meta",
+        "[data-prefix=\"author\"] .entry-header .entry-meta",
+        "[data-prefix=\"single_page\"] .entry-header .entry-meta",
+        "[data-prefix=\"blog\"] .entry-card .entry-meta",
+        "[data-prefix=\"categories\"] .entry-card .entry-meta",
+        "[data-prefix=\"author\"] .entry-card .entry-meta",
+        "[data-prefix=\"search\"] .entry-card .entry-meta"
+      ],
+      "option_ids": [
+        "added_to_cart_popup_price_font",
+        "added_to_cart_popup_title_font",
+        "breadcrumbsFont",
+        "cardProductExcerptFont",
+        "cardProductPriceFont",
+        "cardProductSkuFont",
+        "cardProductStockFont",
+        "cardProductTitleFont",
+        "card_product_categories_font",
+        "cart_total_font",
+        "copyrightFont",
+        "figcaption",
+        "filter_panel_widgets_font",
+        "footerWidgetsFont",
+        "footerWidgetsTitleFont",
+        "footer_socials_label_font",
+        "h1Typography",
+        "h2Typography",
+        "h3Typography",
+        "h4Typography",
+        "h5Typography",
+        "h6Typography",
+        "headerDropdownFont",
+        "headerMenuFont",
+        "headerTextFont",
+        "inline_mobile_menu_font",
+        "mobileMenuDropdownFont",
+        "mobileMenuFont",
+        "pre",
+        "product_badge_font",
+        "pullquote",
+        "quickViewProductPriceFont",
+        "quickViewProductTitleFont",
+        "quote",
+        "related_upsells_heading_font",
+        "rootTypography",
+        "searchHeaderModalFont",
+        "search_label_font",
+        "shop_results_count_font",
+        "shortcuts_font",
+        "sidebarWidgetsFont",
+        "sidebarWidgetsTitleFont",
+        "singleProductBreadcrumbsFont",
+        "singleProductPriceFont",
+        "singleProductTitleFont",
+        "siteTagline",
+        "siteTitle",
+        "socials_label_font",
+        "trendingBlockHeadingFont",
+        "trendingBlockPostsFont",
+        "trendingBlockPriceFont",
+        "trendingBlockTaxonomyFont",
+        "trigger_label_font",
+        "typography",
+        "waitlist_message_font",
+        "waitlist_title_font",
+        "woo_tabs_font"
+      ],
+      "defined_in": [
+        "plugins/blocksy-companion-pro/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion-pro/framework/features/header/items/account/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/color-mode-switch/header-items/color-mode-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/mega-menu/item-dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/post-types-extra/features/filtering/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/shortcuts/global.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/added-to-cart-popup/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/cart-suggested-products/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/compare/header-items/compare/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/offcanvas-filters/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/product-waitlist/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/quick-view/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/extensions/woocommerce-extra/features/wish-list/header-items/wish-list/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/contacts/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/language-switcher/dynamic-styles.php",
+        "plugins/blocksy-companion-pro/framework/premium/features/premium-header/items/search-input/dynamic-styles.php",
+        "plugins/blocksy-companion/framework/extensions/trending/global.php",
+        "plugins/blocksy-companion/framework/features/header/items/account/dynamic-styles.php",
+        "themes/blocksy/inc/dynamic-styles/global/posts-listing.php",
+        "themes/blocksy/inc/dynamic-styles/global/single-elements.php",
+        "themes/blocksy/inc/dynamic-styles/global/typography.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/archive.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-general.php",
+        "themes/blocksy/inc/dynamic-styles/global/woocommerce/single-product-layers.php",
+        "themes/blocksy/inc/dynamic-styles/page-title/page-title.php",
+        "themes/blocksy/inc/panel-builder/footer/copyright/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/middle-row/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/footer/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/cart/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/logo/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/mobile-menu/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/search/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/socials/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/text/dynamic-styles.php",
+        "themes/blocksy/inc/panel-builder/header/trigger/dynamic-styles.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 2,
+      "global": true
+    },
+    {
+      "name": "--theme-transition",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 3,
+      "global": false
+    },
+    {
+      "name": "--theme-wide-offset",
+      "category": "layout",
+      "value_in_global_css": "130px",
+      "selectors_in_global_css": [
+        ":root"
+      ],
+      "option_ids": [
+        "maxSiteWidth",
+        "narrowContainerWidth",
+        "wideOffset"
+      ],
+      "defined_in": [
+        "themes/blocksy/inc/dynamic-styles/admin-global.php",
+        "themes/blocksy/inc/dynamic-styles/global/all.php",
+        "uploads/blocksy/css/global.css"
+      ],
+      "used_in_count": 6,
+      "global": true
+    },
+    {
+      "name": "--true",
+      "category": "other",
+      "value_in_global_css": null,
+      "selectors_in_global_css": [],
+      "option_ids": [],
+      "defined_in": [
+        "themes/blocksy/static/bundle/editor-styles.min.css",
+        "themes/blocksy/static/bundle/main.min.css"
+      ],
+      "used_in_count": 13,
+      "global": false
+    }
+  ],
+  "notes": [
+    "option_ids lists every customizer option that writes this variable in ANY scope (global or a component such as a Woo card). To change the global value, use the option whose dynamic-styles selector is :root; see references/design-tokens.md.",
+    "value_in_global_css is from the snapshot site; read live values with the tokens command.",
+    "--has-* variables are internal boolean switches (var(--true)/var(--false)); do not set them from block markup."
+  ]
+}

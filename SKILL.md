@@ -1,6 +1,6 @@
 ---
 name: blocksy
-description: Use when configuring a WordPress site that runs the Blocksy theme, Blocksy Child, Blocksy Companion, or Blocksy Companion Pro — global theme options, header/footer builder, colors, typography, menus, Content Blocks/popups, per-page settings, extensions, custom fonts, and applying settings with WP-CLI or remote REST when there is no server access. Triggers on Blocksy, Blocksy Companion, Blocksy Pro, header builder, Content Blocks, custom fonts, Blocksy extensions, or Blocksy settings import/export.
+description: Use when configuring a WordPress site that runs the Blocksy theme, Blocksy Child, Blocksy Companion, or Blocksy Companion Pro — global theme options, header/footer builder, colors, typography, menus, Content Blocks/popups, per-page settings, extensions, custom fonts, and applying settings with WP-CLI or remote REST when there is no server access. Also provides Blocksy design tokens (palette, typography, widths, breakpoints, CSS variables and classes) to other skills that build Gutenberg block pages (GreenLight/GreenShift, core blocks, any block suite) on a Blocksy site. Triggers on Blocksy, Blocksy Companion, Blocksy Pro, header builder, footer builder, Content Blocks, custom fonts, Blocksy extensions, Blocksy settings import/export, or building/styling pages on a Blocksy site.
 license: MIT
 ---
 
@@ -81,6 +81,25 @@ Never write `blocksy_active_extensions` by hand to fake activation, never
 activate both Companion plugins, never patch licence checks, and never recreate
 a Pro feature with custom code. Full policy and feature list:
 `references/pro-gate.md`.
+
+## Building pages with another skill
+
+When another skill (GreenLight/GreenShift, core blocks, any block suite) writes
+the page content, this skill supplies the design system and the page settings:
+
+1. Export live tokens: `node scripts/remote.mjs tokens > blocksy-tokens.json`
+   or `BLOCKSY_INSPECT=tokens ... eval-file scripts/inspect.php`.
+2. Give the block skill `blocksy-tokens.json` plus the rules in
+   `references/design-tokens.md`: palette slugs/`var(--theme-palette-color-N)`
+   instead of hex, inherited fonts, Blocksy widths, breakpoints
+   999.98px / 689.98px, no `--theme-*` overrides at `:root`.
+3. Apply the per-page layout meta (full width, no hero, no content spacing)
+   with a plan `post_meta` section.
+4. Header and footer stay in the builder (`references/builder.md`); never
+   rebuild them as page blocks.
+
+`data/css-variables.json` and `data/css-classes.json` are the static catalog
+(Blocksy 2.1.60) for offline use.
 
 ## The plan format
 
@@ -303,7 +322,8 @@ Version differences are real; the extractor is part of the bridge and
 | `references/plan-format.md` | Every plan field and its semantics |
 | `references/storage-model.md` | Exact database/API location of every setting |
 | `references/theme-options.md` | Control value shapes and global theme options |
-| `references/builder.md` | Header/footer structure, item IDs, free/pro items |
+| `references/builder.md` | Header/footer structure, complete item inventory (27 header, 20 footer), free/pro/extension requirements |
+| `references/design-tokens.md` | Palette, typography, layout, breakpoints, CSS variables/classes for skills that build block pages; GreenLight mapping |
 | `references/content-blocks.md` | Template types, conditions, hooks, popups, maintenance |
 | `references/extensions.md` | All 15 extensions, free/pro, plans, storage, settings |
 | `references/pro-gate.md` | Stop/ask/verify policy when a Pro-only feature is requested on a free build |

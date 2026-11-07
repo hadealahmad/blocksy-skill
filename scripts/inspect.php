@@ -6,6 +6,7 @@
  *   BLOCKSY_INSPECT=info   wp eval-file scripts/inspect.php
  *   BLOCKSY_INSPECT=schema wp eval-file scripts/inspect.php > schema.json
  *   BLOCKSY_INSPECT=export BLOCKSY_INSPECT_PORTABLE=1 wp eval-file scripts/inspect.php > backup.json
+ *   BLOCKSY_INSPECT=tokens wp eval-file scripts/inspect.php > tokens.json
  *   BLOCKSY_INSPECT=all    wp eval-file scripts/inspect.php
  */
 
@@ -51,6 +52,12 @@ foreach ( $modes as $single ) {
 
 	if ( 'all' === $single || 'schema' === $single ) {
 		$result['schema'] = $bridge->schema();
+	}
+
+	if ( 'tokens' === $single ) {
+		// Not part of "all": tokens are written flat so other skills can read them directly.
+		echo wp_json_encode( $bridge->tokens(), JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE ) . "\n";
+		exit( 0 );
 	}
 
 	if ( 'all' === $single || 'export' === $single ) {

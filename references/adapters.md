@@ -97,6 +97,7 @@ node scripts/remote.mjs export --portable --post-meta > backup.json
 node scripts/remote.mjs apply plan.json --dry-run
 node scripts/remote.mjs apply plan.json
 node scripts/remote.mjs cache
+node scripts/remote.mjs tokens > blocksy-tokens.json
 ```
 
 ### Endpoints
@@ -111,6 +112,7 @@ Base: `/wp-json/blocksy-bridge/v1`
 | GET | `/export?portable=1&post_meta=1` | Export current settings |
 | POST | `/apply?dry_run=1` | Validate/apply a plan |
 | POST | `/cache` | Regenerate CSS and purge caches |
+| GET | `/tokens` | Live design tokens for block-building skills (read-only) |
 
 ### What the bridge will not do
 

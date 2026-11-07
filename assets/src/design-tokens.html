@@ -1,0 +1,161 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { width: 1080px; height: 1350px; }
+  body {
+    font-family: "Inter", "Segoe UI", system-ui, sans-serif;
+    color: #1b2533;
+    background:
+      radial-gradient(circle at 92% 4%, #e9e9ec 0, transparent 380px),
+      linear-gradient(#f4f1ea, #f1eee7);
+    background-color: #f3f0e9;
+    padding: 58px 62px 0;
+    position: relative;
+  }
+  body::before {
+    content: ""; position: absolute; inset: 0;
+    background-image: linear-gradient(#0000000a 1px, transparent 1px), linear-gradient(90deg, #0000000a 1px, transparent 1px);
+    background-size: 36px 36px; pointer-events: none;
+  }
+  .top { display: flex; justify-content: space-between; align-items: center; position: relative; }
+  .brand { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 700; letter-spacing: .14em; }
+  .dot { width: 14px; height: 14px; border-radius: 50%; background: #2563eb; box-shadow: 0 0 0 4px #2563eb22; }
+  .ver { font-size: 13px; padding: 8px 12px; border: 1px solid #d9d6cf; border-radius: 20px; background: #f8f6f1; color: #4b5563; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-size: 62px; line-height: 1.04; letter-spacing: -.02em; margin-top: 34px; position: relative; }
+  h1 em { color: #2563eb; }
+  .lead { font-size: 20px; line-height: 1.5; color: #4b5563; margin-top: 20px; max-width: 900px; position: relative; }
+  .chips { display: flex; gap: 10px; margin-top: 26px; flex-wrap: wrap; position: relative; }
+  .chip { display: flex; align-items: center; gap: 8px; font-size: 14px; font-weight: 500; padding: 9px 15px; border: 1px solid #dedbd3; border-radius: 22px; background: #fbfaf7; }
+  .chip i { width: 7px; height: 7px; border-radius: 50%; display: inline-block; }
+
+  .flow { display: grid; grid-template-columns: 1fr 40px 1.15fr 40px 1fr; align-items: stretch; margin-top: 34px; position: relative; }
+  .card { background: #fdfcf9; border: 1px solid #e2dfd8; border-radius: 16px; box-shadow: 0 10px 30px #0000000a; overflow: hidden; }
+  .card h3 { font-size: 11px; letter-spacing: .14em; color: #6b7280; padding: 14px 16px; border-bottom: 1px solid #ece9e2; background: #f7f5f0; font-weight: 700; }
+  .card .b { padding: 16px; font-size: 14px; line-height: 1.55; }
+  .arrow { display: flex; align-items: center; justify-content: center; color: #9aa3af; font-size: 22px; }
+  .mono { font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace; font-size: 12.5px; }
+  .sw { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-bottom: 12px; }
+  .sw span { height: 30px; border-radius: 7px; border: 1px solid #0000000f; }
+  .k { color: #7c3aed; } .s { color: #0f766e; } .n { color: #b45309; } .c { color: #9ca3af; }
+  ul.tgt { list-style: none; }
+  ul.tgt li { display: flex; align-items: center; gap: 9px; padding: 9px 0; border-bottom: 1px dashed #e7e4dd; font-weight: 500; }
+  ul.tgt li:last-child { border-bottom: 0; }
+  ul.tgt b { width: 22px; height: 22px; border-radius: 6px; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 11px; }
+
+  .code { margin-top: 26px; position: relative; }
+  .code .bar { display: flex; justify-content: space-between; align-items: center; padding: 13px 18px; border-bottom: 1px solid #ece9e2; background: #f7f5f0; }
+  .lights { display: flex; gap: 7px; align-items: center; }
+  .lights span { width: 10px; height: 10px; border-radius: 50%; }
+  .pill { font-size: 11px; font-weight: 700; letter-spacing: .1em; padding: 6px 11px; border-radius: 14px; background: #e8ebf3; color: #3b4a63; border: 1px solid #d5dbe8; }
+  pre { padding: 16px 22px; font-family: "JetBrains Mono", "Fira Code", ui-monospace, monospace; font-size: 14.5px; line-height: 1.7; color: #1f2937; }
+  .bad { color: #b91c1c; text-decoration: line-through; text-decoration-thickness: 1.5px; }
+  .ok { color: #15803d; font-weight: 700; }
+
+  .builder { margin-top: 26px; display: grid; grid-template-columns: 210px 1fr; gap: 0; position: relative; }
+  .builder .big { padding: 18px; border-right: 1px solid #ece9e2; display: flex; flex-direction: column; justify-content: center; }
+  .builder .big strong { font-family: Georgia, serif; font-size: 44px; line-height: 1; }
+  .builder .big span { font-size: 13px; color: #6b7280; margin-top: 6px; }
+  .items { padding: 16px 18px; display: flex; flex-wrap: wrap; gap: 6px; align-content: center; }
+  .it { font-family: ui-monospace, monospace; font-size: 12px; padding: 4px 8px; border-radius: 6px; background: #f1efe9; border: 1px solid #e4e1da; color: #374151; }
+  .it.new { background: #eaf1ff; border-color: #bcd0fb; color: #1d4ed8; font-weight: 700; }
+
+  .rules { margin-top: 26px; display: grid; grid-template-columns: repeat(4, 1fr); position: relative; }
+  .rules div { padding: 18px 16px; border-right: 1px solid #ece9e2; font-size: 14px; line-height: 1.45; color: #374151; }
+  .rules div:last-child { border-right: 0; }
+  .rules b { display: block; font-size: 11px; letter-spacing: .12em; color: #2563eb; margin-bottom: 6px; }
+  .foot { position: absolute; left: 62px; right: 62px; bottom: 40px; display: flex; justify-content: space-between; align-items: flex-end; }
+  .foot .url { font-family: ui-monospace, monospace; font-size: 16px; }
+  .foot .url b { color: #2563eb; }
+  .foot .r { font-size: 12px; letter-spacing: .12em; color: #7a7366; text-align: right; line-height: 1.6; }
+</style>
+</head>
+<body>
+  <div class="top">
+    <div class="brand"><span class="dot"></span>OPENCODE SKILL · BLOCKSY · UPDATE</div>
+    <div class="ver">Blocksy 2.1.60</div>
+  </div>
+
+  <h1>Blocksy tokens for <em>any</em> block builder</h1>
+  <p class="lead">Other skills that build Gutenberg pages now style content with the site's own palette, fonts, widths and breakpoints. The header and footer builder inventory is now complete.</p>
+
+  <div class="chips">
+    <span class="chip"><i style="background:#14b8a6"></i>Palette</span>
+    <span class="chip"><i style="background:#8b5cf6"></i>Typography</span>
+    <span class="chip"><i style="background:#f59e0b"></i>Widths</span>
+    <span class="chip"><i style="background:#2563eb"></i>Breakpoints</span>
+    <span class="chip"><i style="background:#ef4444"></i>CSS vars + classes</span>
+  </div>
+
+  <div class="flow">
+    <div class="card">
+      <h3>1 · YOUR BLOCKSY SITE</h3>
+      <div class="b">
+        <div class="sw">
+          <span style="background:#2872fa"></span><span style="background:#1559ed"></span><span style="background:#3A4F66"></span><span style="background:#192a3d"></span>
+          <span style="background:#e1e8ed"></span><span style="background:#f2f5f7"></span><span style="background:#FAFBFC"></span><span style="background:#ffffff"></span>
+        </div>
+        Customizer palette, fonts, container widths
+      </div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card">
+      <h3>2 · TOKENS COMMAND</h3>
+      <div class="b mono">
+        <span class="c">$</span> remote.mjs tokens<br>
+        <span class="c">  &gt; blocksy-tokens.json</span><br><br>
+        <span class="k">palette</span> · <span class="k">font_sizes</span><br>
+        <span class="k">layout</span> · <span class="k">variables</span><br>
+        <span class="k">elements</span> · <span class="k">breakpoints</span>
+      </div>
+    </div>
+    <div class="arrow">→</div>
+    <div class="card">
+      <h3>3 · BLOCK SKILLS</h3>
+      <div class="b">
+        <ul class="tgt">
+          <li><b style="background:#16a34a">G</b>GreenLight / GreenShift</li>
+          <li><b style="background:#2563eb">W</b>Core blocks</li>
+          <li><b style="background:#6b7280">+</b>Any block suite</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="card code">
+    <div class="bar">
+      <div class="lights"><span style="background:#f87171"></span><span style="background:#fbbf24"></span><span style="background:#4ade80"></span><span class="mono" style="width:auto;height:auto;background:none;margin-left:10px;color:#6b7280">references/design-tokens.md</span></div>
+      <span class="pill">FOLLOWS THE CUSTOMIZER</span>
+    </div>
+<pre><span class="k">.acme-hero</span> {
+  background: <span class="bad">#192a3d</span>  <span class="ok">var(--theme-palette-color-4)</span>;
+  max-width:  <span class="bad">1290px</span>   <span class="ok">var(--theme-normal-container-max-width)</span>;
+  <span class="k">--theme-headings-color</span>: <span class="s">var(--theme-palette-color-8)</span>;
+}
+<span class="c">@media (max-width: <span class="n">689.98px</span>) { … }   /* same breakpoints as the theme */</span>
+<span class="c">&lt;!-- wp:group {"backgroundColor":"<span class="s">palette-color-6</span>","align":"full"} --&gt;</span></pre>
+  </div>
+
+  <div class="card builder">
+    <div class="big"><strong>27 + 20</strong><span>header + footer builder items, with free / Pro / extension requirements</span></div>
+    <div class="items">
+      <span class="it">logo</span><span class="it">menu</span><span class="it">menu-tertiary</span><span class="it">mobile-menu</span><span class="it">search-input</span><span class="it">account</span><span class="it">cart</span><span class="it">contacts</span><span class="it">language-switcher</span><span class="it">content-block</span><span class="it">widget-area-1…6</span><span class="it">copyright</span><span class="it">…</span>
+      <span class="it new">color-mode-switcher</span><span class="it new">compare</span><span class="it new">wish-list</span>
+    </div>
+  </div>
+
+  <div class="card rules">
+    <div><b>NO HEX</b>Reference palette slots and variables, never pasted colors.</div>
+    <div><b>INHERIT FONTS</b>Typography stays a Customizer decision.</div>
+    <div><b>SCOPED OVERRIDES</b>Set variables on the section, never on :root.</div>
+    <div><b>PAGE META</b>Full-width layout applied through a plan, not markup.</div>
+  </div>
+
+  <div class="foot">
+    <div class="url">github.com/<b>hadealahmad</b>/blocksy-skill</div>
+    <div class="r">COMMUNITY PROJECT<br>NOT AN OFFICIAL BLOCKSY PRODUCT</div>
+  </div>
+</body>
+</html>

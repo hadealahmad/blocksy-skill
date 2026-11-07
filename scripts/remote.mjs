@@ -20,6 +20,7 @@
  *   node scripts/remote.mjs apply examples/example-plan.json --dry-run
  *   node scripts/remote.mjs apply examples/example-plan.json
  *   node scripts/remote.mjs cache
+ *   node scripts/remote.mjs tokens > blocksy-tokens.json
  */
 
 import fs from 'node:fs';
@@ -43,6 +44,7 @@ Commands:
   export [--portable] [--post-meta]   Export current settings and content
   apply <plan.json> [--dry-run]       Validate and apply a plan
   cache                                Regenerate Blocksy CSS and purge caches
+  tokens                              Live design tokens for block-building skills
 
 Environment:
   BLOCKSY_URL           Site URL (required)
@@ -170,6 +172,11 @@ async function main() {
 				body: JSON.stringify(plan),
 			})
 		);
+		return;
+	}
+
+	if (command === 'tokens') {
+		print(await request('/tokens'));
 		return;
 	}
 

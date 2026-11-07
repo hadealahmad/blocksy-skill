@@ -244,6 +244,14 @@ requires WooCommerce.
 **Pro:** `contacts`, `content-block`, `divider`, `language-switcher`,
 `menu-tertiary`, `mobile-menu-secondary`, `search-input`, `widget-area-1`.
 
+**Pro, extension-gated:** `color-mode-switcher` (extension `color-mode-switch`),
+`compare` and `wish-list` (extension `woocommerce-extra` + WooCommerce, with the
+Compare / Wishlist feature switched on in the extension settings).
+
+`language-switcher` is listed by the builder but stays disabled unless WPML,
+Polylang, TranslatePress or Weglot is active. `cart` is the same with
+WooCommerce.
+
 ### Footer
 
 **Free theme:** `top-row`, `middle-row`, `bottom-row`, `copyright`, `menu`,
@@ -254,6 +262,76 @@ requires WooCommerce.
 
 The Pro footer reuses the theme logo/button/text implementations and the
 premium header item implementations for content block/search/language/contacts.
+
+### Complete item inventory
+
+`data/builder-items.json` lists every item that exists in Blocksy 2.1.60 +
+Companion + Companion Pro (27 header, 20 footer), including the three that the
+`data/builder-options.json` snapshot lacks because their extension/plugin was
+off. Use it to answer "can I put X in the header/footer?" and to know what has
+to be active first.
+
+| Item | Builder | Availability | Needs | Options in snapshot | Options (static parse) |
+| --- | --- | --- | --- | --- | --- |
+| `bottom-row` | footer | free | — | 22 | 23 |
+| `button` | footer | pro | — | 35 | 30 |
+| `contacts` | footer | pro | — | 23 | 27 |
+| `content-block` | footer | pro | — | 2 | 4 |
+| `copyright` | footer | free | — | 7 | 8 |
+| `language-switcher` | footer | pro | plugin:wpml, plugin:polylang, plugin:translatepress, plugin:weglot | 14 | 30 |
+| `logo` | footer | pro | — | 30 | 31 |
+| `menu` | footer | free | — | 10 | 11 |
+| `menu-secondary` | footer | pro | — | 10 | 11 |
+| `middle-row` | footer | free | — | 22 | 23 |
+| `search-input` | footer | pro | — | 36 | 37 |
+| `socials` | footer | free | — | 18 | 19 |
+| `text` | footer | pro | — | 15 | 18 |
+| `top-row` | footer | free | — | 22 | 23 |
+| `widget-area-1` | footer | free | — | 6 | 7 |
+| `widget-area-2` | footer | free | — | 6 | 7 |
+| `widget-area-3` | footer | free | — | 6 | 7 |
+| `widget-area-4` | footer | free | — | 6 | 7 |
+| `widget-area-5` | footer | free | — | 6 | 7 |
+| `widget-area-6` | footer | free | — | 6 | 7 |
+| `account` | header | free-companion | — | 57 | 63 |
+| `bottom-row` | header | free | — | 25 | 26 |
+| `button` | header | free | — | 33 | 30 |
+| `cart` | header | free | plugin:woocommerce | 47 | 30 |
+| `color-mode-switcher` | header | pro | extension:color-mode-switch | not in snapshot | 18 |
+| `compare` | header | pro | extension:woocommerce-extra, plugin:woocommerce | not in snapshot | 21 |
+| `contacts` | header | pro | — | 21 | 27 |
+| `content-block` | header | pro | — | 2 | 4 |
+| `divider` | header | pro | — | 6 | 7 |
+| `language-switcher` | header | pro | plugin:wpml, plugin:polylang, plugin:translatepress, plugin:weglot | 27 | 30 |
+| `logo` | header | free | — | 28 | 31 |
+| `menu` | header | free | — | 36 | 36 |
+| `menu-secondary` | header | free | — | 36 | 36 |
+| `menu-tertiary` | header | pro | — | 36 | 36 |
+| `middle-row` | header | free | — | 25 | 26 |
+| `mobile-menu` | header | free | — | 22 | 22 |
+| `mobile-menu-secondary` | header | pro | — | 22 | 22 |
+| `offcanvas` | header | free | — | 21 | 18 |
+| `offcanvas-logo` | header | free | — | 4 | 5 |
+| `search` | header | free | — | 37 | 39 |
+| `search-input` | header | pro | — | 34 | 37 |
+| `socials` | header | free | — | 21 | 22 |
+| `text` | header | free | — | 14 | 18 |
+| `top-row` | header | free | — | 25 | 26 |
+| `trigger` | header | free | — | 21 | 22 |
+| `widget-area-1` | header | pro | — | 1 | 1 |
+| `wish-list` | header | pro | extension:woocommerce-extra, plugin:woocommerce | not in snapshot | 21 |
+
+- *Options in snapshot* comes from `data/builder-options.json` (live extraction).
+  *Static parse* is from `options.php` and matches ~95% of live ids for
+  catalogued items; treat it as a hint only.
+- For an item that is not in the snapshot, satisfy its conditions on the target
+  site, then read its exact option ids and defaults from the live `schema`
+  (`builder.header[]` / `builder.footer[]`). Do not guess values from the static
+  list.
+- `content-block` shows only `content_width` and `margin` until at least one
+  Content Block exists; then `hook_id` (the Content Block to render) appears.
+- The color mode switcher also adds dark-mode logo options to `logo` and
+  `offcanvas-logo` through filters once the extension is active.
 
 **Pro gate:** if the site has the free Companion build and the user asks for a
 Pro item, stop and ask for Blocksy Companion Pro installation/activation. Do

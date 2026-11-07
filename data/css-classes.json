@@ -1,0 +1,2672 @@
+{
+  "blocksy_version": "2.1.60",
+  "generated": "2026-11-07T20:23:09.330993+00:00",
+  "count": 192,
+  "classes": [
+    {
+      "class": "is-style-dots",
+      "family": "block-style",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".wp-block-separator:not(:where(.is-style-wide,.is-style-dots,.alignfull,.alignwide)){max-width:100px !important}",
+      "uses_variables": []
+    },
+    {
+      "class": "is-style-outline",
+      "family": "block-style",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ":is(.ct-button-ghost,.wp-block-button.is-style-outline .wp-element-button){padding:var(--theme-button-padding);border:2px solid;border-color:var(--theme-button-background-initial-color);background-color:initial}",
+      "uses_variables": [
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-button-padding",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color"
+      ]
+    },
+    {
+      "class": "is-style-plain",
+      "family": "block-style",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": "blockquote:where(:not(.is-style-plain)):where(:not(.has-text-align-center):not(.has-text-align-right)){border-inline-start:4px solid var(--theme-palette-color-1)}",
+      "uses_variables": [
+        "--theme-palette-color-1"
+      ]
+    },
+    {
+      "class": "is-style-stripes",
+      "family": "block-style",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".wp-block-table.is-style-stripes{border:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "is-style-wide",
+      "family": "block-style",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".wp-block-separator:not(:where(.is-style-wide,.is-style-dots,.alignfull,.alignwide)){max-width:100px !important}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-button",
+      "family": "button",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ":is(.ct-button,.wpforms-submit,.wp-element-button,.wp-block-button__link,.ff-inherit-theme-style .ff-btn-submit){color:var(--theme-button-text-initial-color);background-color:var(--theme-button-background-initial-color)}",
+      "uses_variables": [
+        "--false",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-button-border",
+        "--theme-button-border-hover-color",
+        "--theme-button-border-radius",
+        "--theme-button-font-family",
+        "--theme-button-font-size",
+        "--theme-button-font-style",
+        "--theme-button-font-weight",
+        "--theme-button-letter-spacing",
+        "--theme-button-line-height",
+        "--theme-button-min-height",
+        "--theme-button-padding",
+        "--theme-button-shadow",
+        "--theme-button-text-decoration",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color",
+        "--theme-button-text-transform",
+        "--theme-button-transform",
+        "--theme-font-family"
+      ]
+    },
+    {
+      "class": "ct-button-ghost",
+      "family": "button",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-button-ghost,.wp-element-button{font-family:var(--theme-button-font-family, var(--theme-font-family));font-size:var(--theme-button-font-size);font-weight:var(--theme-button-font-weight);font-style:var(--theme-button-font-style);line-height:var(--theme-button-line-height);letter-spacing:var(--the",
+      "uses_variables": [
+        "--false",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-button-border",
+        "--theme-button-border-radius",
+        "--theme-button-font-family",
+        "--theme-button-font-size",
+        "--theme-button-font-style",
+        "--theme-button-font-weight",
+        "--theme-button-letter-spacing",
+        "--theme-button-line-height",
+        "--theme-button-min-height",
+        "--theme-button-padding",
+        "--theme-button-text-decoration",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color",
+        "--theme-button-text-transform",
+        "--theme-font-family"
+      ]
+    },
+    {
+      "class": "ct-button-loader",
+      "family": "button",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "[data-button-state] .ct-button-loader{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-button-secondary-text",
+      "family": "button",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".button,.ct-button,.added_to_cart,.ct-button-ghost,[type=submit],.wp-element-button,.wp-block-button__link,button.regform-button,button[class*=ajax],.woocommerce button.button,.woocommerce-message .showlogin,.woocommerce-message .restore-item,.forminator-ui[data-design=none] .forminator-button,.flue",
+      "uses_variables": [
+        "--theme-button-font-family",
+        "--theme-button-font-size",
+        "--theme-button-font-style",
+        "--theme-button-font-weight",
+        "--theme-button-letter-spacing",
+        "--theme-button-line-height",
+        "--theme-button-text-decoration",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color",
+        "--theme-button-text-transform",
+        "--theme-font-family"
+      ]
+    },
+    {
+      "class": "ct-button-text",
+      "family": "button",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-header-cta .ct-button-text{display:flex;flex-direction:column;text-align:var(--horizontal-alignment)}",
+      "uses_variables": [
+        "--horizontal-alignment"
+      ]
+    },
+    {
+      "class": "ct-search-button-content",
+      "family": "button",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-searching .ct-search-button-content{opacity:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "wp-block-button__link",
+      "family": "button",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ":is(.wpforms-submit,.ct-button-ghost,.wp-element-button,.wp-block-button__link,.ff-inherit-theme-style .ff-btn-submit){display:inline-flex;align-items:center;justify-content:center;padding:var(--theme-button-padding);min-height:var(--theme-button-min-height);border-radius:var(--theme-button-border-r",
+      "uses_variables": [
+        "--false",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-button-border",
+        "--theme-button-border-hover-color",
+        "--theme-button-border-radius",
+        "--theme-button-font-family",
+        "--theme-button-font-size",
+        "--theme-button-font-style",
+        "--theme-button-font-weight",
+        "--theme-button-letter-spacing",
+        "--theme-button-line-height",
+        "--theme-button-min-height",
+        "--theme-button-padding",
+        "--theme-button-shadow",
+        "--theme-button-text-decoration",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color",
+        "--theme-button-text-transform",
+        "--theme-button-transform",
+        "--theme-font-family"
+      ]
+    },
+    {
+      "class": "wp-element-button",
+      "family": "button",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-button-ghost,.wp-element-button{font-family:var(--theme-button-font-family, var(--theme-font-family));font-size:var(--theme-button-font-size);font-weight:var(--theme-button-font-weight);font-style:var(--theme-button-font-style);line-height:var(--theme-button-line-height);letter-spacing:var(--the",
+      "uses_variables": [
+        "--false",
+        "--search-button-size",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-button-border",
+        "--theme-button-border-hover-color",
+        "--theme-button-border-radius",
+        "--theme-button-font-family",
+        "--theme-button-font-size",
+        "--theme-button-font-style",
+        "--theme-button-font-weight",
+        "--theme-button-letter-spacing",
+        "--theme-button-line-height",
+        "--theme-button-min-height",
+        "--theme-button-padding",
+        "--theme-button-shadow",
+        "--theme-button-text-decoration",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color",
+        "--theme-button-text-transform",
+        "--theme-button-transform",
+        "--theme-font-family",
+        "--theme-form-border-radius",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-height",
+        "--theme-form-inner-spacing",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "has-palette-color-1-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-1-background-color{background-color:var(--theme-palette-color-1)}",
+      "uses_variables": [
+        "--theme-palette-color-1"
+      ]
+    },
+    {
+      "class": "has-palette-color-1-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-1-color{color:var(--theme-palette-color-1)}",
+      "uses_variables": [
+        "--theme-palette-color-1"
+      ]
+    },
+    {
+      "class": "has-palette-color-2-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-2-background-color{background-color:var(--theme-palette-color-2)}",
+      "uses_variables": [
+        "--theme-palette-color-2"
+      ]
+    },
+    {
+      "class": "has-palette-color-2-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-2-color{color:var(--theme-palette-color-2)}",
+      "uses_variables": [
+        "--theme-palette-color-2"
+      ]
+    },
+    {
+      "class": "has-palette-color-3-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-3-background-color{background-color:var(--theme-palette-color-3)}",
+      "uses_variables": [
+        "--theme-palette-color-3"
+      ]
+    },
+    {
+      "class": "has-palette-color-3-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-3-color{color:var(--theme-palette-color-3)}",
+      "uses_variables": [
+        "--theme-palette-color-3"
+      ]
+    },
+    {
+      "class": "has-palette-color-4-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-4-background-color{background-color:var(--theme-palette-color-4)}",
+      "uses_variables": [
+        "--theme-palette-color-4"
+      ]
+    },
+    {
+      "class": "has-palette-color-4-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-4-color{color:var(--theme-palette-color-4)}",
+      "uses_variables": [
+        "--theme-palette-color-4"
+      ]
+    },
+    {
+      "class": "has-palette-color-5-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-5-background-color{background-color:var(--theme-palette-color-5)}",
+      "uses_variables": [
+        "--theme-palette-color-5"
+      ]
+    },
+    {
+      "class": "has-palette-color-5-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-5-color{color:var(--theme-palette-color-5)}",
+      "uses_variables": [
+        "--theme-palette-color-5"
+      ]
+    },
+    {
+      "class": "has-palette-color-6-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-6-background-color{background-color:var(--theme-palette-color-6)}",
+      "uses_variables": [
+        "--theme-palette-color-6"
+      ]
+    },
+    {
+      "class": "has-palette-color-6-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-6-color{color:var(--theme-palette-color-6)}",
+      "uses_variables": [
+        "--theme-palette-color-6"
+      ]
+    },
+    {
+      "class": "has-palette-color-7-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-7-background-color{background-color:var(--theme-palette-color-7)}",
+      "uses_variables": [
+        "--theme-palette-color-7"
+      ]
+    },
+    {
+      "class": "has-palette-color-7-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-7-color{color:var(--theme-palette-color-7)}",
+      "uses_variables": [
+        "--theme-palette-color-7"
+      ]
+    },
+    {
+      "class": "has-palette-color-8-background-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-8-background-color{background-color:var(--theme-palette-color-8)}",
+      "uses_variables": [
+        "--theme-palette-color-8"
+      ]
+    },
+    {
+      "class": "has-palette-color-8-color",
+      "family": "color",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".has-palette-color-8-color{color:var(--theme-palette-color-8)}",
+      "uses_variables": [
+        "--theme-palette-color-8"
+      ]
+    },
+    {
+      "class": "ct-about-me-block",
+      "family": "component",
+      "files": [
+        "theme-block-about-me.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-about-me-block{color:var(--theme-block-text-color, var(--theme-text-color));--theme-link-initial-color: var(--theme-block-text-color, var(--theme-text-color))}",
+      "uses_variables": [
+        "--theme-block-text-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-about-me-name",
+      "family": "component",
+      "files": [
+        "theme-block-about-me.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-about-me-block .ct-about-me-name:not(:last-child){margin-bottom:15px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-about-me-text",
+      "family": "component",
+      "files": [
+        "theme-block-about-me.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-about-me-block .ct-about-me-text:not(:last-child){margin-bottom:25px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-accordion-heading",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--tab-border-color",
+        "--theme-border-color",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-account-item",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-header-cta,.ct-header-text,.ct-account-item,.ct-header-compare,.ct-header-wishlist,.ct-language-switcher [data-label]{display:flex;align-items:var(--align-items, center)}",
+      "uses_variables": [
+        "--align-items",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-account-modal",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".menu-container ul,.entry-meta,.ct-account-modal>ul,.ct-language-switcher ul,[class*=ct-contact-info] ul,.products:is(ul),.woocommerce-Reviews :where(ol,ul),.ct-comments :where(ol,ul),.ct-comments ul,.payment_methods,.woocommerce-tabs>ul,.wc-item-meta,.ct-header-account ul,.ct-product-additional-inf",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-account-user-box",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-account-user-box{line-height:initial;color:var(--account-nav-text-initial-color, var(--theme-palette-color-3))}",
+      "uses_variables": [
+        "--account-nav-text-initial-color",
+        "--theme-palette-color-3"
+      ]
+    },
+    {
+      "class": "ct-account-welcome",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-account-welcome{display:flex;align-items:center;padding:20px;border-bottom:1px solid var(--account-nav-divider-color, rgba(0, 0, 0, 0.05))}",
+      "uses_variables": [
+        "--account-nav-divider-color"
+      ]
+    },
+    {
+      "class": "ct-acount-nav",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-acount-nav{overflow:hidden;align-self:start;border-radius:5px;box-shadow:var(--theme-box-shadow);background:var(--account-nav-background-initial-color, var(--theme-palette-color-8))}",
+      "uses_variables": [
+        "--account-nav-background-initial-color",
+        "--theme-box-shadow",
+        "--theme-palette-color-8"
+      ]
+    },
+    {
+      "class": "ct-active",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "*:has(>.ct-tooltip) .ct-tooltip.ct-active{opacity:1;transform:translateY(calc(var(--ct-tooltip-vertical-hover-offset, 5px) * -1))}",
+      "uses_variables": [
+        "--admin-bar",
+        "--ct-tooltip-vertical-hover-offset",
+        "--header-height",
+        "--theme-frame-size"
+      ]
+    },
+    {
+      "class": "ct-added",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "a.ct-added [class*=ct-dynamic-count]{animation:.6s ease-in-out .12s normal both 1 bounce-in}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-added-to-cart-product",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-ajax-loader",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "non-critical-search-styles.min.css",
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-ajax-loader{position:absolute;inset:0;z-index:0;margin:auto;display:flex;border-radius:100%;width:var(--loader-size, 20px);height:var(--loader-size, 20px);color:var(--loader-color, #c5cbd0)}",
+      "uses_variables": [
+        "--loader-color",
+        "--loader-size",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-arrow-next",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-slider-arrows .ct-arrow-next{border-start-end-radius:3px;border-end-end-radius:3px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-arrow-prev",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-slider-arrows .ct-arrow-prev{margin-inline-end:-1px;border-start-start-radius:3px;border-end-start-radius:3px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-author-box-more",
+      "family": "component",
+      "files": [
+        "author-box.min.css"
+      ],
+      "sample_rule": ".author-box .ct-author-box-more{font-size:11px;font-weight:500;text-transform:uppercase;display:inline-flex}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-author-name",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".hero-section .ct-author-name [class*=ct-media-container]{border-radius:100%;margin-bottom:10px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-back-to-top",
+      "family": "component",
+      "files": [
+        "back-to-top.min.css"
+      ],
+      "sample_rule": ".ct-back-to-top{position:fixed;z-index:110;bottom:calc(var(--theme-frame-size, 0px) + var(--back-top-bottom-offset, 25px));display:flex;align-items:center;justify-content:center;padding:12px;opacity:var(--opacity, 0);visibility:var(--visibility, hidden);transform:var(--transform, translate3d(0, 15px",
+      "uses_variables": [
+        "--back-top-bottom-offset",
+        "--back-top-side-offset",
+        "--opacity",
+        "--theme-border-radius",
+        "--theme-box-shadow",
+        "--theme-frame-size",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-palette-color-3",
+        "--theme-palette-color-4",
+        "--top-button-background-color",
+        "--top-button-background-hover-color",
+        "--transform",
+        "--visibility"
+      ]
+    },
+    {
+      "class": "ct-block-code-editor",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-block-code-editor{--color-fg-default: #24292f;--color-canvas-subtle: #f9f9f9;--color-prettylights-syntax-comment: #6e7781;--color-prettylights-syntax-entity-tag: #116329;--color-prettylights-syntax-entity: #8250df;--color-prettylights-syntax-sublimelinter-gutter-mark: #8c959f;--color-prettylight",
+      "uses_variables": [
+        "--color-canvas-subtle",
+        "--color-fg-default"
+      ]
+    },
+    {
+      "class": "ct-breadcrumbs",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,pre,figcaption,.entry-meta,.ct-search-box,.ct-breadcrumbs,.wp-block-quote,.wp-block-pullquote{font-family:var(--theme-font-family);font-size:var(--theme-font-size);font-weight:var(--theme-font-weight);font-style:var(--theme-font-style, inherit);line-height:var(--theme-line-hei",
+      "uses_variables": [
+        "--false",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-builder-no-item",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-builder-no-item{font-size:13px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-cart-actions",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-cart-actions{display:flex;flex-wrap:wrap;gap:10px}",
+      "uses_variables": [
+        "--item-flex",
+        "--item-order",
+        "--theme-button-flex",
+        "--theme-button-min-height",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-cart-auto-update",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-cart-auto-update .actions button[name=update_cart]{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-cart-content",
+      "family": "component",
+      "files": [
+        "cart-header-element-lazy.min.css",
+        "main.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-cart-content{width:310px;margin-top:var(--dropdown-top-offset);padding:22px 20px;border-radius:2px;background:var(--mini-cart-background-color);box-shadow:0px 10px 20px 0px rgba(41,51,61,.1);--theme-content-spacing: 0;--mini-cart-items-spacing: 15px;--mini-cart-divider-color: rgba(255, 255, 255,",
+      "uses_variables": [
+        "--dropdown-top-offset",
+        "--mini-cart-background-color",
+        "--mini-cart-divider-color",
+        "--mini-cart-items-spacing",
+        "--theme-submenu-inline-offset"
+      ]
+    },
+    {
+      "class": "ct-cart-form-actions",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".woocommerce-cart-form__contents .ct-cart-form-actions{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px}",
+      "uses_variables": [
+        "--theme-form-field-height"
+      ]
+    },
+    {
+      "class": "ct-cart-item",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-header-cta,.ct-header-text,.ct-account-item,.ct-header-compare,.ct-header-wishlist,.ct-language-switcher [data-label]{display:flex;align-items:var(--align-items, center)}",
+      "uses_variables": [
+        "--align-items",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-checkbox",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-checkbox,.comment-form input[type=checkbox],#ship-to-different-address-checkbox,.woocommerce-form__input[type=checkbox],.woocommerce-form__label-for-checkbox input[type=checkbox],.woocommerce-input-wrapper input[type=checkbox],#payment .payment_box input[type=checkbox],.forminator-ui[data-design",
+      "uses_variables": [
+        "--form-selection-control-border-width",
+        "--outline-offset",
+        "--theme-form-checkbox-border-radius",
+        "--theme-form-field-border-width",
+        "--theme-form-selection-field-active-color",
+        "--theme-form-selection-field-initial-color",
+        "--theme-palette-color-1",
+        "--top"
+      ]
+    },
+    {
+      "class": "ct-checkout-cart-item",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".cart_item .product-mobile-actions .quantity[data-type=type-2],.mini_cart_item .ct-product-actions .quantity[data-type=type-2],table.shop_table .ct-checkout-cart-item .quantity[data-type=type-2]{--quantity-width: 80px;--quantity-height: 38px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-click-allowed",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": "#ct-page-options .ct-panel.ct-click-allowed:hover:before{background:#f7f7f7}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-color-switch",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item:hover svg,.ct-social-box a:hover svg,.ct-color-switch:hover svg,.ct-header-search:hover svg,.ct-account-item:hover svg,.ct-header-trigger:hover svg,.ct-header-compare:hover svg,.ct-header-wishlist:hover svg,.ct-language-switcher:hover svg{fill:var(--theme-icon-hover-color, var(--theme-",
+      "uses_variables": [
+        "--theme-icon-hover-color",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-comment-author",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-author{--theme-font-size: 16px;--theme-link-initial-color: currentColor;margin-bottom:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-comment-content",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-has-avatar .ct-comment-content{padding-inline-start:70px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-comment-inner",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-inner{padding-block:50px;border-top:1px solid var(--theme-border-color)}",
+      "uses_variables": [
+        "--theme-border-color",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color"
+      ]
+    },
+    {
+      "class": "ct-comment-list",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-list .children{padding-inline-start:35px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-comment-meta",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-meta{position:relative;margin-bottom:20px;--theme-link-initial-color: var(--theme-text-color)}",
+      "uses_variables": [
+        "--max-size",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-comment-meta-data",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-meta-data{display:flex;flex-wrap:wrap;align-items:center;font-size:11px;font-weight:500;text-transform:uppercase}",
+      "uses_variables": [
+        "--margin-inline-start"
+      ]
+    },
+    {
+      "class": "ct-comments",
+      "family": "component",
+      "files": [
+        "author-box.min.css",
+        "comments.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".author-box+.ct-comments,.author-box+.ct-related-posts{border-top:none;margin-top:0;padding-top:0}",
+      "uses_variables": [
+        "--theme-border-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-comments-container",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-comments-container>div{padding-top:40px;padding-bottom:60px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-comments-navigation",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comments-navigation{display:flex;justify-content:space-between;padding-top:15px;margin-bottom:15px;border-top:1px solid var(--theme-border-color)}",
+      "uses_variables": [
+        "--theme-border-color"
+      ]
+    },
+    {
+      "class": "ct-comments-title",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comments-title{margin-bottom:50px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-compare-bar",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".menu-container ul,.entry-meta,.ct-account-modal>ul,.ct-language-switcher ul,[class*=ct-contact-info] ul,.products:is(ul),.woocommerce-Reviews :where(ol,ul),.ct-comments :where(ol,ul),.ct-comments ul,.payment_methods,.woocommerce-tabs>ul,.wc-item-meta,.ct-header-account ul,.ct-product-additional-inf",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-components-panel",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": ".ct-components-panel{display:flex;flex-direction:column;background:#fcfcfc;height:calc(100% - 47px);min-height:0;overflow:hidden}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-components-panel__row-full-width",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-components-panel__row-full-width{align-items:stretch;flex-direction:column}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-contact-info",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-contact-info-block",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-social-box a,.ct-posts-block a,.ct-about-me-block a,.ct-contact-info-block a,.wp-block-blocksy-share-box a{pointer-events:none;text-decoration:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-content-block-select",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-blocksy-query .ct-content-block-select,.wp-block-blocksy-tax-query .ct-content-block-select,.wp-block-blocksy-content-block .ct-content-block-select{width:100%;max-width:350px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-control",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": ".ct-meta-box .ct-control[data-design=\"inline:start\"],.ct-meta-box .ct-controls-group[data-design=\"inline:start\"]{display:grid;grid-template-columns:20% min(80% - 10px,700px);align-items:start;grid-column-gap:10px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-controls-group",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": ".ct-meta-box .ct-control[data-design=\"inline:start\"],.ct-meta-box .ct-controls-group[data-design=\"inline:start\"]{display:grid;grid-template-columns:20% min(80% - 10px,700px);align-items:start;grid-column-gap:10px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-create-menu",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-create-menu{display:flex;align-items:center;height:100%;font-size:14px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-customizer-panel",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": "#ct-page-options .ct-customizer-panel{background:#fcfcfc;border-top:none;border-bottom:none;overflow-y:auto}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-decrease",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "div.quantity :is(.ct-increase,.ct-decrease){display:flex;align-items:center;justify-content:center;position:absolute;z-index:1;cursor:pointer;-webkit-user-select:none;user-select:none;color:var(--quantity-arrows-initial-color, #fff);background:var(--quantity-initial-color, var(--theme-button-backgro",
+      "uses_variables": [
+        "--quantity-arrows-hover-color",
+        "--quantity-arrows-initial-color",
+        "--quantity-button-offset",
+        "--quantity-button-size",
+        "--quantity-hover-color",
+        "--quantity-icon-size",
+        "--quantity-initial-color",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-form-field-border-radius"
+      ]
+    },
+    {
+      "class": "ct-drawer-canvas",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-drawer-canvas[data-location=end]{height:calc(var(--shortcuts-bar-parent-height, var(--shortcuts-bar-height, 0px)) + var(--floating-bar-parent-height, var(--floating-bar-height, 0px)) + var(--compare-bar-height, 0px))}",
+      "uses_variables": [
+        "--compare-bar-height",
+        "--floating-bar-height",
+        "--floating-bar-parent-height",
+        "--scrollbar-width",
+        "--shortcuts-bar-height",
+        "--shortcuts-bar-parent-height",
+        "--theme-frame-size"
+      ]
+    },
+    {
+      "class": "ct-dynamic-cover",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-cover:not(.aligncenter):not(.alignwide):not(.alignfull){width:100%}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-dynamic-data",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "ul:last-child,ol:last-child,ul li:last-child,ol li:last-child,label:last-child,.ct-widget p:last-child,.entry-excerpt *:last-child,.ct-dynamic-data p:last-child,.ct-woo-card-stock p:last-child,[class*=ct-form-notification] p:last-child,.ct-product-description p:last-child,.woocommerce-variation-desc",
+      "uses_variables": [
+        "--product-brand-logo-size",
+        "--product-brands-gap"
+      ]
+    },
+    {
+      "class": "ct-dynamic-data-layer",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-dynamic-data-placeholder",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-cover .ct-dynamic-data-placeholder{position:absolute;inset:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-dynamic-media",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-media:not([data-state=playing]) .ct-pause-path,.ct-media-container:not([data-state=playing]) .ct-pause-path{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-dynamic-media-inner",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-media .ct-dynamic-media-inner{position:relative;width:100%;height:100%;overflow:hidden;will-change:transform}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-expandable-trigger",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-expandable-trigger[data-icon=arrow]{cursor:pointer;background-color:rgba(0,0,0,0);--theme-icon-size: 10px;--theme-icon-transition: transform 0.1s ease}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-fade-enter",
+      "family": "component",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-search-results.ct-slide,.ct-search-results.ct-fade-leave,.ct-search-results.ct-fade-leave-active,.ct-search-results.ct-fade-enter,.ct-search-results.ct-fade-enter-active{transition:height .2s ease,opacity .2s ease}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-fade-enter-active",
+      "family": "component",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-search-results.ct-slide,.ct-search-results.ct-fade-leave,.ct-search-results.ct-fade-leave-active,.ct-search-results.ct-fade-enter,.ct-search-results.ct-fade-enter-active{transition:height .2s ease,opacity .2s ease}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-fade-leave",
+      "family": "component",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-search-results.ct-slide,.ct-search-results.ct-fade-leave,.ct-search-results.ct-fade-leave-active,.ct-search-results.ct-fade-enter,.ct-search-results.ct-fade-enter-active{transition:height .2s ease,opacity .2s ease}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-fade-leave-active",
+      "family": "component",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-search-results.ct-slide,.ct-search-results.ct-fade-leave,.ct-search-results.ct-fade-leave-active,.ct-search-results.ct-fade-enter,.ct-search-results.ct-fade-enter-active{transition:height .2s ease,opacity .2s ease}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-fake-select",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-search__input,.ff-inherit-theme-style .ff-el-form-control,.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),.ct-newsletter-subscribe-form-elements input,.ct-filter-widget-wrapper input,.ct-pseudo-input,.ct-search-form :where(input,.ct-fake-select){margin:0;width",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-background-initial-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-border-style",
+        "--theme-form-field-border-width",
+        "--theme-form-field-height",
+        "--theme-form-field-padding",
+        "--theme-form-font-size",
+        "--theme-form-text-focus-color",
+        "--theme-form-text-initial-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-featured-image",
+      "family": "component",
+      "files": [
+        "featured-image.min.css"
+      ],
+      "sample_rule": ".ct-featured-image{margin-left:auto;margin-right:auto}",
+      "uses_variables": [
+        "--theme-block-max-width",
+        "--theme-block-wide-max-width",
+        "--theme-block-width",
+        "--theme-border-radius"
+      ]
+    },
+    {
+      "class": "ct-filter-widget-wrapper",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-search__input,.ff-inherit-theme-style .ff-el-form-control,.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),.ct-newsletter-subscribe-form-elements input,.ct-filter-widget-wrapper input,.ct-pseudo-input,.ct-search-form :where(input,.ct-fake-select){margin:0;width",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-background-initial-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-border-style",
+        "--theme-form-field-border-width",
+        "--theme-form-field-height",
+        "--theme-form-field-padding",
+        "--theme-form-font-size",
+        "--theme-form-text-focus-color",
+        "--theme-form-text-initial-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-footer",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ":where(footer.ct-footer [data-link] a,[data-link] .ct-posts-shortcode .entry-title a){--has-link-decoration: var(--false)}",
+      "uses_variables": [
+        "--columns-gap",
+        "--container-spacing",
+        "--false",
+        "--footer-container-border-radius",
+        "--footer-container-bottom-offset",
+        "--footer-container-padding",
+        "--grid-template-columns",
+        "--horizontal-alignment",
+        "--margin",
+        "--position",
+        "--text-horizontal-alignment",
+        "--theme-border",
+        "--theme-border-bottom",
+        "--theme-border-top",
+        "--theme-frame-size",
+        "--theme-link-hover-color",
+        "--theme-text-color",
+        "--vertical-alignment",
+        "--widgets-gap"
+      ]
+    },
+    {
+      "class": "ct-footer-copyright",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-has-avatar",
+      "family": "component",
+      "files": [
+        "comments.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-has-avatar .ct-comment-content{padding-inline-start:70px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-has-dropdown",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-search-form.ct-has-dropdown{z-index:2}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-has-link-overlay",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-has-link-overlay :is(.wp-block-post,.wp-block-term){position:relative;cursor:pointer}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-has-reply-form",
+      "family": "component",
+      "files": [
+        "comments.min.css"
+      ],
+      "sample_rule": ".ct-comment-inner:not(.ct-has-reply-form):hover .comment-reply-link{color:#fff;background:var(--theme-button-background-initial-color)}",
+      "uses_variables": [
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color"
+      ]
+    },
+    {
+      "class": "ct-header-account",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".menu-container ul,.entry-meta,.ct-account-modal>ul,.ct-language-switcher ul,[class*=ct-contact-info] ul,.products:is(ul),.woocommerce-Reviews :where(ol,ul),.ct-comments :where(ol,ul),.ct-comments ul,.payment_methods,.woocommerce-tabs>ul,.wc-item-meta,.ct-header-account ul,.ct-product-additional-inf",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-header-cart",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-header-cart,.ct-header-account,.ct-language-switcher[data-type=dropdown]{position:relative}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-header-compare",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-header-cta,.ct-header-text,.ct-account-item,.ct-header-compare,.ct-header-wishlist,.ct-language-switcher [data-label]{display:flex;align-items:var(--align-items, center)}",
+      "uses_variables": [
+        "--align-items",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-header-cta",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-header-cta,.ct-header-text,.ct-account-item,.ct-header-compare,.ct-header-wishlist,.ct-language-switcher [data-label]{display:flex;align-items:var(--align-items, center)}",
+      "uses_variables": [
+        "--align-items",
+        "--horizontal-alignment",
+        "--theme-button-gap",
+        "--theme-button-text-hover-color",
+        "--theme-button-text-initial-color"
+      ]
+    },
+    {
+      "class": "ct-header-search",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item:hover svg,.ct-social-box a:hover svg,.ct-color-switch:hover svg,.ct-header-search:hover svg,.ct-account-item:hover svg,.ct-header-trigger:hover svg,.ct-header-compare:hover svg,.ct-header-wishlist:hover svg,.ct-language-switcher:hover svg{fill:var(--theme-icon-hover-color, var(--theme-",
+      "uses_variables": [
+        "--theme-icon-hover-color",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-header-text",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--align-items",
+        "--horizontal-alignment",
+        "--max-width",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-header-trigger",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item:hover svg,.ct-social-box a:hover svg,.ct-color-switch:hover svg,.ct-header-search:hover svg,.ct-account-item:hover svg,.ct-header-trigger:hover svg,.ct-header-compare:hover svg,.ct-header-wishlist:hover svg,.ct-language-switcher:hover svg{fill:var(--theme-icon-hover-color, var(--theme-",
+      "uses_variables": [
+        "--theme-icon-hover-color",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-palette-color-2",
+        "--theme-text-color",
+        "--toggle-button-second-color",
+        "--toggle-button-second-color-hover"
+      ]
+    },
+    {
+      "class": "ct-header-wishlist",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-header-cta,.ct-header-text,.ct-account-item,.ct-header-compare,.ct-header-wishlist,.ct-language-switcher [data-label]{display:flex;align-items:var(--align-items, center)}",
+      "uses_variables": [
+        "--align-items",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-home-icon",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-breadcrumbs[data-source=default] .ct-home-icon{display:flex;top:-0.1em;fill:currentColor}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-icon",
+      "family": "component",
+      "files": [
+        "back-to-top.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-back-to-top:hover .ct-icon{fill:var(--theme-icon-hover-color, var(--theme-palette-color-2))}",
+      "uses_variables": [
+        "--theme-icon-color",
+        "--theme-icon-hover-color",
+        "--theme-icon-size",
+        "--theme-icon-transition",
+        "--theme-palette-color-2",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-icon-container",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "share-box.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-icon,.ct-icon-container svg{width:var(--theme-icon-size, 15px);height:var(--theme-icon-size, 15px);fill:var(--theme-icon-color, var(--theme-text-color));transition:var(--theme-icon-transition, fill 0.12s cubic-bezier(0.455, 0.03, 0.515, 0.955))}",
+      "uses_variables": [
+        "--background-color",
+        "--background-hover-color",
+        "--official-color",
+        "--theme-icon-color",
+        "--theme-icon-size",
+        "--theme-icon-transition",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-increase",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "div.quantity :is(.ct-increase,.ct-decrease){display:flex;align-items:center;justify-content:center;position:absolute;z-index:1;cursor:pointer;-webkit-user-select:none;user-select:none;color:var(--quantity-arrows-initial-color, #fff);background:var(--quantity-initial-color, var(--theme-button-backgro",
+      "uses_variables": [
+        "--quantity-arrows-hover-color",
+        "--quantity-arrows-initial-color",
+        "--quantity-button-offset",
+        "--quantity-button-size",
+        "--quantity-hover-color",
+        "--quantity-icon-size",
+        "--quantity-initial-color",
+        "--theme-button-background-hover-color",
+        "--theme-button-background-initial-color",
+        "--theme-form-field-border-radius"
+      ]
+    },
+    {
+      "class": "ct-label",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--official-color",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-language-switcher",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--align-items",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-icon-hover-color",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-palette-color-2",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-last-page",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "[data-pagination=load_more].ct-last-page .ct-load-more,[data-pagination=load_more].ct-last-page .ct-ajax-loader,[data-pagination=infinite_scroll].ct-last-page .ct-load-more,[data-pagination=infinite_scroll].ct-last-page .ct-ajax-loader{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-last-page-text",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "[data-pagination=load_more] .ct-last-page-text,[data-pagination=infinite_scroll] .ct-last-page-text{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-left",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-icon-container.ct-left{margin-inline-end:.5em}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-lightbox-video-container",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-lightbox-video-container{position:absolute;top:50%;inset-inline:10%;margin:auto;max-width:150vh;aspect-ratio:16/9;transform:translateY(-50%)}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-link-overlay",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-has-link-overlay :is(.wp-block-post,.wp-block-term) .ct-link-overlay{position:absolute;inset:0;margin:0;pointer-events:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-link-styles",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "[data-link=type-2] :where(.entry-content :where(p,em,strong)>a,.entry-content :where(ul,ol) a,.wp-block-table a,.ct-link-styles):not(:hover){--theme-text-decoration: underline}",
+      "uses_variables": [
+        "--has-link-decoration"
+      ]
+    },
+    {
+      "class": "ct-load-more",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "[data-pagination=load_more] .ct-load-more-helper.ct-loading .ct-load-more,[data-pagination=infinite_scroll] .ct-load-more-helper.ct-loading .ct-load-more{opacity:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-load-more-helper",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "[data-pagination=load_more] .ct-load-more-helper,[data-pagination=infinite_scroll] .ct-load-more-helper{display:flex;align-items:center;justify-content:center;position:relative;min-width:var(--theme-button-min-height, 45px);min-height:var(--theme-button-min-height, 45px)}",
+      "uses_variables": [
+        "--theme-button-min-height"
+      ]
+    },
+    {
+      "class": "ct-loading",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "[data-pagination=load_more] .ct-load-more-helper.ct-loading .ct-ajax-loader,[data-pagination=infinite_scroll] .ct-load-more-helper.ct-loading .ct-ajax-loader{opacity:1}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-media-container",
+      "family": "component",
+      "files": [
+        "author-box.min.css",
+        "cart-header-element-lazy.min.css",
+        "entries.min.css",
+        "featured-image.min.css",
+        "main.min.css",
+        "non-critical-search-styles.min.css",
+        "page-title.min.css",
+        "related-posts.min.css",
+        "theme-blocks-editor-styles.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".author-box .ct-media-container{flex:0 0 60px;width:60px;height:60px;border-radius:100%}",
+      "uses_variables": [
+        "--border-radius",
+        "--card-element-margin-start",
+        "--card-media-max-width",
+        "--product-brand-logo-size",
+        "--search-image-radius",
+        "--search-image-size",
+        "--theme-border-radius",
+        "--theme-image-border-radius",
+        "--theme-image-shadow",
+        "--theme-narrow-container-max-width",
+        "--theme-object-fit",
+        "--theme-palette-color-1",
+        "--theme-wide-offset",
+        "--zoom-image-background"
+      ]
+    },
+    {
+      "class": "ct-media-container-static",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-media-container-static img{aspect-ratio:1/1}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-menu-link",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "non-critical-styles.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--dropdown-background-hover-color",
+        "--has-divider",
+        "--horizontal-alignment",
+        "--items-vertical-spacing",
+        "--menu-item-alignment",
+        "--menu-item-height",
+        "--menu-item-padding",
+        "--menu-item-radius",
+        "--menu-items-spacing",
+        "--text-horizontal-alignment",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-icon-active-color",
+        "--theme-icon-hover-color",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-link-active-color",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-meta-box",
+      "family": "component",
+      "files": [
+        "editor.min.css"
+      ],
+      "sample_rule": ".ct-meta-box .ct-control[data-design=\"inline:start\"],.ct-meta-box .ct-controls-group[data-design=\"inline:start\"]{display:grid;grid-template-columns:20% min(80% - 10px,700px);align-items:start;grid-column-gap:10px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-module-title",
+      "family": "component",
+      "files": [
+        "cart-header-element-lazy.min.css",
+        "main.min.css",
+        "related-posts.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".woocommerce-mini-cart li,.woocommerce-mini-cart__total,.woocommerce-mini-cart__empty-message,.ct-shipping-progress-mini-cart,.ct-suggested-products--mini-cart .ct-module-title{color:var(--theme-text-color)}",
+      "uses_variables": [
+        "--horizontal-alignment",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-heading-color",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-newsletter-subscribe-block",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-newsletter-subscribe-block input[type=checkbox],.ff-inherit-theme-style :is(input[type=checkbox],input[type=radio]){appearance:none;width:16px;height:16px;margin:0;margin-inline-end:.7em;box-shadow:none;background:rgba(0,0,0,0);border:var(--form-selection-control-border-width, var(--theme-form-f",
+      "uses_variables": [
+        "--form-selection-control-border-width",
+        "--theme-form-checkbox-border-radius",
+        "--theme-form-field-border-width",
+        "--theme-form-selection-field-initial-color"
+      ]
+    },
+    {
+      "class": "ct-newsletter-subscribe-form-elements",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-search__input,.ff-inherit-theme-style .ff-el-form-control,.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),.ct-newsletter-subscribe-form-elements input,.ct-filter-widget-wrapper input,.ct-pseudo-input,.ct-search-form :where(input,.ct-fake-select){margin:0;width",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-background-initial-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-border-style",
+        "--theme-form-field-border-width",
+        "--theme-form-field-height",
+        "--theme-form-field-padding",
+        "--theme-form-font-size",
+        "--theme-form-text-focus-color",
+        "--theme-form-text-initial-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-no-results",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-no-results{--alignment: center}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-order-review",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-order-review,.sticky-summary .entry-summary,.sticky-gallery .woocommerce-product-gallery{align-self:flex-start;position:sticky;top:calc(50px + var(--admin-bar, 0px) + var(--theme-frame-size, 0px) + var(--header-sticky-offset, 0px) + var(--header-sticky-height-animated, calc(var(--header-sticky-h",
+      "uses_variables": [
+        "--admin-bar",
+        "--header-sticky-height",
+        "--header-sticky-height-animated",
+        "--header-sticky-offset",
+        "--order-review-border",
+        "--order-review-border-radius",
+        "--order-review-padding",
+        "--sticky-shrink",
+        "--theme-frame-size",
+        "--theme-table-text-align"
+      ]
+    },
+    {
+      "class": "ct-pagination",
+      "family": "component",
+      "files": [
+        "pagination.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-pagination{display:flex;flex-wrap:wrap;justify-content:space-between;margin-top:var(--spacing, 60px)}",
+      "uses_variables": [
+        "--pagination-divider",
+        "--spacing"
+      ]
+    },
+    {
+      "class": "ct-panel",
+      "family": "component",
+      "files": [
+        "editor.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": "#ct-page-options .ct-panel.ct-click-allowed:hover:before{background:#f7f7f7}",
+      "uses_variables": [
+        "--admin-bar"
+      ]
+    },
+    {
+      "class": "ct-panel-actions",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-panel-actions{display:flex;align-items:center;padding-inline:var(--panel-padding, 35px)}",
+      "uses_variables": [
+        "--panel-padding",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-panel-content",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "[data-panel*=in] [data-behaviour=modal].active .ct-panel-content,[data-panel*=out] [data-behaviour=modal] .ct-panel-content{animation-duration:.25s;animation-fill-mode:both}",
+      "uses_variables": [
+        "--vertical-alignment"
+      ]
+    },
+    {
+      "class": "ct-panel-content-inner",
+      "family": "component",
+      "files": [
+        "cart-header-element-lazy.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": "#woo-cart-panel .ct-panel-content-inner{flex:1;overflow:hidden;--horizontal-alignment: stretch}",
+      "uses_variables": [
+        "--horizontal-alignment",
+        "--margin",
+        "--panel-content-height",
+        "--panel-padding"
+      ]
+    },
+    {
+      "class": "ct-panel-inner",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "[data-behaviour*=side] .ct-panel-inner{position:absolute;inset-block:0px;height:calc(100% - var(--side-panel-offset, 0px)*2);width:calc(100% - var(--side-panel-offset, 0px)*2);max-width:var(--side-panel-width, 500px);margin:var(--side-panel-offset, 0px);box-shadow:var(--theme-box-shadow);border-radi",
+      "uses_variables": [
+        "--side-panel-border-radius",
+        "--side-panel-offset",
+        "--side-panel-width",
+        "--theme-box-shadow",
+        "--theme-panel-reveal-left",
+        "--theme-panel-reveal-right"
+      ]
+    },
+    {
+      "class": "ct-pause-path",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-media:not([data-state=playing]) .ct-pause-path,.ct-media-container:not([data-state=playing]) .ct-pause-path{display:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-payment-methods",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-payment-methods{display:flex;align-items:center;justify-content:center;flex-wrap:wrap;gap:1em;padding:15px 30px 20px 30px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-posts-block",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-social-box a,.ct-posts-block a,.ct-about-me-block a,.ct-contact-info-block a,.wp-block-blocksy-share-box a{pointer-events:none;text-decoration:none}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-posts-shortcode",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ":where(footer.ct-footer [data-link] a,[data-link] .ct-posts-shortcode .entry-title a){--has-link-decoration: var(--false)}",
+      "uses_variables": [
+        "--false",
+        "--theme-link-hover-color"
+      ]
+    },
+    {
+      "class": "ct-product-actions",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".cart_item .product-mobile-actions .quantity[data-type=type-2],.mini_cart_item .ct-product-actions .quantity[data-type=type-2],table.shop_table .ct-checkout-cart-item .quantity[data-type=type-2]{--quantity-width: 80px;--quantity-height: 38px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-product-additional-info",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".menu-container ul,.entry-meta,.ct-account-modal>ul,.ct-language-switcher ul,[class*=ct-contact-info] ul,.products:is(ul),.woocommerce-Reviews :where(ol,ul),.ct-comments :where(ol,ul),.ct-comments ul,.payment_methods,.woocommerce-tabs>ul,.wc-item-meta,.ct-header-account ul,.ct-product-additional-inf",
+      "uses_variables": [
+        "--theme-palette-color-1"
+      ]
+    },
+    {
+      "class": "ct-product-brands",
+      "family": "component",
+      "files": [
+        "theme-blocks-editor-styles.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-dynamic-data .ct-product-brands{display:inline-flex;align-items:center;flex-wrap:wrap;gap:var(--product-brands-gap, 10px)}",
+      "uses_variables": [
+        "--horizontal-alignment",
+        "--product-brand-logo-size",
+        "--product-brands-gap",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-product-sku",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-pseudo-input",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-search__input,.ff-inherit-theme-style .ff-el-form-control,.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),.ct-newsletter-subscribe-form-elements input,.ct-filter-widget-wrapper input,.ct-pseudo-input,.ct-search-form :where(input,.ct-fake-select){margin:0;width",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--has-height",
+        "--has-width",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-background-initial-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-border-style",
+        "--theme-form-field-border-width",
+        "--theme-form-field-height",
+        "--theme-form-field-padding",
+        "--theme-form-field-width",
+        "--theme-form-font-size",
+        "--theme-form-text-focus-color",
+        "--theme-form-text-initial-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-query-template-grid",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-query-template-grid{display:grid;gap:var(--grid-columns-gap, 30px);grid-template-columns:repeat(var(--grid-columns-width), minmax(0, 1fr))}",
+      "uses_variables": [
+        "--grid-columns-gap",
+        "--grid-columns-width"
+      ]
+    },
+    {
+      "class": "ct-quick-view-card",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ":is(.product .entry-summary-items,.ct-quick-view-card) .product_meta>span{font-size:13px;letter-spacing:.05em;text-transform:uppercase;font-weight:700;display:block}",
+      "uses_variables": [
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-related-posts",
+      "family": "component",
+      "files": [
+        "author-box.min.css",
+        "main.min.css",
+        "related-posts.min.css"
+      ],
+      "sample_rule": ".author-box+.ct-comments,.author-box+.ct-related-posts{border-top:none;margin-top:0;padding-top:0}",
+      "uses_variables": [
+        "--card-element-spacing",
+        "--grid-columns-gap",
+        "--grid-template-columns",
+        "--horizontal-alignment",
+        "--theme-border-color",
+        "--theme-border-radius",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-right",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-icon-container.ct-right{margin-inline-start:.5em}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-search-form",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-search__input,.ff-inherit-theme-style .ff-el-form-control,.ff-inherit-theme-style select.ff-el-form-control:not([size]):not([multiple]),.ct-newsletter-subscribe-form-elements input,.ct-filter-widget-wrapper input,.ct-pseudo-input,.ct-search-form :where(input,.ct-fake-select){margin:0;width",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--search-button-size",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-background-initial-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-border-style",
+        "--theme-form-field-border-width",
+        "--theme-form-field-height",
+        "--theme-form-field-padding",
+        "--theme-form-font-size",
+        "--theme-form-inner-spacing",
+        "--theme-form-max-width",
+        "--theme-form-text-focus-color",
+        "--theme-form-text-initial-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-search-form-inner",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": "#search-modal .ct-search-form-inner{--theme-form-inner-spacing: 15px;height:auto;padding-block:var(--theme-form-inner-spacing);padding-inline:var(--has-classic-forms, var(--theme-form-inner-spacing));border-radius:var(--has-classic-forms, var(--theme-form-border-radius));background-color:rgba(0,0,0,",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--theme-form-border-radius",
+        "--theme-form-inner-spacing"
+      ]
+    },
+    {
+      "class": "ct-search-results",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--items-divider",
+        "--items-padding",
+        "--items-spacing",
+        "--search-dropdown-background",
+        "--search-dropdown-box-shadow",
+        "--search-dropdown-box-shadow-color",
+        "--search-dropdown-extra-spacing",
+        "--search-dropdown-position",
+        "--search-image-radius",
+        "--search-image-size",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-form-field-border-radius",
+        "--theme-form-field-height",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-palette-color-8",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-searching",
+      "family": "component",
+      "files": [
+        "non-critical-search-styles.min.css"
+      ],
+      "sample_rule": ".ct-searching .ct-search-button-content{opacity:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-select-taxonomy",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-pseudo-input:has(:is(input,.ct-select-taxonomy):focus){outline-color:var(--theme-form-field-border-focus-color);border-color:var(--theme-form-field-border-focus-color);background-color:var(--has-classic-forms, var(--theme-form-field-background-focus-color))}",
+      "uses_variables": [
+        "--has-classic-forms",
+        "--theme-form-field-background-focus-color",
+        "--theme-form-field-border-focus-color",
+        "--theme-form-field-border-initial-color",
+        "--theme-form-field-height"
+      ]
+    },
+    {
+      "class": "ct-share-box",
+      "family": "component",
+      "files": [
+        "share-box.min.css",
+        "theme-block-share-box.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-share-box{display:flex;flex-direction:column;align-items:var(--horizontal-alignment)}",
+      "uses_variables": [
+        "--horizontal-alignment",
+        "--items-spacing",
+        "--margin",
+        "--theme-border"
+      ]
+    },
+    {
+      "class": "ct-shipping-progress-mini-cart",
+      "family": "component",
+      "files": [
+        "cart-header-element-lazy.min.css"
+      ],
+      "sample_rule": ".woocommerce-mini-cart__total,.ct-shipping-progress-mini-cart,.ct-suggested-products--mini-cart{margin-bottom:var(--mini-cart-items-spacing, 20px)}",
+      "uses_variables": [
+        "--mini-cart-items-spacing",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-sidebar",
+      "family": "component",
+      "files": [
+        "sidebar.min.css"
+      ],
+      "sample_rule": ".ct-sidebar{position:relative}",
+      "uses_variables": [
+        "--admin-bar",
+        "--header-sticky-height",
+        "--sidebar-background-color",
+        "--sidebar-inner-spacing",
+        "--sidebar-offset",
+        "--sidebar-widgets-spacing",
+        "--sticky-shrink",
+        "--theme-border",
+        "--theme-border-radius",
+        "--theme-box-shadow",
+        "--theme-frame-size",
+        "--theme-palette-color-8",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-slider-arrows",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-slider-arrows{display:flex;-webkit-user-select:none;user-select:none}",
+      "uses_variables": [
+        "--slider-arrow-button-size",
+        "--theme-border-color",
+        "--theme-button-background-hover-color",
+        "--theme-button-text-hover-color",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-social-box",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-block-about-me.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-cart-item,.ct-social-box,.ct-account-item,.ct-header-compare,.ct-header-wishlist{--theme-link-initial-color: var(--theme-text-color)}",
+      "uses_variables": [
+        "--horizontal-alignment",
+        "--items-direction",
+        "--items-spacing",
+        "--theme-icon-hover-color",
+        "--theme-palette-color-2",
+        "--theme-text-color",
+        "--wrap"
+      ]
+    },
+    {
+      "class": "ct-sub-menu-parent",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "non-critical-styles.min.css"
+      ],
+      "sample_rule": "nav[class*=menu] li:hover>.ct-menu-link,nav[class*=menu] li:hover>.ct-sub-menu-parent{color:var(--theme-link-hover-color)}",
+      "uses_variables": [
+        "--mobile-menu-divider",
+        "--theme-icon-active-color",
+        "--theme-icon-hover-color",
+        "--theme-link-active-color",
+        "--theme-link-hover-color"
+      ]
+    },
+    {
+      "class": "ct-suggested-products--mini-cart",
+      "family": "component",
+      "files": [
+        "cart-header-element-lazy.min.css"
+      ],
+      "sample_rule": ".woocommerce-mini-cart__total,.ct-shipping-progress-mini-cart,.ct-suggested-products--mini-cart{margin-bottom:var(--mini-cart-items-spacing, 20px)}",
+      "uses_variables": [
+        "--mini-cart-divider-color",
+        "--mini-cart-items-spacing",
+        "--theme-text-color"
+      ]
+    },
+    {
+      "class": "ct-swap",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "[data-hover=swap] .ct-swap{position:absolute;inset:0;opacity:0}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-toggle-dropdown-mobile",
+      "family": "component",
+      "files": [
+        "non-critical-styles.min.css"
+      ],
+      "sample_rule": ".mobile-menu li:hover>.ct-sub-menu-parent .ct-menu-link:not(.ct-disabled-link),.mobile-menu li:hover>.ct-sub-menu-parent .ct-toggle-dropdown-mobile,.mobile-menu li.dropdown-active>.ct-sub-menu-parent .ct-menu-link:not(.ct-disabled-link),.mobile-menu li.dropdown-active>.ct-sub-menu-parent .ct-toggle-",
+      "uses_variables": [
+        "--theme-link-initial-color",
+        "--toggle-button-size"
+      ]
+    },
+    {
+      "class": "ct-tooltip",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "share-box.min.css",
+        "theme-block-share-box.min.css",
+        "theme-blocks-editor-styles.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "*:has(>.ct-tooltip){anchor-name:--ct-tooltip-anchor;anchor-scope:--ct-tooltip-anchor}",
+      "uses_variables": [
+        "--ct-tooltip-arrow-position",
+        "--ct-tooltip-vertical-hover-offset",
+        "--ct-tooltip-vertical-initial-offset"
+      ]
+    },
+    {
+      "class": "ct-trending-block",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-video-indicator",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-video-indicator{position:absolute;inset:0;z-index:3;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:opacity .12s cubic-bezier(0.455, 0.03, 0.515, 0.955),visibility .12s cubic-bezier(0.455, 0.03, 0.515, 0.955)}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-video-loader",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-video-indicator .ct-video-loader{visibility:hidden}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-widget",
+      "family": "component",
+      "files": [
+        "main.min.css",
+        "sidebar.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--margin",
+        "--sidebar-background-color",
+        "--sidebar-inner-spacing",
+        "--sidebar-widgets-spacing",
+        "--theme-border",
+        "--theme-border-radius",
+        "--theme-box-shadow",
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-palette-color-8",
+        "--theme-text-color",
+        "--theme-text-decoration",
+        "--theme-text-transform",
+        "--widgets-gap"
+      ]
+    },
+    {
+      "class": "ct-woo-card-actions",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-woo-card-extra,.ct-woo-card-actions{--theme-button-shadow: none;--theme-button-transform: none}",
+      "uses_variables": [
+        "--horizontal-alignment"
+      ]
+    },
+    {
+      "class": "ct-woo-card-extra",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-woo-card-extra,.ct-woo-card-actions{--theme-button-shadow: none;--theme-button-transform: none}",
+      "uses_variables": [
+        "--theme-button-text-hover-color"
+      ]
+    },
+    {
+      "class": "ct-woo-card-rating",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "[data-products] .ct-woo-card-rating{display:flex;align-items:center;gap:.5em}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-woo-card-stock",
+      "family": "component",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": "body,h1,h2,h3,h4,h5,h6,label,figcaption,.wp-block-quote,.wp-block-pullquote,.ct-label,.site-title,.entry-meta,.ct-menu-badge,.entry-excerpt,.ct-post-title,.ct-breadcrumbs,.ct-header-text,.ct-product-sku,.ct-product-title,.ct-woo-card-stock,.author-box-bio,.author-box-name,.ct-contact-info,.site-desc",
+      "uses_variables": [
+        "--theme-font-family",
+        "--theme-font-size",
+        "--theme-font-style",
+        "--theme-font-weight",
+        "--theme-letter-spacing",
+        "--theme-line-height",
+        "--theme-text-decoration",
+        "--theme-text-transform"
+      ]
+    },
+    {
+      "class": "ct-woo-unauthorized",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-woo-unauthorized>h2{display:none}",
+      "uses_variables": [
+        "--theme-border-color",
+        "--theme-content-spacing"
+      ]
+    },
+    {
+      "class": "ct-woocommerce-cart-form",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-woocommerce-cart-form{display:grid;gap:40px}",
+      "uses_variables": [
+        "--admin-bar",
+        "--cart-totals-border",
+        "--cart-totals-border-radius",
+        "--cart-totals-padding",
+        "--header-sticky-height",
+        "--sticky-shrink",
+        "--theme-table-text-align"
+      ]
+    },
+    {
+      "class": "ct-woocommerce-checkout",
+      "family": "component",
+      "files": [
+        "woocommerce.min.css"
+      ],
+      "sample_rule": ".ct-woocommerce-checkout{display:grid;gap:35px}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-wpforms-inline-fields",
+      "family": "component",
+      "files": [
+        "editor-styles.min.css"
+      ],
+      "sample_rule": ".ct-wpforms-inline-fields form fieldset,.ct-wpforms-inline-fields .wpforms-field-container{display:flex;flex-wrap:wrap;gap:var(--wpforms-inline-fields-gap, 20px)}",
+      "uses_variables": [
+        "--wpforms-inline-fields-gap"
+      ]
+    },
+    {
+      "class": "alignfull",
+      "family": "layout",
+      "files": [
+        "editor-styles.min.css",
+        "featured-image.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".is-root-container>.alignfull{margin-inline:var(--has-wide, -20px)}",
+      "uses_variables": [
+        "--has-wide",
+        "--theme-block-max-width",
+        "--theme-block-width"
+      ]
+    },
+    {
+      "class": "alignwide",
+      "family": "layout",
+      "files": [
+        "editor-styles.min.css",
+        "featured-image.min.css",
+        "main.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".wp-block-separator:not(:where(.is-style-wide,.is-style-dots,.alignfull,.alignwide)){max-width:100px !important}",
+      "uses_variables": [
+        "--theme-block-max-width",
+        "--theme-block-wide-max-width"
+      ]
+    },
+    {
+      "class": "ct-container",
+      "family": "layout",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-footer.ct-container{margin-bottom:var(--footer-container-bottom-offset);border-radius:var(--footer-container-border-radius)}",
+      "uses_variables": [
+        "--footer-container-border-radius",
+        "--footer-container-bottom-offset",
+        "--theme-container-width",
+        "--theme-normal-container-max-width"
+      ]
+    },
+    {
+      "class": "ct-container-fluid",
+      "family": "layout",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-container-fluid{width:calc(var(--theme-container-edge-spacing) - var(--theme-frame-size, 0px)*2)}",
+      "uses_variables": [
+        "--theme-container-edge-spacing",
+        "--theme-frame-size"
+      ]
+    },
+    {
+      "class": "ct-container-narrow",
+      "family": "layout",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".ct-container,.ct-container-narrow{width:var(--theme-container-width)}",
+      "uses_variables": [
+        "--theme-container-width",
+        "--theme-narrow-container-max-width"
+      ]
+    },
+    {
+      "class": "entry-content",
+      "family": "layout",
+      "files": [
+        "main.min.css",
+        "non-critical-styles.min.css",
+        "woocommerce.min.css"
+      ],
+      "sample_rule": "[data-link=type-2] :where(.entry-content :where(p,em,strong)>a,.entry-content :where(ul,ol) a,.wp-block-table a,.ct-link-styles):not(:hover){--theme-text-decoration: underline}",
+      "uses_variables": [
+        "--has-link-decoration",
+        "--theme-block-max-width",
+        "--theme-block-width",
+        "--theme-container-width",
+        "--theme-container-width-base",
+        "--theme-content-spacing",
+        "--theme-link-hover-color",
+        "--theme-link-initial-color",
+        "--woo-separated-tabs-spacing"
+      ]
+    },
+    {
+      "class": "is-layout-constrained",
+      "family": "layout",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ":is(.is-layout-flow,.is-layout-constrained)>*:where(:not(h1,h2,h3,h4,h5,h6)){margin-block-start:0;margin-block-end:var(--theme-content-spacing)}",
+      "uses_variables": [
+        "--has-theme-content-spacing",
+        "--theme-block-width",
+        "--theme-content-spacing"
+      ]
+    },
+    {
+      "class": "is-layout-flow",
+      "family": "layout",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ":is(.is-layout-flow,.is-layout-constrained)>*:where(:not(h1,h2,h3,h4,h5,h6)){margin-block-start:0;margin-block-end:var(--theme-content-spacing)}",
+      "uses_variables": [
+        "--has-theme-content-spacing",
+        "--theme-content-spacing"
+      ]
+    },
+    {
+      "class": "is-layout-slider",
+      "family": "layout",
+      "files": [
+        "flexy.min.css",
+        "theme-blocks-editor-styles.min.css"
+      ],
+      "sample_rule": ".is-layout-slider .flexy-items{--flexy-items-gap: var(--grid-columns-gap, 30px);--flexy-item-width: var(--grid-columns-width)}",
+      "uses_variables": [
+        "--grid-columns-gap",
+        "--grid-columns-width"
+      ]
+    },
+    {
+      "class": "is-width-constrained",
+      "family": "layout",
+      "files": [
+        "main.min.css"
+      ],
+      "sample_rule": ".is-width-constrained{margin-inline:auto;width:var(--theme-container-width);max-width:var(--theme-block-max-width)}",
+      "uses_variables": [
+        "--theme-block-max-width",
+        "--theme-container-width"
+      ]
+    },
+    {
+      "class": "ct-hidden-lg",
+      "family": "visibility",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".is-desktop-preview .ct-hidden-lg{display:none !important}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-hidden-md",
+      "family": "visibility",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".is-tablet-preview .ct-hidden-md{display:none !important}",
+      "uses_variables": []
+    },
+    {
+      "class": "ct-hidden-sm",
+      "family": "visibility",
+      "files": [
+        "editor-styles.min.css",
+        "main.min.css"
+      ],
+      "sample_rule": ".is-mobile-preview .ct-hidden-sm{display:none !important}",
+      "uses_variables": []
+    }
+  ]
+}

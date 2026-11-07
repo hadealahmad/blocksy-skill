@@ -3,7 +3,7 @@
  * Plugin Name: Blocksy Bridge
  * Plugin URI:  https://github.com/your-org/blocksy-bridge
  * Description: A narrow, authenticated REST bridge for reading and applying Blocksy theme, builder, menu, and Content Block settings. Intended for the Blocksy skill.
- * Version:     0.1.0
+ * Version:     0.2.0
  * Author:      Blocksy Skill
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Blocksy_Bridge' ) ) {
 
 	class Blocksy_Bridge {
 
-		const VERSION           = '0.1.0';
+		const VERSION           = '0.2.0';
 		const REST_NAMESPACE    = 'blocksy-bridge/v1';
 		const MAX_PLAN_BYTES    = 2097152; // 2 MB
 		const OPTION_LOG        = 'blocksy_bridge_last_apply';
@@ -165,6 +165,7 @@ node scripts/remote.mjs info</pre>
 				'/export' => [ 'GET', 'rest_export' ],
 				'/apply'  => [ 'POST', 'rest_apply' ],
 				'/cache'  => [ 'POST', 'rest_cache' ],
+				'/tokens' => [ 'GET', 'rest_tokens' ],
 			];
 
 			foreach ( $routes as $path => $route ) {
@@ -289,6 +290,10 @@ node scripts/remote.mjs info</pre>
 			}
 
 			return rest_ensure_response( $report );
+		}
+
+		public function rest_tokens() {
+			return rest_ensure_response( $this->tokens() );
 		}
 
 		public function rest_cache() {
@@ -2122,6 +2127,334 @@ node scripts/remote.mjs info</pre>
 			}
 
 			return wp_json_encode( $a ) === wp_json_encode( $b );
+		}
+
+		/* ---------------------------------------------------------------------
+		 * Design tokens (for block-building skills)
+		 * ------------------------------------------------------------------ */
+
+		const TOKENS_SCHEMA   = 'blocksy-tokens/1';
+		const TABLET_MAX      = '999.98px';
+		const MOBILE_MAX      = '689.98px';
+
+		/**
+		 * Live, resolved Blocksy design tokens: palette, root CSS variables per
+		 * device, element typography rules, Gutenberg presets and layout widths.
+		 * Read-only. Consumed by other skills that emit block markup.
+		 */
+		public function tokens() {
+			$css    = $this->global_css_source();
+			$parsed = $this->parse_global_css( $css['css'] );
+
+			$root = [];
+			foreach ( [ 'desktop', 'tablet', 'mobile' ] as $device ) {
+				foreach ( $parsed[ $device ] as $rule ) {
+					if ( ! $this->is_root_selector( $rule['selector'] ) ) {
+						continue;
+					}
+					foreach ( $rule['decls'] as $name => $value ) {
+						if ( 0 !== strpos( $name, '--' ) ) {
+							continue;
+						}
+						if ( ! isset( $root[ $name ] ) ) {
+							$root[ $name ] = [
+								'desktop' => null,
+								'tablet'  => null,
+								'mobile'  => null,
+							];
+						}
+						$root[ $name ][ $device ] = $value;
+					}
+				}
+			}
+			ksort( $root );
+
+			$flat = [];
+			foreach ( $root as $name => $values ) {
+				$flat[ $name ] = null !== $values['desktop'] ? $values['desktop'] : ( null !== $values['tablet'] ? $values['tablet'] : $values['mobile'] );
+			}
+			foreach ( $root as $name => $values ) {
+				$root[ $name ]['resolved'] = $this->resolve_css_value( $flat[ $name ], $flat );
+			}
+
+			return [
+				'schema'      => self::TOKENS_SCHEMA,
+				'generated'   => gmdate( 'c' ),
+				'site'        => home_url( '/' ),
+				'blocksy'     => [
+					'theme_version'   => $this->blocksy_theme_version(),
+					'companion_build' => $this->companion_build(),
+					'stylesheet'      => get_stylesheet(),
+				],
+				'css_source'  => $css['source'],
+				'breakpoints' => [
+					'tablet_max' => self::TABLET_MAX,
+					'mobile_max' => self::MOBILE_MAX,
+					'media'      => [
+						'tablet' => '@media (max-width: ' . self::TABLET_MAX . ')',
+						'mobile' => '@media (max-width: ' . self::MOBILE_MAX . ')',
+					],
+					'visibility_classes' => [
+						'hide_on_desktop' => 'ct-hidden-lg',
+						'hide_on_tablet'  => 'ct-hidden-md',
+						'hide_on_mobile'  => 'ct-hidden-sm',
+					],
+				],
+				'palette'     => $this->tokens_palette( $flat ),
+				'font_sizes'  => $this->tokens_font_sizes(),
+				'layout'      => $this->tokens_layout( $flat ),
+				'variables'   => $root,
+				'elements'    => $this->tokens_elements( $parsed ),
+			];
+		}
+
+		private function global_css_source() {
+			$path = $this->global_css_path();
+
+			if ( file_exists( $path ) && is_readable( $path ) ) {
+				$content = file_get_contents( $path ); // phpcs:ignore WordPress.WP.AlternativeFunctions
+				if ( is_string( $content ) && '' !== trim( $content ) ) {
+					return [
+						'source' => 'file',
+						'css'    => $content,
+					];
+				}
+			}
+
+			if ( function_exists( 'blocksy_get_dynamic_css_file_content' ) ) {
+				try {
+					$content = blocksy_get_dynamic_css_file_content( [ 'context' => 'files:global' ] );
+					if ( is_string( $content ) ) {
+						return [
+							'source' => 'generated',
+							'css'    => $content,
+						];
+					}
+				} catch ( \Throwable $e ) {
+					return [
+						'source' => 'error: ' . $e->getMessage(),
+						'css'    => '',
+					];
+				}
+			}
+
+			return [
+				'source' => 'unavailable',
+				'css'    => '',
+			];
+		}
+
+		/**
+		 * Split Blocksy's global CSS into desktop / tablet / mobile rule lists.
+		 * Blocksy emits flat rules plus one tablet and one mobile media block.
+		 */
+		private function parse_global_css( $css ) {
+			$out = [
+				'desktop' => [],
+				'tablet'  => [],
+				'mobile'  => [],
+			];
+
+			$css = preg_replace( '#/\*.*?\*/#s', '', (string) $css );
+			$len = strlen( $css );
+			$i   = 0;
+
+			while ( $i < $len ) {
+				$open = strpos( $css, '{', $i );
+				if ( false === $open ) {
+					break;
+				}
+				$prelude = trim( substr( $css, $i, $open - $i ) );
+
+				if ( 0 === strpos( $prelude, '@media' ) ) {
+					$depth = 1;
+					$j     = $open + 1;
+					while ( $j < $len && $depth > 0 ) {
+						if ( '{' === $css[ $j ] ) {
+							$depth++;
+						} elseif ( '}' === $css[ $j ] ) {
+							$depth--;
+						}
+						$j++;
+					}
+					$inner  = substr( $css, $open + 1, $j - $open - 2 );
+					$device = null;
+					if ( false !== strpos( $prelude, self::MOBILE_MAX ) ) {
+						$device = 'mobile';
+					} elseif ( false !== strpos( $prelude, self::TABLET_MAX ) ) {
+						$device = 'tablet';
+					}
+					if ( $device ) {
+						$nested = $this->parse_global_css( $inner );
+						$out[ $device ] = array_merge( $out[ $device ], $nested['desktop'] );
+					}
+					$i = $j;
+					continue;
+				}
+
+				$close = strpos( $css, '}', $open );
+				if ( false === $close ) {
+					break;
+				}
+				$out['desktop'][] = [
+					'selector' => preg_replace( '/\s+/', ' ', $prelude ),
+					'decls'    => $this->parse_declarations( substr( $css, $open + 1, $close - $open - 1 ) ),
+				];
+				$i = $close + 1;
+			}
+
+			return $out;
+		}
+
+		private function parse_declarations( $body ) {
+			$decls = [];
+			foreach ( preg_split( '/;(?![^(]*\))/', $body ) as $decl ) {
+				$pos = strpos( $decl, ':' );
+				if ( false === $pos ) {
+					continue;
+				}
+				$name  = trim( substr( $decl, 0, $pos ) );
+				$value = trim( substr( $decl, $pos + 1 ) );
+				if ( '' !== $name && '' !== $value ) {
+					$decls[ $name ] = $value;
+				}
+			}
+			return $decls;
+		}
+
+		private function is_root_selector( $selector ) {
+			foreach ( array_map( 'trim', explode( ',', $selector ) ) as $part ) {
+				if ( ':root' !== $part ) {
+					return false;
+				}
+			}
+			return true;
+		}
+
+		/** Resolve var(--x[, fallback]) chains against the root variable map. */
+		private function resolve_css_value( $value, $vars, $depth = 0 ) {
+			if ( ! is_string( $value ) || $depth > 10 ) {
+				return $value;
+			}
+
+			return preg_replace_callback(
+				'/var\(\s*(--[A-Za-z0-9_-]+)\s*(?:,\s*([^()]*(?:\([^()]*\))?[^()]*))?\)/',
+				function ( $m ) use ( $vars, $depth ) {
+					if ( isset( $vars[ $m[1] ] ) && null !== $vars[ $m[1] ] ) {
+						return $this->resolve_css_value( $vars[ $m[1] ], $vars, $depth + 1 );
+					}
+					return isset( $m[2] ) && '' !== trim( $m[2] ) ? trim( $m[2] ) : $m[0];
+				},
+				$value
+			);
+		}
+
+		private function tokens_palette( $flat ) {
+			$palette = [];
+
+			if ( function_exists( 'blocksy_manager' ) && isset( blocksy_manager()->colors ) && method_exists( blocksy_manager()->colors, 'get_color_palette' ) ) {
+				foreach ( blocksy_manager()->colors->get_color_palette() as $color ) {
+					$var = '--' . $color['variable'];
+					$palette[] = [
+						'slug'            => $color['slug'],
+						'title'           => $color['title'],
+						'variable'        => $var,
+						'preset_variable' => '--wp--preset--color--' . $color['slug'],
+						'value'           => isset( $flat[ $var ] ) ? $this->resolve_css_value( $flat[ $var ], $flat ) : $color['color'],
+						'classes'         => [
+							'text'       => 'has-' . $color['slug'] . '-color',
+							'background' => 'has-' . $color['slug'] . '-background-color',
+							'border'     => 'has-' . $color['slug'] . '-border-color',
+						],
+						'block_attr'      => $color['slug'],
+					];
+				}
+			}
+
+			return $palette;
+		}
+
+		private function tokens_font_sizes() {
+			$sizes = [];
+
+			if ( ! function_exists( 'wp_get_global_settings' ) ) {
+				return $sizes;
+			}
+
+			$presets = wp_get_global_settings( [ 'typography', 'fontSizes' ] );
+			foreach ( [ 'theme', 'custom', 'default' ] as $origin ) {
+				if ( empty( $presets[ $origin ] ) || ! is_array( $presets[ $origin ] ) ) {
+					continue;
+				}
+				foreach ( $presets[ $origin ] as $preset ) {
+					if ( empty( $preset['slug'] ) ) {
+						continue;
+					}
+					$sizes[] = [
+						'slug'     => $preset['slug'],
+						'origin'   => $origin,
+						'size'     => isset( $preset['size'] ) ? $preset['size'] : null,
+						'fluid'    => isset( $preset['fluid'] ) ? $preset['fluid'] : null,
+						'variable' => '--wp--preset--font-size--' . $preset['slug'],
+						'class'    => 'has-' . $preset['slug'] . '-font-size',
+					];
+				}
+			}
+
+			return $sizes;
+		}
+
+		private function tokens_layout( $flat ) {
+			$layout = function_exists( 'wp_get_global_settings' ) ? wp_get_global_settings( [ 'layout' ] ) : [];
+			$pick   = function ( $name ) use ( $flat ) {
+				return isset( $flat[ $name ] ) ? $this->resolve_css_value( $flat[ $name ], $flat ) : null;
+			};
+
+			return [
+				'content_size'         => isset( $layout['contentSize'] ) ? $layout['contentSize'] : null,
+				'wide_size'            => isset( $layout['wideSize'] ) ? $layout['wideSize'] : null,
+				'container_max_width'  => $pick( '--theme-normal-container-max-width' ),
+				'narrow_max_width'     => $pick( '--theme-narrow-container-max-width' ),
+				'edge_spacing'         => $pick( '--theme-container-edge-spacing' ),
+				'wide_offset'          => $pick( '--theme-wide-offset' ),
+				'content_spacing'      => $pick( '--theme-content-spacing' ),
+				'vertical_spacing'     => $pick( '--theme-content-vertical-spacing' ),
+				'variables'            => [
+					'content_size' => '--theme-block-max-width',
+					'wide_size'    => '--theme-block-wide-max-width',
+					'container'    => '--theme-normal-container-max-width',
+					'narrow'       => '--theme-narrow-container-max-width',
+					'wp_content'   => '--wp--style--global--content-size',
+					'wp_wide'      => '--wp--style--global--wide-size',
+				],
+			];
+		}
+
+		/**
+		 * Typography/colour rules Blocksy emits for plain elements (h1-h6, body,
+		 * buttons, blockquote, code, figcaption ...). Header/footer and other
+		 * component-scoped rules are skipped; they are builder concerns.
+		 */
+		private function tokens_elements( $parsed ) {
+			$elements = [];
+
+			foreach ( [ 'desktop', 'tablet', 'mobile' ] as $device ) {
+				foreach ( $parsed[ $device ] as $rule ) {
+					$selector = $rule['selector'];
+					if ( $this->is_root_selector( $selector ) ) {
+						continue;
+					}
+					if ( preg_match( '/\[data-(header|footer|row|column|id|items|prefix)|#offcanvas|#header|#footer|\.ct-header|\.ct-footer|\.ct-panel/', $selector ) ) {
+						continue;
+					}
+					if ( ! isset( $elements[ $selector ] ) ) {
+						$elements[ $selector ] = [];
+					}
+					$elements[ $selector ][ $device ] = $rule['decls'];
+				}
+			}
+
+			return $elements;
 		}
 
 		/* ---------------------------------------------------------------------

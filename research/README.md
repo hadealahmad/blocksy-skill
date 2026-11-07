@@ -25,6 +25,12 @@ on option ids or defaults.
 | `post-meta-options-blocksy-2.1.60.json` | Per-post Blocksy meta options for `post` (51), `page` (57) and the posts page/blog (2). |
 | `content-block-options-blocksy-2.1.60.json` | Content Block meta options for every `template_type` (header, footer, single, archive, 404, hook, popup, maintenance, nothing_found). |
 
+| `css-tokens.md` + `extract-css-tokens.py` | Static extraction of `--theme-*` CSS variables and reusable classes into `data/css-variables.json` / `data/css-classes.json`. |
+| `builder-items.md` + `extract-builder-items.py` | Static inventory of every header/footer item in theme + Companion + Pro (incl. extension-gated ones) into `data/builder-items.json`. |
+
+The two static extractors were run on 2026-11-07 against the same Blocksy
+2.1.60 source with the database offline. They read files only.
+
 ## How they were generated
 
 WP-CLI needs the Local MySQL socket on this machine:
