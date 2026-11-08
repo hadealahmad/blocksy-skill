@@ -7,7 +7,7 @@ site allows.
 
 | What you have | Adapter | Can set global settings? | Can set builder? | Menus? | Content Blocks? | Per-page meta? |
 | --- | --- | --- | --- | --- | --- | --- |
-| Shell / SSH / WP-CLI / LocalWP | WP-CLI | Yes | Yes | Yes | Yes | Yes |
+| Shell / SSH / WP-CLI / DDEV / LocalWP | WP-CLI | Yes | Yes | Yes | Yes | Yes |
 | wp-admin + can install a plugin | Bridge REST | Yes | Yes | Yes | Yes | Yes |
 | wp-admin + REST only | Core REST | No | No | Yes | Partial | Yes |
 | wp-admin only, no REST/plugin install | Manual / assisted | Via import | Via import | Manual | Manual | Manual |
@@ -36,6 +36,9 @@ BLOCKSY_PLAN=plan.json \
 
 On a normal server with a working `wp-config.php`, the socket discovery simply
 does nothing and `wp --path` is used.
+
+**DDEV:** the script runs WP-CLI in the web container; same commands as above.
+See `references/ddev.md`.
 
 WP-CLI is the best option when available: no new plugin, no token, no HTTP
 surface.
@@ -180,6 +183,7 @@ it through a code-snippets plugin. The snippet is exactly what
 | --- | --- | --- |
 | 404 on `/wp-json/blocksy-bridge/v1/health` | Plugin inactive, REST disabled, or permalinks broken | Activate the bridge; check `/wp-json/`; resave permalinks |
 | 401/403 with an Application Password | `Authorization` header stripped by nginx/FastCGI, or app passwords disabled | Use `BLOCKSY_TOKEN` (header by default, `BLOCKSY_TOKEN_QUERY=1` if needed) |
+| `fetch failed` / `UNABLE_TO_VERIFY_LEAF_SIGNATURE` on a DDEV site | Node does not trust the mkcert CA | `NODE_EXTRA_CA_CERTS="$(mkcert -CAROOT)/rootCA.pem"` (`ddev.md`) |
 | 403 with the token | Wrong token, token rotated, or a security plugin blocking the route | Re-copy from Settings → Blocksy Bridge; allowlist the route |
 | 409 | Blocksy theme is not active | Activate Blocksy or the child theme |
 | 413 | Plan over 2 MB | Split the plan or reduce content |

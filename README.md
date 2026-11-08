@@ -24,7 +24,7 @@ hard-coded values. See `references/design-tokens.md`.
 
 | Access | Adapter |
 | --- | --- |
-| Shell / SSH / LocalWP / WP-CLI | `scripts/wp-local.sh` + `scripts/inspect.php` + `scripts/apply.php` |
+| Shell / SSH / DDEV / LocalWP / WP-CLI | `scripts/wp-local.sh` + `scripts/inspect.php` + `scripts/apply.php` |
 | No shell, but plugin install allowed from wp-admin | `dist/blocksy-bridge.zip` + `scripts/remote.mjs` |
 | No plugin install, wp-admin + REST only | Core REST for menus/pages/per-page meta (partial) |
 | No automation | Generated plan + manual import / manual Content Blocks |
@@ -57,7 +57,8 @@ BLOCKSY_PLAN=examples/example-plan.json \
   ./scripts/wp-local.sh "$SITE" eval-file scripts/apply.php
 ```
 
-`scripts/wp-local.sh` discovers the LocalWP MySQL socket automatically.
+`scripts/wp-local.sh` runs WP-CLI inside the web container for DDEV projects
+(see `references/ddev.md`) and discovers the LocalWP MySQL socket automatically.
 
 ## Quick start with the bridge
 
@@ -100,10 +101,12 @@ SKILL.md                  entry point and workflow
 references/               adapters, storage, options, builder, content blocks,
                           extensions, menus, verification, plan format
 scripts/
-  wp-local.sh             LocalWP-aware WP-CLI wrapper
+  wp-local.sh             DDEV/LocalWP-aware WP-CLI wrapper
   inspect.php             WP-CLI schema/info/export
   apply.php               WP-CLI plan apply
   remote.mjs              Bridge REST client
+tests/
+  wp-local-ddev.test.sh   DDEV path mapping, fake ddev (bash tests/wp-local-ddev.test.sh)
 bridge/
   blocksy-bridge.php      single-file bridge plugin source
 dist/

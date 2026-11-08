@@ -1,6 +1,6 @@
 ---
 name: blocksy
-description: Use when configuring a WordPress site that runs the Blocksy theme, Blocksy Child, Blocksy Companion, or Blocksy Companion Pro — global theme options, header/footer builder, colors, typography, menus, Content Blocks/popups, per-page settings, extensions, custom fonts, and applying settings with WP-CLI or remote REST when there is no server access. Also provides Blocksy design tokens (palette, typography, widths, breakpoints, CSS variables and classes) to other skills that build Gutenberg block pages (GreenLight/GreenShift, core blocks, any block suite) on a Blocksy site. Triggers on Blocksy, Blocksy Companion, Blocksy Pro, header builder, footer builder, Content Blocks, custom fonts, Blocksy extensions, Blocksy settings import/export, or building/styling pages on a Blocksy site.
+description: Use when configuring a WordPress site that runs the Blocksy theme, Blocksy Child, Blocksy Companion, or Blocksy Companion Pro — global theme options, header/footer builder, colors, typography, menus, Content Blocks/popups, per-page settings, extensions, custom fonts, and applying settings with WP-CLI (incl. DDEV and LocalWP) or remote REST when there is no server access. Also provides Blocksy design tokens (palette, typography, widths, breakpoints, CSS variables and classes) to other skills that build Gutenberg block pages (GreenLight/GreenShift, core blocks, any block suite) on a Blocksy site. Triggers on Blocksy, Blocksy Companion, Blocksy Pro, header builder, footer builder, Content Blocks, custom fonts, Blocksy extensions, Blocksy settings import/export, or building/styling pages on a Blocksy site.
 license: MIT
 ---
 
@@ -14,7 +14,7 @@ Blocksy version.
 
 | Situation | Adapter | Coverage |
 | --- | --- | --- |
-| Shell / SSH / LocalWP / WP-CLI available | **WP-CLI** (`scripts/wp-local.sh`, `scripts/inspect.php`, `scripts/apply.php`) | Full |
+| Shell / SSH / DDEV / LocalWP / WP-CLI available | **WP-CLI** (`scripts/wp-local.sh`, `scripts/inspect.php`, `scripts/apply.php`) | Full |
 | No shell, but can install a plugin from wp-admin | **Blocksy Bridge REST** (`dist/blocksy-bridge.zip`, `scripts/remote.mjs`) | Full |
 | No plugin install, only wp-admin + REST | **Core REST fallback** | Menus, pages/posts, per-page Blocksy meta only |
 | No automation possible | **Manual / assisted** | Generated plan + Customizer import / manual Content Blocks |
@@ -24,7 +24,8 @@ self-contained PHP file that exposes a narrow, authenticated REST API for
 Blocksy settings. Install it once from wp-admin, then keep working over HTTPS
 with a token or WordPress Application Password.
 
-Read `references/adapters.md` before choosing.
+Read `references/adapters.md` before choosing. A site with `.ddev/config.yaml`
+in its root or a parent is a DDEV project: read `references/ddev.md`.
 
 ## Non-negotiable rules
 
@@ -236,9 +237,14 @@ cache results. Then follow `references/verification.md`.
 
 ### WP-CLI
 
-Use `scripts/wp-local.sh`. It discovers the LocalWP MySQL socket automatically
-by matching the site path in `~/.config/Local/run/*/conf/nginx/site.conf`. On a
-normal server it falls back to plain `wp --path=...`.
+Use `scripts/wp-local.sh`. It picks the runtime from the site path:
+
+- **DDEV** (`.ddev/config.yaml` in the site dir or a parent): runs WP-CLI in
+  the web container. Never starts a stopped project. Back up with
+  `ddev snapshot` (real DB rollback). Details: `references/ddev.md`.
+- **LocalWP**: discovers the MySQL socket by matching the site path in
+  `~/.config/Local/run/*/conf/nginx/site.conf`.
+- Otherwise plain `wp --path=...`.
 
 ```sh
 ./scripts/wp-local.sh <site-root> <wp command>
@@ -319,6 +325,7 @@ Version differences are real; the extractor is part of the bridge and
 | File | Read it for |
 | --- | --- |
 | `references/adapters.md` | WP-CLI, bridge REST, core REST, manual fallback, auth, installation |
+| `references/ddev.md` | DDEV projects: container WP-CLI, snapshots, uploads paths, prod DB import, mkcert TLS for the bridge client |
 | `references/plan-format.md` | Every plan field and its semantics |
 | `references/storage-model.md` | Exact database/API location of every setting |
 | `references/theme-options.md` | Control value shapes and global theme options |

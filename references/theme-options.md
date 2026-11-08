@@ -14,7 +14,7 @@ schema (`node scripts/remote.mjs schema` or `scripts/inspect.php`) or
 | `ct-number`, `ct-slider` | Number, or a unit string like `"60px"`; responsive: `{desktop,tablet,mobile}` |
 | `ct-visibility` | `{desktop:true,tablet:true,mobile:false}`; if all devices match, Blocksy itself may store the scalar `true`/`false` |
 | `ct-color-picker` | `{default:{color:"#..."}, hover:{color:"#..."}, ...}` |
-| `ct-typography` | `{family, variation, size, "line-height", "letter-spacing", "text-transform", "text-decoration"}` |
+| `ct-typography` | `{family, variation, size, "line-height", "letter-spacing", "text-transform", "text-decoration"}`; `size` and `line-height` may be responsive: `{"desktop":"25px","tablet":"22px","mobile":"19px"}` |
 | `ct-color-palettes-picker` | `{color1:{color:"#..."}, ..., color8:{color:"#..."}}` |
 | `ct-border` | `{width, style, color:{color}}` |
 | `ct-box-shadow` | `{inherit, blur, spread, v_offset, h_offset, inset, enable, color:{color}}` |
