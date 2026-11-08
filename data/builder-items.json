@@ -1,7 +1,7 @@
 {
   "blocksy_version": "2.1.60",
   "generated": "2026-11-07T20:25:06Z",
-  "source": "static extraction of theme/companion/pro source; see research/builder-items.md",
+  "source": "static extraction of Blocksy 2.1.60 theme/companion/pro source (regex parse of options.php)",
   "counts": {
     "header": 27,
     "footer": 20,

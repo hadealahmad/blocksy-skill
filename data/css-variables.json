@@ -1,7 +1,7 @@
 {
   "blocksy_version": "2.1.60",
   "generated": "2026-11-07T20:23:09.311821+00:00",
-  "source": "static extraction, see research/css-tokens.md",
+  "source": "static extraction of Blocksy 2.1.60 CSS bundles, dynamic-styles PHP and a generated global.css",
   "count": 153,
   "variables": [
     {

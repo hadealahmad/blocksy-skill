@@ -1,4 +1,43 @@
+# Local test site (LocalWP copy)
 blocksy-skill-test
+
+# Research material: raw snapshots and extractor scripts used to build data/.
+# Kept locally, not part of the skill.
+research/
+
+# Outputs of running the workflow from inside the skill directory
+/current.json
+/backup*.json
+/schema.json
+/portable.json
+/export*.json
+/tokens.json
+/blocksy-tokens.json
+/plan*.json
+*.local.json
+
+# Secrets
+.env
+.env.*
+
+# Agent / tool state
+.omc/
+.claude/
+.opencode/
+.cursor/
+.gemini/
+.codex/
+.aider*
+.vscode/
+.idea/
+
+# OS / editor junk
 .DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Dependencies, logs, temp
 node_modules/
 *.log
+*.tmp

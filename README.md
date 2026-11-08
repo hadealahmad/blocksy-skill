@@ -115,7 +115,6 @@ examples/
 assets/
   example-plan.png        social/repo preview image
   design-tokens.png       design tokens update image (source in assets/src/)
-research/                 extraction notes and snapshots used to build this
 ```
 
 ## Safety
