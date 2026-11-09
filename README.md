@@ -2,7 +2,7 @@
 
 > Repository: <https://github.com/hadealahmad/blocksy-skill>
 
-A portable OpenCode skill for configuring WordPress sites that run:
+A portable agent skill (Claude Code, OpenCode, and other agents that read `SKILL.md`) for configuring WordPress sites that run:
 
 - Blocksy
 - Blocksy Child
@@ -35,16 +35,19 @@ is no file or database access.
 
 ## Install the skill
 
-Clone it directly into the global skills directory:
+Clone it into your agent's skills directory:
 
 ```sh
-git clone https://github.com/hadealahmad/blocksy-skill.git \
-  ~/.config/opencode/skills/blocksy
+# Claude Code
+git clone https://github.com/hadealahmad/blocksy-skill.git ~/.claude/skills/blocksy
+
+# OpenCode
+git clone https://github.com/hadealahmad/blocksy-skill.git ~/.config/opencode/skills/blocksy
 ```
 
-Or copy this directory to `~/.config/opencode/skills/blocksy/`, or keep it as a
-project skill in `.opencode/skills/blocksy/`. The skill entry point is
-`SKILL.md`.
+For a single project, clone it to `.claude/skills/blocksy/` or
+`.opencode/skills/blocksy/` inside that project instead. The skill entry point
+is `SKILL.md`.
 
 ## Quick start with WP-CLI
 
@@ -105,8 +108,11 @@ scripts/
   inspect.php             WP-CLI schema/info/export
   apply.php               WP-CLI plan apply
   remote.mjs              Bridge REST client
+  restore-plan.mjs        build a plan that returns a site to a backup export
+  find-option.mjs         search the option catalogs / a live schema
 tests/
   wp-local-ddev.test.sh   DDEV path mapping, fake ddev (bash tests/wp-local-ddev.test.sh)
+  *.test.mjs              node --test tests/*.test.mjs
 bridge/
   blocksy-bridge.php      single-file bridge plugin source
 dist/

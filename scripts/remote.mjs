@@ -19,12 +19,15 @@
  *   node scripts/remote.mjs export --portable --post-meta > portable.json
  *   node scripts/remote.mjs apply examples/example-plan.json --dry-run
  *   node scripts/remote.mjs apply examples/example-plan.json
+ *   node scripts/remote.mjs restore backup.json --dry-run
+ *   node scripts/remote.mjs restore backup.json [--menus] [--content-blocks] [--print]
  *   node scripts/remote.mjs cache
  *   node scripts/remote.mjs tokens > blocksy-tokens.json
  */
 
 import fs from 'node:fs';
 import process from 'node:process';
+import { buildRestorePlan } from './restore-plan.mjs';
 
 const [, , command, ...rest] = process.argv;
 
@@ -43,6 +46,7 @@ Commands:
   schema                              Full live option/builder/content-block schema
   export [--portable] [--post-meta]   Export current settings and content
   apply <plan.json> [--dry-run]       Validate and apply a plan
+  restore <backup.json> [--menus] [--content-blocks] [--dry-run] [--print]   Return the site to a backup export
   cache                                Regenerate Blocksy CSS and purge caches
   tokens                              Live design tokens for block-building skills
 
@@ -182,6 +186,36 @@ async function main() {
 
 	if (command === 'cache') {
 		print(await request('/cache', { method: 'POST' }));
+		return;
+	}
+
+	if (command === 'restore') {
+		const backupPath = rest.find((item) => !item.startsWith('--'));
+		if (!backupPath) fail('Usage: node scripts/remote.mjs restore <backup.json> [--menus] [--content-blocks] [--dry-run] [--print]');
+		if (!fs.existsSync(backupPath)) fail(`Backup not found: ${backupPath}`);
+
+		const backup = JSON.parse(fs.readFileSync(backupPath, 'utf8'));
+		const current = await request('/export?post_meta=1');
+		const { plan, summary } = buildRestorePlan(backup, current, {
+			menus: rest.includes('--menus'),
+			contentBlocks: rest.includes('--content-blocks'),
+		});
+
+		console.error(JSON.stringify(summary, null, 2));
+
+		if (rest.includes('--print')) {
+			print(plan);
+			return;
+		}
+
+		const dryRun = rest.includes('--dry-run');
+		print(
+			await request(`/apply${dryRun ? '?dry_run=1' : ''}`, {
+				method: 'POST',
+				headers: { 'Content-Type': 'application/json' },
+				body: JSON.stringify(plan),
+			})
+		);
 		return;
 	}
 

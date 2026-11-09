@@ -304,21 +304,20 @@ regenerate CSS in the same PHP process, call
 `blocksy_manager()->db->wipe_cache()` before the refresh. Across separate
 WP-CLI invocations this is not needed.
 
-## 8. Running WP-CLI on this LocalWP site
+## 8. Running WP-CLI on a LocalWP site
+
+LocalWP runs MySQL on a per-site socket, so a plain `wp` call fails with
+`Error establishing a database connection`. Use the wrapper, which finds the
+socket for you:
 
 ```sh
-SITE=/run/media/hadi/SSD2/Coding/wordpress/blocksy-skill-test/app/public
-SOCKET=/home/hadi/.config/Local/run/NJVUbgRm4/mysql/mysqld.sock
-
-cd "$SITE"
-php -d mysqli.default_socket="$SOCKET" /usr/local/bin/wp <command> --allow-root
+./scripts/wp-local.sh "/path/to/Local Sites/my-site/app/public" option get template
 ```
 
-Without the socket override WP-CLI fails with
-`Error establishing a database connection`.
+How it finds the socket: it looks for the Local run directory
+(`~/.config/Local/run/*` on Linux) whose `conf/nginx/site.conf` contains the
+site's `app/public` path, then reads the socket from `conf/mysql/my.cnf` or
+`conf/php/php.ini` and passes it as `mysqli.default_socket`.
 
-To discover the run dir automatically, find the run config whose
-`conf/nginx/site.conf` contains the site's `app/public` path, then read
-`conf/mysql/my.cnf` or `conf/php/php.ini` for the socket.
+The site URL and port are shown in the Local app and in `info` (`site.url`).
 
-Web URL for this site: `http://localhost:10119`.

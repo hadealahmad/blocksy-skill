@@ -50,9 +50,12 @@ in its root or a parent is a DDEV project: read `references/ddev.md`.
    `do_action('blocksy:dynamic-css:refresh-caches')` regenerates
    `uploads/blocksy/css/global.css`; `do_action('blocksy:cache-manager:purge-all')`
    clears page/object caches.
-7. **Backup, then dry-run, then apply, then verify.** No full transaction
-   rollback exists. Export current settings first; keep the backup until the
-   site is verified.
+7. **Backup, then dry-run, then apply, then verify.** A real apply validates
+   the whole plan first and writes nothing if any part is invalid, but there is
+   no database transaction. Export current settings first and keep the backup
+   until the site is verified. To undo an applied plan, use
+   `node scripts/remote.mjs restore backup.json` or `scripts/restore-plan.mjs`
+   (`references/verification.md`).
 8. **Check the free/pro tier before activating an extension.** Pro extensions
    are silently unavailable on the free plugin. See
    `references/extensions.md`.
@@ -168,7 +171,11 @@ One working example: `examples/example-plan.json`.
 WP-CLI:
 
 ```sh
-./scripts/wp-local.sh /path/to/site/app/public eval-file scripts/inspect.php > current.json
+# Small: theme, versions, licence plan, extensions, menu locations. Read this first.
+BLOCKSY_INSPECT=info ./scripts/wp-local.sh /path/to/site/app/public eval-file scripts/inspect.php
+
+# Large (tens of thousands of lines): save to a file, never print it.
+BLOCKSY_INSPECT=schema ./scripts/wp-local.sh /path/to/site/app/public eval-file scripts/inspect.php > schema.json
 ```
 
 Remote:
@@ -184,6 +191,16 @@ BLOCKSY_URL=https://example.com BLOCKSY_TOKEN='...' \
 `info` tells you the active theme, whether the child is active, Blocksy and
 Companion versions, licence plan, active extensions, CSS mode, and menu
 locations. `schema` is the live catalog for **this** install.
+
+Do not read `schema.json` or the `data/` catalogs whole. Look options up:
+
+```sh
+node scripts/find-option.mjs sticky --in builder --schema schema.json
+node scripts/find-option.mjs --id rootTypography --json --schema schema.json
+node scripts/find-option.mjs "site width"            # no --schema: bundled 2.1.60 snapshot
+```
+
+Each match shows where the option lives (`theme_mods`, a header/footer item, `post_meta`, a Content Block type), its type, whether it is responsive, and its default. Labels are English regardless of the site language.
 
 ### 2. Back up
 
@@ -201,7 +218,7 @@ Keep `backup.json` until the site is verified.
 
 ### 3. Compose the plan
 
-Use the live schema for valid IDs, types, and defaults. Start from
+Use the live schema for valid IDs, types, and defaults (`scripts/find-option.mjs`). Start from
 `examples/example-plan.json` and edit it. See:
 
 - `references/theme-options.md` for value shapes
@@ -303,6 +320,9 @@ Details: `references/storage-model.md`.
 | `data/builder-options.json` | 24 header + 20 footer items, 903 item options, 12 header + 8 footer section settings, default placements |
 | `data/post-meta-options.json` | Per-post/page/blog meta options |
 | `data/content-block-options.json` | Content Block options for all 9 template types |
+| `data/builder-items.json` | Every header/footer builder item with tier (free/pro), required extension or plugin |
+| `data/css-variables.json` | Catalog of Blocksy `--theme-*` CSS variables |
+| `data/css-classes.json` | Catalog of Blocksy utility and structural CSS classes |
 
 These are **snapshots**. Always prefer the live `schema` from the target site.
 Version differences are real; the extractor is part of the bridge and
@@ -319,6 +339,7 @@ Version differences are real; the extractor is part of the bridge and
 - If a plan error mentions an unknown theme mod or option, the target site's
   Blocksy version or active extensions differ from the catalog. Re-inspect
   instead of guessing.
+- When the work is finished on a production site, deactivate and delete the Blocksy Bridge plugin (or at least regenerate its token in Settings → Blocksy Bridge) and revoke the Application Password. The token is administrator-equivalent.
 
 ## References
 

@@ -14,6 +14,11 @@ require_once __DIR__ . '/../bridge/blocksy-bridge.php';
 
 $bridge = Blocksy_Bridge::instance();
 
+$blocksy_bridge_source = (string) file_get_contents( __DIR__ . '/../bridge/blocksy-bridge.php' );
+if ( preg_match( "/const VERSION\s*=\s*'([^']+)'/", $blocksy_bridge_source, $blocksy_bridge_match ) && Blocksy_Bridge::VERSION !== $blocksy_bridge_match[1] ) {
+	fwrite( STDERR, 'Warning: the site has Blocksy Bridge ' . Blocksy_Bridge::VERSION . ' installed as a plugin, which overrides the bridge ' . $blocksy_bridge_match[1] . " shipped with this skill. Update the plugin from dist/blocksy-bridge.zip.\n" );
+}
+
 if ( ! $bridge->blocksy_is_active() ) {
 	fwrite( STDERR, "Blocksy is not active on this site.\n" );
 	exit( 1 );

@@ -1,4 +1,288 @@
 {
+  "404": [
+    {
+      "id": "has_inline_code_editor",
+      "type": "hidden",
+      "label": null,
+      "default": "no",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "has_content_block_structure",
+      "type": "hidden",
+      "label": "Container Structure",
+      "default": "yes",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "hidden": true
+    },
+    {
+      "id": "content_block_structure",
+      "type": "ct-image-picker",
+      "label": null,
+      "default": "type-4",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "type-3": {
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
+          "title": "Narrow Width"
+        },
+        "type-4": {
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
+          "title": "Normal Width"
+        }
+      }
+    },
+    {
+      "id": "content_style",
+      "type": "ct-radio",
+      "label": "Content Area Style",
+      "default": "wide",
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "choices": {
+        "wide": "Wide",
+        "boxed": "Boxed"
+      }
+    },
+    {
+      "id": "content_block_spacing",
+      "type": "ct-radio",
+      "label": "Content Area Vertical Spacing",
+      "default": "both",
+      "responsive": false,
+      "path": "",
+      "section": null,
+      "choices": {
+        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
+        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
+        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
+        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
+      }
+    },
+    {
+      "id": "background",
+      "type": "ct-background",
+      "label": "Page Background",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_background",
+      "type": "ct-background",
+      "label": "Content Area Background",
+      "default": {
+        "background_type": "color",
+        "background_pattern": "type-1",
+        "background_image": {
+          "attachment_id": null,
+          "x": 0,
+          "y": 0
+        },
+        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
+        "background_repeat": "repeat",
+        "background_size": "auto",
+        "background_attachment": "scroll",
+        "patternColor": {
+          "default": {
+            "color": "#e5e7ea"
+          }
+        },
+        "overlayColor": {
+          "default": {
+            "color": "CT_CSS_SKIP_RULE"
+          }
+        },
+        "backgroundColor": {
+          "default": {
+            "color": "var(--theme-palette-color-8)"
+          }
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_shadow",
+      "type": "ct-box-shadow",
+      "label": "Content Area Shadow",
+      "default": {
+        "inherit": false,
+        "blur": 18,
+        "spread": -6,
+        "v_offset": 12,
+        "h_offset": 0,
+        "inset": false,
+        "enable": true,
+        "color": {
+          "color": "rgba(34, 56, 101, 0.04)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_border",
+      "type": "ct-border",
+      "label": "Content Area Border",
+      "default": {
+        "width": 1,
+        "style": "none",
+        "color": {
+          "color": "rgba(44,62,80,0.2)"
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null
+    },
+    {
+      "id": "content_boxed_radius",
+      "type": "ct-spacing",
+      "label": "Content Area Border Radius",
+      "default": {
+        "state": 1,
+        "values": [
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          },
+          {
+            "value": 3,
+            "unit": "px"
+          }
+        ],
+        "custom": ""
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    },
+    {
+      "id": "boxed_content_spacing",
+      "type": "ct-spacing",
+      "label": "Content Area Padding",
+      "default": {
+        "desktop": {
+          "state": 1,
+          "values": [
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            },
+            {
+              "value": 40,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "tablet": {
+          "state": 1,
+          "values": [
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            },
+            {
+              "value": 35,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        },
+        "mobile": {
+          "state": 1,
+          "values": [
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            },
+            {
+              "value": 20,
+              "unit": "px"
+            }
+          ],
+          "custom": ""
+        }
+      },
+      "responsive": true,
+      "path": "",
+      "section": null,
+      "min": 0
+    }
+  ],
   "header": [
     {
       "id": "has_inline_code_editor",
@@ -39,11 +323,11 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         }
       }
@@ -79,7 +363,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -115,7 +399,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -151,7 +435,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -186,7 +470,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -217,7 +501,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -355,11 +639,11 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         }
       }
@@ -395,7 +679,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -431,7 +715,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -467,7 +751,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -502,7 +786,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -533,7 +817,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -674,19 +958,19 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         },
         "type-2": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "src": "/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
           "title": "Left Sidebar"
         },
         "type-1": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "src": "/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
           "title": "Right Sidebar"
         }
       }
@@ -722,7 +1006,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -758,7 +1042,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -794,7 +1078,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -829,7 +1113,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -860,7 +1144,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -1036,19 +1320,19 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         },
         "type-2": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
+          "src": "/wp-content/themes/blocksy/static/images/left-single-sidebar.svg",
           "title": "Left Sidebar"
         },
         "type-1": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
+          "src": "/wp-content/themes/blocksy/static/images/right-single-sidebar.svg",
           "title": "Right Sidebar"
         }
       }
@@ -1084,7 +1368,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -1120,7 +1404,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -1156,7 +1440,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -1191,7 +1475,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -1222,291 +1506,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
-      "default": {
-        "desktop": {
-          "state": 1,
-          "values": [
-            {
-              "value": 40,
-              "unit": "px"
-            },
-            {
-              "value": 40,
-              "unit": "px"
-            },
-            {
-              "value": 40,
-              "unit": "px"
-            },
-            {
-              "value": 40,
-              "unit": "px"
-            }
-          ],
-          "custom": ""
-        },
-        "tablet": {
-          "state": 1,
-          "values": [
-            {
-              "value": 35,
-              "unit": "px"
-            },
-            {
-              "value": 35,
-              "unit": "px"
-            },
-            {
-              "value": 35,
-              "unit": "px"
-            },
-            {
-              "value": 35,
-              "unit": "px"
-            }
-          ],
-          "custom": ""
-        },
-        "mobile": {
-          "state": 1,
-          "values": [
-            {
-              "value": 20,
-              "unit": "px"
-            },
-            {
-              "value": 20,
-              "unit": "px"
-            },
-            {
-              "value": 20,
-              "unit": "px"
-            },
-            {
-              "value": 20,
-              "unit": "px"
-            }
-          ],
-          "custom": ""
-        }
-      },
-      "responsive": true,
-      "path": "",
-      "section": null,
-      "min": 0
-    }
-  ],
-  "404": [
-    {
-      "id": "has_inline_code_editor",
-      "type": "hidden",
-      "label": null,
-      "default": "no",
-      "responsive": false,
-      "path": "",
-      "section": null,
-      "hidden": true
-    },
-    {
-      "id": "has_content_block_structure",
-      "type": "hidden",
-      "label": "Container Structure",
-      "default": "yes",
-      "responsive": false,
-      "path": "",
-      "section": null,
-      "hidden": true
-    },
-    {
-      "id": "content_block_structure",
-      "type": "ct-image-picker",
-      "label": null,
-      "default": "type-4",
-      "responsive": false,
-      "path": "",
-      "section": null,
-      "choices": {
-        "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
-          "title": "Narrow Width"
-        },
-        "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
-          "title": "Normal Width"
-        }
-      }
-    },
-    {
-      "id": "content_style",
-      "type": "ct-radio",
-      "label": "Content Area Style",
-      "default": "wide",
-      "responsive": true,
-      "path": "",
-      "section": null,
-      "choices": {
-        "wide": "Wide",
-        "boxed": "Boxed"
-      }
-    },
-    {
-      "id": "content_block_spacing",
-      "type": "ct-radio",
-      "label": "Content Area Vertical Spacing",
-      "default": "both",
-      "responsive": false,
-      "path": "",
-      "section": null,
-      "choices": {
-        "both": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Top & Bottom</i>",
-        "top": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Top</i>",
-        "bottom": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Only Bottom</i>",
-        "none": "<span></span>\n\t\t\t\t\t\t\t<i class=\"ct-tooltip\">Disabled</i>"
-      }
-    },
-    {
-      "id": "background",
-      "type": "ct-background",
-      "label": "خلفية الصفحة",
-      "default": {
-        "background_type": "color",
-        "background_pattern": "type-1",
-        "background_image": {
-          "attachment_id": null,
-          "x": 0,
-          "y": 0
-        },
-        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
-        "background_repeat": "repeat",
-        "background_size": "auto",
-        "background_attachment": "scroll",
-        "patternColor": {
-          "default": {
-            "color": "#e5e7ea"
-          }
-        },
-        "overlayColor": {
-          "default": {
-            "color": "CT_CSS_SKIP_RULE"
-          }
-        },
-        "backgroundColor": {
-          "default": {
-            "color": "CT_CSS_SKIP_RULE"
-          }
-        }
-      },
-      "responsive": true,
-      "path": "",
-      "section": null
-    },
-    {
-      "id": "content_background",
-      "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
-      "default": {
-        "background_type": "color",
-        "background_pattern": "type-1",
-        "background_image": {
-          "attachment_id": null,
-          "x": 0,
-          "y": 0
-        },
-        "gradient": "linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%)",
-        "background_repeat": "repeat",
-        "background_size": "auto",
-        "background_attachment": "scroll",
-        "patternColor": {
-          "default": {
-            "color": "#e5e7ea"
-          }
-        },
-        "overlayColor": {
-          "default": {
-            "color": "CT_CSS_SKIP_RULE"
-          }
-        },
-        "backgroundColor": {
-          "default": {
-            "color": "var(--theme-palette-color-8)"
-          }
-        }
-      },
-      "responsive": true,
-      "path": "",
-      "section": null
-    },
-    {
-      "id": "content_boxed_shadow",
-      "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
-      "default": {
-        "inherit": false,
-        "blur": 18,
-        "spread": -6,
-        "v_offset": 12,
-        "h_offset": 0,
-        "inset": false,
-        "enable": true,
-        "color": {
-          "color": "rgba(34, 56, 101, 0.04)"
-        }
-      },
-      "responsive": true,
-      "path": "",
-      "section": null
-    },
-    {
-      "id": "content_boxed_border",
-      "type": "ct-border",
-      "label": "Content Area Border",
-      "default": {
-        "width": 1,
-        "style": "none",
-        "color": {
-          "color": "rgba(44,62,80,0.2)"
-        }
-      },
-      "responsive": true,
-      "path": "",
-      "section": null
-    },
-    {
-      "id": "content_boxed_radius",
-      "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
-      "default": {
-        "state": 1,
-        "values": [
-          {
-            "value": 3,
-            "unit": "px"
-          },
-          {
-            "value": 3,
-            "unit": "px"
-          },
-          {
-            "value": 3,
-            "unit": "px"
-          },
-          {
-            "value": 3,
-            "unit": "px"
-          }
-        ],
-        "custom": ""
-      },
-      "responsive": true,
-      "path": "",
-      "section": null,
-      "min": 0
-    },
-    {
-      "id": "boxed_content_spacing",
-      "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -3331,11 +3331,11 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         }
       }
@@ -3371,7 +3371,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -3407,7 +3407,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -3443,7 +3443,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -3478,7 +3478,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -3509,7 +3509,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -4392,11 +4392,11 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         }
       }
@@ -4432,7 +4432,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -4468,7 +4468,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -4504,7 +4504,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -4539,7 +4539,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -4570,7 +4570,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,
@@ -4690,11 +4690,11 @@
       "section": null,
       "choices": {
         "type-3": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/narrow.svg",
+          "src": "/wp-content/themes/blocksy/static/images/narrow.svg",
           "title": "Narrow Width"
         },
         "type-4": {
-          "src": "http://localhost:10119/wp-content/themes/blocksy/static/images/normal.svg",
+          "src": "/wp-content/themes/blocksy/static/images/normal.svg",
           "title": "Normal Width"
         }
       }
@@ -4730,7 +4730,7 @@
     {
       "id": "background",
       "type": "ct-background",
-      "label": "خلفية الصفحة",
+      "label": "Page Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -4766,7 +4766,7 @@
     {
       "id": "content_background",
       "type": "ct-background",
-      "label": "لون خلفية منطقة المحتوى",
+      "label": "Content Area Background",
       "default": {
         "background_type": "color",
         "background_pattern": "type-1",
@@ -4802,7 +4802,7 @@
     {
       "id": "content_boxed_shadow",
       "type": "ct-box-shadow",
-      "label": "ظل منطقة المحتوى",
+      "label": "Content Area Shadow",
       "default": {
         "inherit": false,
         "blur": 18,
@@ -4837,7 +4837,7 @@
     {
       "id": "content_boxed_radius",
       "type": "ct-spacing",
-      "label": "انحناء حدود منطقة المحتوى",
+      "label": "Content Area Border Radius",
       "default": {
         "state": 1,
         "values": [
@@ -4868,7 +4868,7 @@
     {
       "id": "boxed_content_spacing",
       "type": "ct-spacing",
-      "label": "المسافة الداخليّة لمنطقة المحتوى",
+      "label": "Content Area Padding",
       "default": {
         "desktop": {
           "state": 1,

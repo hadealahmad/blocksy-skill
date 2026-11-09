@@ -3,7 +3,7 @@
  * Plugin Name: Blocksy Bridge
  * Plugin URI:  https://github.com/your-org/blocksy-bridge
  * Description: A narrow, authenticated REST bridge for reading and applying Blocksy theme, builder, menu, and Content Block settings. Intended for the Blocksy skill.
- * Version:     0.2.0
+ * Version:     0.3.0
  * Author:      Blocksy Skill
  * Requires at least: 6.0
  * Requires PHP: 7.4
@@ -18,7 +18,7 @@ if ( ! class_exists( 'Blocksy_Bridge' ) ) {
 
 	class Blocksy_Bridge {
 
-		const VERSION           = '0.2.0';
+		const VERSION           = '0.3.0';
 		const REST_NAMESPACE    = 'blocksy-bridge/v1';
 		const MAX_PLAN_BYTES    = 2097152; // 2 MB
 		const OPTION_LOG        = 'blocksy_bridge_last_apply';
@@ -26,6 +26,7 @@ if ( ! class_exists( 'Blocksy_Bridge' ) ) {
 
 		private static $instance = null;
 		private $schema_cache = null;
+		private $theme_option_map = null;
 
 		public static function instance() {
 			if ( null === self::$instance ) {
@@ -423,6 +424,12 @@ node scripts/remote.mjs info</pre>
 				return $this->schema_cache;
 			}
 
+			$site_locale = get_locale();
+			$switched    = false;
+			if ( 'en_US' !== $site_locale && function_exists( 'switch_to_locale' ) ) {
+				$switched = switch_to_locale( 'en_US' );
+			}
+
 			$this->ensure_customizer_helpers();
 
 			$theme_options = $this->theme_options_schema();
@@ -431,15 +438,20 @@ node scripts/remote.mjs info</pre>
 			$content_blocks = $this->content_block_schema();
 			$extensions = $this->extensions_schema();
 
+			if ( $switched ) {
+				restore_previous_locale();
+			}
+
 			$this->schema_cache = [
 				'bridge' => [
 					'version'        => self::VERSION,
 					'rest_namespace' => self::REST_NAMESPACE,
 				],
 				'site' => [
-					'url'        => home_url( '/' ),
-					'wp_version' => get_bloginfo( 'version' ),
-					'locale'     => get_locale(),
+					'url'           => home_url( '/' ),
+					'wp_version'    => get_bloginfo( 'version' ),
+					'locale'        => $site_locale,
+					'labels_locale' => $switched || 'en_US' === $site_locale ? 'en_US' : $site_locale,
 				],
 				'blocksy' => [
 					'theme_version'      => $this->blocksy_theme_version(),
@@ -1048,6 +1060,7 @@ node scripts/remote.mjs info</pre>
 			$report = [
 				'dry_run'  => (bool) $dry_run,
 				'ok'       => true,
+				'applied'  => false,
 				'actions'  => [],
 				'warnings' => [],
 				'errors'   => [],
@@ -1059,17 +1072,28 @@ node scripts/remote.mjs info</pre>
 				$snapshot = $this->export( [ 'post_meta' => true ] );
 			}
 
-			$this->apply_extensions( $plan['extensions'] ?? [], $dry_run, $report );
-			$this->apply_theme_mods( $plan['theme_mods'] ?? [], $plan['remove_theme_mods'] ?? [], $dry_run, $report );
-			$this->apply_options( $plan['options'] ?? [], $plan['remove_options'] ?? [], $dry_run, $report );
-			$this->apply_menus( $plan['menus'] ?? [], $dry_run, $report );
-			$this->apply_content_blocks( $plan['content_blocks'] ?? [], $dry_run, $report );
-			$this->apply_post_meta( $plan['post_meta'] ?? [], $dry_run, $report );
-			$this->remove_post_meta( $plan['remove_post_meta'] ?? [], $dry_run, $report );
+			$atomic = ! isset( $plan['atomic'] ) || $plan['atomic'];
 
-			$report['ok'] = empty( $report['errors'] );
+			if ( ! $dry_run && $atomic ) {
+				$preflight = $report;
+				$this->run_plan_sections( $plan, true, $preflight );
+				$this->schema_cache = null;
 
-			if ( ! $dry_run && $report['ok'] && ( ! isset( $plan['cache'] ) || $plan['cache'] ) ) {
+				if ( ! empty( $preflight['errors'] ) ) {
+					$preflight['ok']               = false;
+					$preflight['applied']          = false;
+					$preflight['preflight_failed'] = true;
+					$preflight['warnings'][]       = 'Preflight validation failed. Nothing was written. Fix the errors and re-run, or set "atomic": false in the plan to apply the valid parts anyway.';
+					return $preflight;
+				}
+			}
+
+			$this->run_plan_sections( $plan, $dry_run, $report );
+
+			$report['ok']      = empty( $report['errors'] );
+			$report['applied'] = ! $dry_run && ! empty( $report['actions'] );
+
+			if ( ! $dry_run && ( ! isset( $plan['cache'] ) || $plan['cache'] ) && ( $report['ok'] || ! empty( $report['actions'] ) ) ) {
 				$report['cache'] = $this->refresh_caches();
 			}
 
@@ -1094,6 +1118,16 @@ node scripts/remote.mjs info</pre>
 			}
 
 			return $report;
+		}
+
+		private function run_plan_sections( $plan, $dry_run, &$report ) {
+			$this->apply_extensions( $plan['extensions'] ?? [], $dry_run, $report );
+			$this->apply_theme_mods( $plan['theme_mods'] ?? [], $plan['remove_theme_mods'] ?? [], $dry_run, $report );
+			$this->apply_options( $plan['options'] ?? [], $plan['remove_options'] ?? [], $dry_run, $report );
+			$this->apply_menus( $plan['menus'] ?? [], $dry_run, $report );
+			$this->apply_content_blocks( $plan['content_blocks'] ?? [], $dry_run, $report );
+			$this->apply_post_meta( $plan['post_meta'] ?? [], $dry_run, $report );
+			$this->remove_post_meta( $plan['remove_post_meta'] ?? [], $dry_run, $report );
 		}
 
 		private function apply_extensions( $extensions, $dry_run, &$report ) {
@@ -1236,6 +1270,14 @@ node scripts/remote.mjs info</pre>
 				$after = $value;
 
 				if ( $this->values_equal( $before, $after ) ) {
+					continue;
+				}
+
+				$value_errors = $this->validate_theme_mod_value( $key, $after );
+				if ( ! empty( $value_errors ) ) {
+					foreach ( $value_errors as $value_error ) {
+						$report['errors'][] = $value_error;
+					}
 					continue;
 				}
 
@@ -2127,6 +2169,58 @@ node scripts/remote.mjs info</pre>
 			}
 
 			return wp_json_encode( $a ) === wp_json_encode( $b );
+		}
+
+		private function validate_theme_mod_value( $key, $value ) {
+			if ( null === $this->theme_option_map ) {
+				$this->theme_option_map = [];
+				foreach ( $this->theme_options_schema() as $option ) {
+					if ( isset( $option['id'] ) ) {
+						$this->theme_option_map[ $option['id'] ] = $option;
+					}
+				}
+			}
+
+			if ( ! isset( $this->theme_option_map[ $key ] ) ) {
+				return [];
+			}
+
+			$option = $this->theme_option_map[ $key ];
+
+			if ( isset( $option['type'] ) && 'ct-typography' === $option['type'] ) {
+				if ( ! is_array( $value ) ) {
+					return [ "Theme mod '$key' (ct-typography) must be an object." ];
+				}
+
+				$required = [ 'family', 'variation', 'size', 'line-height', 'letter-spacing', 'text-transform', 'text-decoration' ];
+				$missing  = [];
+				foreach ( $required as $req_key ) {
+					if ( ! array_key_exists( $req_key, $value ) ) {
+						$missing[] = $req_key;
+					}
+				}
+
+				if ( ! empty( $missing ) ) {
+					return [ "Theme mod '$key' (ct-typography) is missing: " . implode( ', ', $missing ) . '. Typography values must be complete.' ];
+				}
+			}
+
+			if ( ! empty( $option['responsive'] ) && is_array( $value ) ) {
+				$devices = [ 'desktop', 'tablet', 'mobile' ];
+				$present = [];
+				foreach ( $devices as $device ) {
+					if ( array_key_exists( $device, $value ) ) {
+						$present[] = $device;
+					}
+				}
+
+				$present_count = count( $present );
+				if ( 1 === $present_count || 2 === $present_count ) {
+					return [ "Theme mod '$key' is responsive and is missing: " . implode( ', ', array_diff( $devices, $present ) ) . '. Provide desktop, tablet and mobile.' ];
+				}
+			}
+
+			return [];
 		}
 
 		/* ---------------------------------------------------------------------
