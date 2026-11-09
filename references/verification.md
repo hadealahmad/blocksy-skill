@@ -135,30 +135,71 @@ Remote: `node scripts/remote.mjs cache`.
 
 ## 7. Rollback
 
-There is no database transaction. The safe pattern is:
+There is no database transaction; a real apply validates the whole plan first and writes nothing if validation fails (see `atomic` in plan-format.md), but a plan that passes validation and looks wrong still needs a restore.
 
-1. **Export before apply** and keep the backup.
-2. If the result is wrong, apply a **cleanup plan**:
-   - `remove_theme_mods` for keys added by the failed plan.
-   - `menus: [{name, delete: true}]` for menus created by the plan.
-   - `content_blocks: [{key, delete: true}]` for blocks created by the plan.
-   - `remove_post_meta` for per-page keys added by the plan.
-   - `cache: true`.
-3. Re-apply the backup's `theme_mods`, `options`, `menus`, and
-   `content_blocks` for anything that should be restored.
+### Step 1: export a backup before applying
 
-Example cleanup:
+Export a non-portable backup with post meta before applying:
 
-```json
-{
-  "version": 1,
-  "remove_theme_mods": ["header_placements", "footer_placements", "colorPalette"],
-  "menus": [{ "name": "Example Main Menu", "delete": true }],
-  "content_blocks": [{ "key": "example-single-notice", "delete": true }],
-  "remove_post_meta": { "sample-page": ["page_structure_type"] },
-  "cache": true
-}
+WP-CLI:
+
+```sh
+BLOCKSY_INSPECT=export BLOCKSY_INSPECT_POST_META=1 ./scripts/wp-local.sh "$SITE" eval-file scripts/inspect.php > backup.json
 ```
+
+Remote:
+
+```sh
+node scripts/remote.mjs export --post-meta > backup.json
+```
+
+### Step 2: restore
+
+#### Remote restore
+
+Dry-run first, then apply:
+
+```sh
+node scripts/remote.mjs restore backup.json --dry-run
+node scripts/remote.mjs restore backup.json
+```
+
+Add `--menus` and/or `--content-blocks` to also restore those; `--print` shows the plan without applying:
+
+```sh
+node scripts/remote.mjs restore backup.json --menus --content-blocks --print
+```
+
+#### WP-CLI restore
+
+Export the current state to `current.json` with the same export command, then generate the restore plan:
+
+```sh
+BLOCKSY_INSPECT=export BLOCKSY_INSPECT_POST_META=1 ./scripts/wp-local.sh "$SITE" eval-file scripts/inspect.php > current.json
+node scripts/restore-plan.mjs backup.json current.json > restore-plan.json
+```
+
+Dry-run and apply `restore-plan.json` with `scripts/apply.php`:
+
+```sh
+BLOCKSY_PLAN=restore-plan.json BLOCKSY_DRY_RUN=1 ./scripts/wp-local.sh "$SITE" eval-file scripts/apply.php
+BLOCKSY_PLAN=restore-plan.json ./scripts/wp-local.sh "$SITE" eval-file scripts/apply.php
+```
+
+### What the restore plan does
+
+- Sets changed theme mods and options back.
+- Removes theme mods and options added since the backup.
+- Re-activates or deactivates extensions to match.
+- Restores per-page meta when both exports include it.
+- With `--menus`: rebuilds changed menus and deletes menus created since.
+- With `--content-blocks`: restores changed blocks and deletes blocks created since.
+
+### Limits
+
+- Menus and Content Blocks are opt-in because restoring them deletes ones created after the backup.
+- Media/attachments, widgets, and Additional CSS are not covered.
+- On DDEV a `ddev snapshot` is a full database rollback and is preferred (see ddev.md).
 
 If a menu was deleted and `nav_menu_locations` still points at it, WordPress
 may normalize the location to `0`. Set `nav_menu_locations` back to the desired

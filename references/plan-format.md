@@ -22,6 +22,7 @@ Only include the sections you need. Every section is optional.
   "content_blocks": [],
   "post_meta": {},
   "remove_post_meta": {},
+  "atomic": true,
   "cache": true,
   "snapshot": false
 }
@@ -87,7 +88,9 @@ Rules:
 
 - Use the IDs and value shapes from the live schema.
 - `ct-typography` values must be complete.
+- A partial `ct-typography` object is rejected with an error naming the missing keys.
 - Responsive values must include `desktop`, `tablet`, `mobile`.
+- A responsive option given some but not all of `desktop`/`tablet`/`mobile` is rejected. A scalar is accepted.
 - `header_placements` and `footer_placements` are validated and sanitized.
 - Existing legacy mods are allowed so a backup can be restored.
 - New unknown keys are rejected.
@@ -266,9 +269,23 @@ Allowed keys come from the post/page meta schema plus `disable_header` and
 
 Removes the listed keys. If the meta becomes empty, the meta row is deleted.
 
+## `atomic`
+
+Default `true`. A real (non-dry-run) apply first validates the whole plan. If
+anything is invalid, nothing is written and the response has `ok: false`,
+`applied: false` and `preflight_failed: true`.
+
+Set `false` to write the valid parts and skip the invalid ones. The caches are
+still refreshed after a partial write.
+
+Preflight validates against the site as it is before the apply. A plan that
+activates an extension and, in the same plan, sets a setting that only exists
+once that extension is active can fail preflight. Apply it as two plans
+(extensions first), or set `atomic: false`.
+
 ## `cache`
 
-Default `true`. After a successful non-dry apply:
+Default `true`. After a non-dry apply that succeeded or wrote at least one change:
 
 1. `blocksy_manager()->db->wipe_cache()`
 2. `do_action('blocksy:dynamic-css:refresh-caches')`
@@ -290,6 +307,7 @@ be large. Prefer a separate `export` before apply.
 {
   "dry_run": false,
   "ok": true,
+  "applied": true,
   "actions": [
     { "type": "theme_mod", "op": "set", "key": "maxSiteWidth", "before": null, "after": 1290 }
   ],
@@ -304,6 +322,8 @@ be large. Prefer a separate `export` before apply.
 ```
 
 - `ok` is false if `errors` is non-empty.
+- `applied` is true when a real apply wrote at least one change.
+- `preflight_failed: true` means validation failed and nothing was written.
 - `warnings` do not block the apply.
 - `actions` is the audit trail; review it after a dry run.
 - `errors` usually mean a typo, a version mismatch, a missing extension, or a
